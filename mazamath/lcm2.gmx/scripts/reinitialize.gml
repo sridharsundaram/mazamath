@@ -8,6 +8,8 @@ global.num_bridge_segments += 1;
 
 if (global.num_bridge_segments == 0) {
   global.x_n = 89765467; // Random number seed
+  obj_player_A.name = get_player_name('A');
+  obj_player_B.name = get_player_name('B');
 } else { // Create new bridge segment
   yval := obj_player_A.y;
   instance_create(global.num_bridge_segments * global.bridge_width, yval, obj_bridge);

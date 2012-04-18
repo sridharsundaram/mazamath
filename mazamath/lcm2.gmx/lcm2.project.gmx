@@ -79,7 +79,9 @@
     <android_orient_portrait>-1</android_orient_portrait>
     <android_splash_png></android_splash_png>
   </options>
-  <NewExtensions/>
+  <NewExtensions>
+    <extension index="0">extensions\multiplayer</extension>
+  </NewExtensions>
   <sounds name="sound">
     <sound>sound\snd_monkey</sound>
     <sound>sound\snd_me</sound>
@@ -121,10 +123,17 @@
     <script>scripts\reinitialize.gml</script>
     <script>scripts\random_int32.gml</script>
     <script>scripts\maza_irandom_range.gml</script>
-    <script>scripts\splash_html.gml</script>
     <script>scripts\move_sinhika.gml</script>
-    <script>scripts\move_player.gml</script>
+    <script>scripts\move_players.gml</script>
     <script>scripts\initialize_player.gml</script>
+    <scripts name="browser">
+      <script>scripts\get_player_me.gml</script>
+      <script>scripts\splash_html.gml</script>
+      <script>scripts\player_moves_ready.gml</script>
+      <script>scripts\get_move.gml</script>
+      <script>scripts\get_player_name.gml</script>
+      <script>scripts\send_move.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font_multiple</font>
@@ -137,7 +146,7 @@
     <object>objects\obj_sinhika</object>
     <object>objects\obj_weld</object>
     <object>objects\obj_explosion</object>
-    <object>objects\obj_dashboard</object>
+    <object>objects\obj_controller</object>
     <object>objects\obj_spinner</object>
     <object>objects\obj_bridge</object>
     <object>objects\obj_wood_multiple</object>
@@ -145,6 +154,7 @@
     <object>objects\obj_delta_score</object>
     <object>objects\obj_score</object>
     <object>objects\obj_control_player</object>
+    <object>objects\obj_client</object>
   </objects>
   <rooms name="rooms" roommaxid="100012" room_maxtileid="10000033">
     <room>rooms\lcm</room>

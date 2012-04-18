@@ -54,7 +54,16 @@ draw_set_halign(fa_center);
 draw_set_valign(fa_bottom);
 draw_set_font(-1);
 
-draw_text_transformed(self.x + global.GRID_SPACE_WIDTH/2, self.y + 1.5*global.GRID_SPACE_WIDTH, self.name, 0.75, 0.75, 0);
+draw_text_transformed(self.x + global.GRID_SPACE_WIDTH/2, self.y + 1.5*global.GRID_SPACE_WIDTH, 
+                      (self.player_id).name, 0.75, 0.75, 0);
+if (object_get_parent(self.player_id) == obj_player) {
+  draw_set_color(c_white);
+  draw_set_font(font_multiple);
+  draw_set_halign(fa_center);
+  draw_set_valign(fa_middle);
+  draw_text(self.x + 2.5*global.GRID_SPACE_WIDTH, self.y + global.GRID_SPACE_WIDTH/2, 
+            " x " + string((self.player_id).multiple));
+}
 </string>
           </argument>
         </arguments>

@@ -6,11 +6,42 @@
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
-  <bbox_left>7</bbox_left>
-  <bbox_right>24</bbox_right>
+  <bbox_left>1</bbox_left>
+  <bbox_right>27</bbox_right>
   <bbox_top>2</bbox_top>
-  <bbox_bottom>29</bbox_bottom>
+  <bbox_bottom>31</bbox_bottom>
   <frames>
     <frame index="0">images\spr_wood_multiple_0.png</frame>
+    <frame index="1">images\spr_wood_multiple_1.png</frame>
+    <frame index="2">images\spr_wood_multiple_2.png</frame>
+    <frame index="3">images\spr_wood_multiple_3.png</frame>
+    <frame index="4">images\spr_wood_multiple_4.png</frame>
+    <frame index="5">images\spr_wood_multiple_5.png</frame>
+    <frame index="6">images\spr_wood_multiple_6.png</frame>
+    <frame index="7">images\spr_wood_multiple_7.png</frame>
+    <frame index="8">images\spr_wood_multiple_8.png</frame>
+    <frame index="9">images\spr_wood_multiple_9.png</frame>
+    <frame index="10">images\spr_wood_multiple_10.png</frame>
+    <frame index="11">images\spr_wood_multiple_11.png</frame>
+    <frame index="12">images\spr_wood_multiple_12.png</frame>
+    <frame index="13">images\spr_wood_multiple_13.png</frame>
+    <frame index="14">images\spr_wood_multiple_14.png</frame>
+    <frame index="15">images\spr_wood_multiple_15.png</frame>
+    <frame index="16">images\spr_wood_multiple_16.png</frame>
+    <frame index="17">images\spr_wood_multiple_17.png</frame>
+    <frame index="18">images\spr_wood_multiple_18.png</frame>
+    <frame index="19">images\spr_wood_multiple_19.png</frame>
+    <frame index="20">images\spr_wood_multiple_20.png</frame>
+    <frame index="21">images\spr_wood_multiple_21.png</frame>
+    <frame index="22">images\spr_wood_multiple_22.png</frame>
+    <frame index="23">images\spr_wood_multiple_23.png</frame>
+    <frame index="24">images\spr_wood_multiple_24.png</frame>
+    <frame index="25">images\spr_wood_multiple_25.png</frame>
+    <frame index="26">images\spr_wood_multiple_26.png</frame>
+    <frame index="27">images\spr_wood_multiple_27.png</frame>
+    <frame index="28">images\spr_wood_multiple_28.png</frame>
+    <frame index="29">images\spr_wood_multiple_29.png</frame>
+    <frame index="30">images\spr_wood_multiple_30.png</frame>
+    <frame index="31">images\spr_wood_multiple_31.png</frame>
   </frames>
 </sprite>

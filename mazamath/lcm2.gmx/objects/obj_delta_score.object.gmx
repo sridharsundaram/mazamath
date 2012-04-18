@@ -32,7 +32,7 @@ move_towards_point(obj_score.x, obj_score.y, 10);
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_dashboard">
+    <event eventtype="4" ename="obj_controller">
       <action>
         <libid>1</libid>
         <id>603</id>

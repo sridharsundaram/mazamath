@@ -27,6 +27,9 @@
             <kind>1</kind>
             <string>event_inherited();
 self.original_path = path_monkey;
+self.name = 'A';
+self.player = 'A';
+
 </string>
           </argument>
         </arguments>

@@ -1,5 +1,4 @@
-// Move the player - can be monkey or me
-if (self.recovering) return 0;
+// Move the player - given multiple (-ve multiple indicates backward)
 sound_play(self.sound);
 self.jumping = abs(self.multiple) + 1;
 self.x_start_jump = self.x;

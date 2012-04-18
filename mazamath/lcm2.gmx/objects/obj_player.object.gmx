@@ -33,11 +33,14 @@ self.image_speed = 0;
 self.recovering = false;
 self.selected = false;
 self.step = 0; // counter for subimage
-self.multiple = 1;
+self.multiple = 0;
 self.x_start_jump = 0; // x-value at beginning of jump
 self.x_min_segment = 0; // Min x-value for player for this segment
 self.x_max_segment = 0; // Max x-value for player for this segment
 self.wood_id = 0; // Wood corresponding to player
+self.move_ready = false; // Whether move is ready
+self.name = '';   // Name of this player
+self.player = ''; // Which player this is - A or B
 
 </string>
           </argument>
@@ -95,6 +98,7 @@ if (self.jumping &gt; 1) {
   return 0;
 }
 self.jumping = 0;
+self.multiple = 0;
 
 // If other player already recognized success in finding LCM, return
 if (obj_sinhika.speed == 0) return 0;
@@ -145,7 +149,10 @@ if (obj_player.current_count != 0 &amp;&amp; obj_player_A.current_count == obj_p
 if (mouse_check_button(mb_left)) {
   var distance, new_multiple;
   distance = self.x + global.GRID_SPACE_WIDTH/2 - mouse_x;
-  new_multiple = distance div 10 + 1;
+  new_multiple = distance div 10;
+  if (abs(new_multiple) &gt; 10) {
+    new_multiple = sign(new_multiple) * 10;
+  }
   if (self.multiple != new_multiple) {
     sound_play(snd_click);
     self.multiple = new_multiple;
@@ -184,7 +191,11 @@ self.selected = false;
 // Ignore left mouse click if already in action
 if (self.jumping &gt; 0) return 0;
 
-move_player();
+// Cannot move if still recovering
+if (self.recovering) return 0;
+
+self.move_ready = true;
+send_move(self.multiple);
 </string>
           </argument>
         </arguments>
@@ -207,7 +218,10 @@ move_player();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>self.selected = true;
+            <string>// Select only if allowed to move this player
+if (get_player_me() == "BOTH" || get_player_me() == self.player) {
+  self.selected = true;
+}
 </string>
           </argument>
         </arguments>

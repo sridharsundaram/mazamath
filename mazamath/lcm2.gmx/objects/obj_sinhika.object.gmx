@@ -26,6 +26,9 @@
           <argument>
             <kind>1</kind>
             <string>self.recovering = false;
+self.move_ready = false;
+self.name = 'Sinhika';
+
 </string>
           </argument>
         </arguments>
@@ -51,7 +54,8 @@
             <string>// Recovered alarm
 self.recovering = false;
 self.sprite_index = spr_sinhika;
-move_sinhika();
+self.move_ready = true;
+
 </string>
           </argument>
         </arguments>

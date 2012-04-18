@@ -14,7 +14,15 @@
       }
       
       js_getMove = function(player) {
-        return player == 'A' ? gameState.moveA : gameState.moveB;
+        if (player == 'A') {
+          var move = gameState.moveA;
+          gameState.moveA = null;
+          return move;
+        } else {
+          var move = gameState.moveB;
+          gameState.moveB = null;
+          return move;
+        }
       }
       
       js_sendMove = function(multiple) {

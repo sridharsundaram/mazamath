@@ -44,7 +44,7 @@
           <externalName></externalName>
           <kind>11</kind>
           <id>18</id>
-          <help>js_getMove(player)</help>
+          <help>js_getMove(player) gets move for player - move can be gotten only once per player</help>
           <hidden>0</hidden>
           <returnType>1</returnType>
           <argCount>1</argCount>
@@ -77,6 +77,17 @@
           <args>
             <arg>2</arg>
           </args>
+        </function>
+        <function>
+          <name>js_getRandomSeed</name>
+          <externalName></externalName>
+          <kind>11</kind>
+          <id>21</id>
+          <help>Gets random seed from js</help>
+          <hidden>0</hidden>
+          <returnType>2</returnType>
+          <argCount>0</argCount>
+          <args/>
         </function>
       </functions>
       <constants/>

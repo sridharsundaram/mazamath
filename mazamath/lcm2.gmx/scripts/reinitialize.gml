@@ -7,7 +7,7 @@ var xval, yval;
 global.num_bridge_segments += 1;
 
 if (global.num_bridge_segments == 0) {
-  global.x_n = 89765467; // Random number seed
+  global.x_n = get_random_seed();
   obj_player_A.name = get_player_name('A');
   obj_player_B.name = get_player_name('B');
 } else { // Create new bridge segment

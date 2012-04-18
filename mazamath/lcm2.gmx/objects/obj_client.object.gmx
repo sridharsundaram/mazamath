@@ -26,7 +26,6 @@
           <argument>
             <kind>1</kind>
             <string>if (player_moves_ready()) {
-  show_message("going to move");
   move_players();
   if (obj_sinhika.move_ready) {
     move_sinhika();

@@ -47,15 +47,20 @@ class GameUpdater():
     self.game = game
 
   def get_game_message(self):
+    nameA = self.game.playerA.nickname() if self.game.playerA else ''
+    nameA = nameA[0:nameA.find('@')]
+    nameB = self.game.playerB.nickname() if self.game.playerB else ''
+    nameB = nameB[0:nameB.find('@')]
     gameUpdate = {
       'state': self.game.state,
       'playerA': self.game.playerA.user_id(),
-      'nameA': self.game.playerA.nickname() if self.game.playerA else '',
+      'nameA': nameA,
       'playerB': '' if not self.game.playerB else self.game.playerB.user_id(),
-      'nameB': self.game.playerB.nickname() if self.game.playerB else '',
+      'nameB': nameB,
       'move_state': self.game.move_state,
       'moveA': self.game.moveA,
       'moveB': self.game.moveB,
+      'random': random.randrange(0, 0x3FFFFFFF) 
     }
     return simplejson.dumps(gameUpdate)
 

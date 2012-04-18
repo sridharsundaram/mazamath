@@ -107,6 +107,7 @@
     <sprite>sprites\spr_dashboard</sprite>
     <sprite>sprites\spr_score</sprite>
     <sprite>sprites\spr_control</sprite>
+    <sprite>sprites\spr_wait</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\back_plane</background>
@@ -133,6 +134,7 @@
       <script>scripts\get_move.gml</script>
       <script>scripts\get_player_name.gml</script>
       <script>scripts\send_move.gml</script>
+      <script>scripts\get_random_seed.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">
@@ -156,7 +158,7 @@
     <object>objects\obj_control_player</object>
     <object>objects\obj_client</object>
   </objects>
-  <rooms name="rooms" roommaxid="100012" room_maxtileid="10000033">
+  <rooms name="rooms" roommaxid="100013" room_maxtileid="10000033">
     <room>rooms\lcm</room>
   </rooms>
   <triggers number="1">

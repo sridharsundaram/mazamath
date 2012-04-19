@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MazaMath - games in Progress</title>
+  </head>
+
+  <body>
+    <h2>Welcome, {{me}}</h2>
+    <h2>Games in Progress</h2>
+    <table border=1>
+      <tr>
+        <td>Number</td>
+        <td>Player A</td>
+        <td>Player B</td>
+        <td>Last Update Time</td>
+      </tr>
+      {% for game in games %}
+      <tr>
+          <td>{{forloop.counter}}</td>
+          <td>
+              {{game.playerA}} 
+          </td>
+          <td>{% ifequal game.playerB None %} 
+                <a href="{{joinlink}}{{game.playerA.user_id}}">Join</a> 
+               {% else %}
+                 {{game.playerB}}
+               {% endifequal %}
+          </td>
+          <td>
+            {{game.last_updated|date:"d M Y P"}}
+          </td>
+            
+      </tr>
+      {% endfor %}
+    </table>
+    <a href="/">New Game</a>
+  </body>
+</html>

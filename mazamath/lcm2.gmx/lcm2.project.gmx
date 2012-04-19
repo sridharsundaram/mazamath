@@ -92,15 +92,11 @@
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_wood</sprite>
-    <sprite>sprites\spr_monkey</sprite>
-    <sprite>sprites\spr_me</sprite>
-    <sprite>sprites\spr_sinhika</sprite>
     <sprite>sprites\spr_island1</sprite>
     <sprite>sprites\spr_island2</sprite>
     <sprite>sprites\spr_island3</sprite>
     <sprite>sprites\spr_weld</sprite>
     <sprite>sprites\spr_explosion</sprite>
-    <sprite>sprites\spr_sinhika_recovering</sprite>
     <sprite>sprites\spr_bridge</sprite>
     <sprite>sprites\spr_wood_multiple</sprite>
     <sprite>sprites\spr_help</sprite>
@@ -108,6 +104,20 @@
     <sprite>sprites\spr_score</sprite>
     <sprite>sprites\spr_control</sprite>
     <sprite>sprites\spr_wait</sprite>
+    <sprites name="gems">
+      <sprite>sprites\spr_gem_blue</sprite>
+      <sprite>sprites\spr_gem_green</sprite>
+      <sprite>sprites\spr_gem_purple</sprite>
+      <sprite>sprites\spr_gem_red</sprite>
+      <sprite>sprites\spr_gem_yellow</sprite>
+      <sprite>sprites\spr_sword</sprite>
+    </sprites>
+    <sprites name="players">
+      <sprite>sprites\spr_monkey</sprite>
+      <sprite>sprites\spr_me</sprite>
+      <sprite>sprites\spr_sinhika</sprite>
+      <sprite>sprites\spr_sinhika_recovering</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\back_plane</background>
@@ -142,10 +152,6 @@
   </fonts>
   <objects name="objects">
     <object>objects\obj_wood</object>
-    <object>objects\obj_player</object>
-    <object>objects\obj_player_B</object>
-    <object>objects\obj_player_A</object>
-    <object>objects\obj_sinhika</object>
     <object>objects\obj_weld</object>
     <object>objects\obj_explosion</object>
     <object>objects\obj_controller</object>
@@ -155,10 +161,18 @@
     <object>objects\obj_help</object>
     <object>objects\obj_delta_score</object>
     <object>objects\obj_score</object>
-    <object>objects\obj_control_player</object>
     <object>objects\obj_client</object>
+    <objects name="players">
+      <object>objects\obj_player</object>
+      <object>objects\obj_player_B</object>
+      <object>objects\obj_player_A</object>
+      <object>objects\obj_sinhika</object>
+      <object>objects\obj_control_player</object>
+    </objects>
+    <object>objects\obj_gem</object>
+    <object>objects\obj_sword</object>
   </objects>
-  <rooms name="rooms" roommaxid="100013" room_maxtileid="10000033">
+  <rooms name="rooms" roommaxid="100013" room_maxtileid="10000035">
     <room>rooms\lcm</room>
   </rooms>
   <triggers number="1">

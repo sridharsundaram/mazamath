@@ -32,3 +32,7 @@
       js_getPlayerName = function(player) {
         return player == 'A' ? gameState.nameA : gameState.nameB;
       }
+
+      js_getRandomSeed = function() {
+        return gameState.random;
+      }

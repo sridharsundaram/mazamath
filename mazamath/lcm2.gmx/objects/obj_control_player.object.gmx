@@ -32,6 +32,40 @@
         </arguments>
       </action>
     </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (object_get_parent(self.player_id) == obj_player) {
+  var me;
+  me = get_player_me();
+  if (false &amp;&amp; me != 'BOTH' &amp;&amp; (self.player_id).player != me &amp;&amp; !(self.player_id).move_ready &amp;&amp; self.step mod 20 == 0) {
+    with instance_create(self.x, self.y, obj_gem) {
+      self.sprite_index = spr_gem_blue;
+      self.vspeed = 5;
+    }
+  }
+}
+    
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="6" enumb="0">
       <action>
         <libid>1</libid>
@@ -81,7 +115,7 @@ draw_set_font(-1);
 draw_text_transformed(self.x + global.GRID_SPACE_WIDTH/2, self.y + 1.5*global.GRID_SPACE_WIDTH, 
                       (self.player_id).name, 0.75, 0.75, 0);
 if (object_get_parent(self.player_id) == obj_player) {
-  if ((self.player_id).multiple == 0) {
+  if (!(self.player_id).move_ready) {
     self.step = (self.step + 1) mod 80;
     draw_sprite(spr_wait, self.step div 8, self.x + 2*global.GRID_SPACE_WIDTH, self.y);
   } else {

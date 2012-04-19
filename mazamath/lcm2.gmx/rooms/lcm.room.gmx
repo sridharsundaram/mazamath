@@ -98,6 +98,7 @@
     <tile index="4" bgName="back_island3" x="4096" y="64" w="64" h="65" xo="0" yo="0" name="inst_7F43F341" depth="1000000" locked="0" colour="-1" scaleX="1" scaleY="1"/>
     <tile index="4" bgName="back_island3" x="3936" y="64" w="64" h="65" xo="0" yo="0" name="inst_4E4440AA" depth="1000000" locked="0" colour="-1" scaleX="1" scaleY="1"/>
     <tile index="1" bgName="back_water" x="192" y="288" w="32" h="32" xo="0" yo="0" name="inst_4892F4A1" depth="1000000" locked="0" colour="-1" scaleX="1" scaleY="1"/>
+    <tile index="4" bgName="back_island3" x="-96" y="-256" w="64" h="65" xo="0" yo="0" name="inst_5A47BDDC" depth="1000000" locked="0" colour="-1" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

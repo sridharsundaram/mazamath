@@ -8,4 +8,4 @@ handlers:
   static_dir: html5game
 
 - url: /.*
-  script: tactoe.py
+  script: handlers/game.py

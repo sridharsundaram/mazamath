@@ -33,5 +33,5 @@ class StartPage(webapp.RequestHandler):
                         'games': all_games,
                         'joinlink': 'http://localhost:8081/join?g=',
                       };
-    path = os.path.join(os.path.dirname(__file__), '../games.html')                      
+    path = os.path.join(os.path.dirname(__file__), '../html/start.html')                      
     self.response.out.write(template.render(path, template_values))

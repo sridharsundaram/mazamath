@@ -166,6 +166,7 @@ global.MAIN_VIEW = 0;
 global.bridge_width = 4 * global.GRID_SPACE_WIDTH; // Dont know how to get sprite width
 global.lcm_value = 0;
 global.level = 0;
+global.move_number = 0;
 global.PLAYER_A = "A";
 global.PLAYER_B = "B";
 global.PLAYER_BOTH = "BOTH";

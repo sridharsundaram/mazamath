@@ -19,6 +19,7 @@ if (global.num_bridge_segments == 0) {
       instance_destroy();
     }
   }
+  global.move_number += 1;
 }
 
 // Reposition players A and B after all bridge segments

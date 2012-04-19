@@ -172,7 +172,7 @@
     <object>objects\obj_gem</object>
     <object>objects\obj_sword</object>
   </objects>
-  <rooms name="rooms" roommaxid="100013" room_maxtileid="10000035">
+  <rooms name="rooms" roommaxid="100013" room_maxtileid="10000034">
     <room>rooms\lcm</room>
   </rooms>
   <triggers number="1">

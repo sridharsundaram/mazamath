@@ -26,21 +26,27 @@
           <argument>
             <kind>1</kind>
             <string>self.jump = 0;  // Size of jump
-self.path = path_duplicate(path_me);
-self.count = 0; // Count from nearest bridge segment
+self.path = -1;
+self.count[global.X] = 0; // Count from nearest bridge segment in X
+self.count[global.Y] = 0; // Count from nearest bridge segment in Y
 self.jumping = 0;
 self.image_speed = 0;
 self.recovering = false;
 self.selected = false;
 self.step = 0; // counter for subimage
-self.multiple = 0;
-self.x_start_jump = 0; // x-value at beginning of jump
-self.x_min_segment = 0; // Min x-value for player for this segment
-self.x_max_segment = 0; // Max x-value for player for this segment
+self.multiple = 1;    // can be negative also
+self.dir = global.X; // 'x' or 'y'
+self.start_jump[global.X] = 0; // x-value at beginning of jump
+self.start_jump[global.Y] = 0; // y-value at beginning of jump
+self.min_segment[global.X] = 0; // Min x-value for player for this segment
+self.min_segment[global.Y] = 0; // Min y-value for player for this segment
+self.max_segment[global.Y] = 0; // Max x-value for player for this segment
+self.max_segment[global.Y] = 0; // Max y-value for player for this segment
 self.wood_id = 0; // Wood corresponding to player
 self.move_ready = false; // Whether move is ready
 self.name = '';   // Name of this player
 self.player = ''; // Which player this is - A or B
+self.move_number = 0; // Logical clock for each player
 
 </string>
           </argument>
@@ -98,16 +104,20 @@ if (self.jumping &gt; 1) {
   return 0;
 }
 self.jumping = 0;
-self.ready = false;
+self.move_ready = false;
 
 // If other player already recognized success in finding LCM, return
 if (obj_sinhika.speed == 0) return 0;
 
 // If LCM found, take success action
 with obj_player {
-  self.current_count = (self.x - self.x_min_segment) div global.GRID_SPACE_WIDTH;
+  self.current_count = (self.x - self.min_segment[global.X]) div global.GRID_SPACE_WIDTH;
 }
-if (obj_player.current_count != 0 &amp;&amp; obj_player_A.current_count == obj_player_B.current_count &amp;&amp; obj_player_B.current_count mod obj_player_B.jump == 0 &amp;&amp; obj_player_A.current_count mod obj_player_A.jump == 0 &amp;&amp; obj_player_B.jumping == 0 and obj_player_A.jumping == 0) {
+if (obj_player.current_count != 0 &amp;&amp; 
+    obj_player_A.current_count == obj_player_B.current_count &amp;&amp; 
+    obj_player_B.current_count mod obj_player_B.jump == 0 &amp;&amp; 
+    obj_player_A.current_count mod obj_player_A.jump == 0 &amp;&amp; 
+    obj_player_B.jumping == 0 and obj_player_A.jumping == 0) {
   global.lcm_value = obj_player_A.current_count;
   var weld;
   weld = instance_create(obj_player_A.x, obj_player_A.y, obj_weld); // Weld the wood together
@@ -147,9 +157,17 @@ if (obj_player.current_count != 0 &amp;&amp; obj_player_A.current_count == obj_p
             <kind>1</kind>
             <string>if (!self.selected) return 0;
 if (mouse_check_button(mb_left)) {
-  var distance, new_multiple;
-  distance = self.x + global.GRID_SPACE_WIDTH/2 - mouse_x;
-  new_multiple = distance div 10;
+  var x_distance, y_distance, new_multiple;
+  x_distance = self.x + global.GRID_SPACE_WIDTH/2 - mouse_x;
+  y_distance = self.y + global.GRID_SPACE_WIDTH/2 - mouse_y;
+  if (abs(x_distance) &gt;= abs(y_distance)) {
+    self.dir = global.X;
+    new_multiple = x_distance div 10 + 1; // Converts simple click to 1
+  } else {
+    self.dir = global.Y;
+    new_multiple = y_distance div 10 + 1; // Converts simple click to 1
+  }
+  // Disallow multiple larger than 10
   if (abs(new_multiple) &gt; 10) {
     new_multiple = sign(new_multiple) * 10;
   }
@@ -157,11 +175,60 @@ if (mouse_check_button(mb_left)) {
     sound_play(snd_click);
     self.multiple = new_multiple;
   }
-  if (self.multiple * self.jump + count &lt; 0) {
-    self.multiple = - (self.count div self.jump);
+  // Clamp multiple at max possible so that count &gt;= 0
+  if (self.multiple * self.jump + self.count[self.dir] &lt; 0) {
+    self.multiple = - (self.count[self.dir] div self.jump);
   }
 }
 
+if (mouse_check_button(mb_right)) { // Always set in X direction
+  var distance, new_jump;
+  distance = mouse_x - self.x - global.GRID_SPACE_WIDTH/2;
+  new_jump = distance div global.GRID_SPACE_WIDTH; // Drag to one jump away
+  if (abs(new_jump) &gt; 10) {
+    new_jump = sign(new_jump) * 10;
+  }
+  if (self.jump != new_jump) {
+    sound_play(snd_click);
+    self.jump = new_jump;
+    (self.wood_id).num = new_jump;
+  }
+  if (self.multiple * self.jump + count[global.X] &lt; 0) {
+    self.multiple = - (self.count[global.X] div self.jump);
+  }
+}
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="6" enumb="57">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (not self.selected) return 0;
+
+self.selected = false;
+
+// Cannot move if still recovering
+if (self.recovering) return 0;
+
+self.move_ready = true;
+send_move(self.multiple, self.dir);
 </string>
           </argument>
         </arguments>
@@ -188,14 +255,37 @@ if (mouse_check_button(mb_left)) {
 
 self.selected = false;
 
-// Ignore left mouse click if already in action
-if (self.jumping &gt; 0) return 0;
-
 // Cannot move if still recovering
 if (self.recovering) return 0;
 
 self.move_ready = true;
-send_move(self.multiple);
+send_move(self.multiple, self.dir);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="6" enumb="5">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>// Select only if user is allowed to move this player
+if ((get_player_me() == "BOTH" || get_player_me() == self.player) &amp;&amp; self.jumping == 0) {
+  self.selected = true;
+}
 </string>
           </argument>
         </arguments>
@@ -218,8 +308,8 @@ send_move(self.multiple);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// Select only if allowed to move this player
-if (get_player_me() == "BOTH" || get_player_me() == self.player) {
+            <string>// Select only if user is allowed to move this player
+if ((get_player_me() == "BOTH" || get_player_me() == self.player) &amp;&amp; self.jumping == 0) {
   self.selected = true;
 }
 </string>
@@ -274,29 +364,33 @@ instance_deactivate_object(obj_sinhika);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>var x_val, j, i_wood, wood_obj;
-self.jumping -= 1;
+            <string>self.jumping -= 1;
 sound_play(snd_wood);
 // Draw wood tiles for numbers - the jump number is a wood_multiple tile
-x_val = self.x_start_jump;
-if (self.count != 0) {
+var j, i_wood, wood_obj, coord;
+
+coord[global.X] = self.x;
+coord[global.Y] = self.y;
+
+if (self.count[self.dir] != 0) {
   wood_obj = obj_wood_multiple;
 } else {
   wood_obj = obj_wood;
 }
 
-if (self.x &gt; self.x_max_segment) {
-  for (j = 1; j &lt;= self.jump; j += 1) {
-    i_wood = instance_create(x_val, self.y, wood_obj);
-    i_wood.num = self.count;
-    self.count += 1;
-    x_val += global.GRID_SPACE_WIDTH;
-    self.x_max_segment += global.GRID_SPACE_WIDTH;
-    wood_obj = obj_wood;
-  }
+if (coord[self.dir] &gt; self.max_segment[self.dir]) {
+  var final;
+  final[self.dir] = self.start_jump[self.dir] + self.jump * global.GRID_SPACE_WIDTH;
+  final[1 - self.dir] = self.start_jump[1 - self.dir];
+  create_wood_bridge(self.start_jump[global.X], self.start_jump[global.Y], 
+       final[global.X], final[global.Y], 
+       self.count[global.X], self.count[global.Y], wood_obj);
+  self.max_segment[self.dir] += self.jump * global.GRID_SPACE_WIDTH;
+  self.count[self.dir] += self.jump;
 }
 
-self.x_start_jump = self.x;
+self.start_jump[global.X] = self.x;
+self.start_jump[global.Y] = self.y;
 self.alarm[0] = 10; // Timeout so that wood gets drawn
 
 </string>
@@ -329,7 +423,7 @@ if (self.selected) {
   draw_set_valign(fa_middle);
   self.step = (self.step + 1) mod sprite_get_number(self.sprite_index);
   draw_sprite(self.sprite_index, step, mouse_x, mouse_y);
-  draw_text(self.x + global.GRID_SPACE_WIDTH/2, self.y + global.GRID_SPACE_WIDTH/2, self.multiple);
+  draw_text(self.x + global.GRID_SPACE_WIDTH/2, self.y + global.GRID_SPACE_WIDTH/2, abs(self.multiple));
 }
 
 </string>

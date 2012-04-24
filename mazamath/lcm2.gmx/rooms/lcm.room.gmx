@@ -63,6 +63,7 @@
     <instance index="14" objName="obj_control_player" x="288" y="0" name="inst_0302B977" locked="0" code="self.player_id = obj_player_B;&#xA;self.sprite_index = spr_me;&#xA;self.image_speed = 0;" scaleX="1" scaleY="1" colour="-1" rotation="0"/>
     <instance index="14" objName="obj_control_player" x="416" y="0" name="inst_4A20826B" locked="0" code="self.player_id = obj_sinhika;&#xA;self.sprite_index = spr_sinhika;&#xA;self.image_speed = 0;" scaleX="1" scaleY="1" colour="-1" rotation="0"/>
     <instance index="15" objName="obj_client" x="0" y="0" name="inst_2DF71105" locked="0" code="" scaleX="1" scaleY="1" colour="-1" rotation="0"/>
+    <instance index="18" objName="obj_surasa" x="0" y="96" name="inst_167B0178" locked="0" code="" scaleX="1" scaleY="1" colour="-1" rotation="0"/>
   </instances>
   <tiles>
     <tile index="2" bgName="back_island1" x="320" y="64" w="64" h="65" xo="0" yo="0" name="inst_3C1E053C" depth="1000000" locked="0" colour="-1" scaleX="1" scaleY="1"/>
@@ -98,7 +99,6 @@
     <tile index="4" bgName="back_island3" x="4096" y="64" w="64" h="65" xo="0" yo="0" name="inst_7F43F341" depth="1000000" locked="0" colour="-1" scaleX="1" scaleY="1"/>
     <tile index="4" bgName="back_island3" x="3936" y="64" w="64" h="65" xo="0" yo="0" name="inst_4E4440AA" depth="1000000" locked="0" colour="-1" scaleX="1" scaleY="1"/>
     <tile index="1" bgName="back_water" x="192" y="288" w="32" h="32" xo="0" yo="0" name="inst_4892F4A1" depth="1000000" locked="0" colour="-1" scaleX="1" scaleY="1"/>
-    <tile index="4" bgName="back_island3" x="-96" y="-256" w="64" h="65" xo="0" yo="0" name="inst_5A47BDDC" depth="1000000" locked="0" colour="-1" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

@@ -92,6 +92,7 @@
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_wood</sprite>
+    <sprite>sprites\spr_wood_horizontal</sprite>
     <sprite>sprites\spr_island1</sprite>
     <sprite>sprites\spr_island2</sprite>
     <sprite>sprites\spr_island3</sprite>
@@ -118,6 +119,11 @@
       <sprite>sprites\spr_sinhika</sprite>
       <sprite>sprites\spr_sinhika_recovering</sprite>
     </sprites>
+    <sprite>sprites\spr_surasa</sprite>
+    <sprite>sprites\spr_down_arrow</sprite>
+    <sprite>sprites\spr_up_arrow</sprite>
+    <sprite>sprites\spr_left_arrow</sprite>
+    <sprite>sprites\spr_right_arrow</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\back_plane</background>
@@ -135,7 +141,7 @@
     <script>scripts\random_int32.gml</script>
     <script>scripts\maza_irandom_range.gml</script>
     <script>scripts\move_sinhika.gml</script>
-    <script>scripts\move_players.gml</script>
+    <script>scripts\move_player.gml</script>
     <script>scripts\initialize_player.gml</script>
     <scripts name="browser">
       <script>scripts\get_player_me.gml</script>
@@ -146,12 +152,14 @@
       <script>scripts\send_move.gml</script>
       <script>scripts\get_random_seed.gml</script>
     </scripts>
+    <script>scripts\create_wood_bridge.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font_multiple</font>
   </fonts>
   <objects name="objects">
     <object>objects\obj_wood</object>
+    <object>objects\obj_wood_horizontal</object>
     <object>objects\obj_weld</object>
     <object>objects\obj_explosion</object>
     <object>objects\obj_controller</object>
@@ -164,15 +172,16 @@
     <object>objects\obj_client</object>
     <objects name="players">
       <object>objects\obj_player</object>
-      <object>objects\obj_player_B</object>
       <object>objects\obj_player_A</object>
+      <object>objects\obj_player_B</object>
       <object>objects\obj_sinhika</object>
       <object>objects\obj_control_player</object>
     </objects>
     <object>objects\obj_gem</object>
     <object>objects\obj_sword</object>
+    <object>objects\obj_surasa</object>
   </objects>
-  <rooms name="rooms" roommaxid="100013" room_maxtileid="10000034">
+  <rooms name="rooms" roommaxid="100014" room_maxtileid="10000033">
     <room>rooms\lcm</room>
   </rooms>
   <triggers number="1">

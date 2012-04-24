@@ -16,11 +16,10 @@ while (x1 <= x2) {
   wood_obj = obj_wood;
 }
 
-wood_obj = argument6;
 y1 += global.GRID_SPACE_WIDTH;
 x1 -= global.GRID_SPACE_WIDTH;
 while (y1 < y2) {
-  i_wood = instance_create(x1, y1, wood_obj);
+  i_wood = instance_create(x1, y1, obj_wood_horizontal);
   i_wood.num = count_y;
   count_y += 1;
   y1 += global.GRID_SPACE_WIDTH;

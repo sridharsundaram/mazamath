@@ -121,9 +121,12 @@ if (object_get_parent(self.player_id) == obj_player) {
   draw_set_valign(fa_middle);
   draw_text(self.x + 2.5*global.GRID_SPACE_WIDTH, self.y + global.GRID_SPACE_WIDTH/2, 
             " x " + string(abs((self.player_id).multiple)));
-  var positive, sprite;
-  positive = (self.player_id).multiple &gt;= 0;
-  sprite = global.arrow[positive,(self.player_id).dir];
+  var sprite;
+  if ((self.player_id).multiple &gt;= 0) {
+    sprite = spr_right_arrow;
+  } else {
+    sprite = spr_left_arrow;
+  }
   draw_sprite_stretched(sprite, -1, 
                         self.x + 3.25 * global.GRID_SPACE_WIDTH, 
                         self.y + 0.25 * global.GRID_SPACE_WIDTH,

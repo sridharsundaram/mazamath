@@ -127,9 +127,10 @@
     <sprite>sprites\spr_green</sprite>
     <sprite>sprites\spr_red</sprite>
     <sprite>sprites\spr_lcm</sprite>
-    <sprite>sprites\spr_me</sprite>
     <sprite>sprites\spr_hcf</sprite>
     <sprite>sprites\spr_celebrate</sprite>
+    <sprite>sprites\spr_key</sprite>
+    <sprite>sprites\spr_treasure</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\back_plane</background>
@@ -195,8 +196,10 @@
     <object>objects\obj_me</object>
     <object>objects\obj_model_controller</object>
     <object>objects\obj_red</object>
+    <object>objects\obj_treasure</object>
+    <object>objects\obj_key</object>
   </objects>
-  <rooms name="rooms" roommaxid="100013" room_maxtileid="10000034">
+  <rooms name="rooms" roommaxid="100023" room_maxtileid="10000034">
     <room>rooms\lcm</room>
     <room>rooms\Celebration_Room</room>
     <room>rooms\Modelling_Room</room>

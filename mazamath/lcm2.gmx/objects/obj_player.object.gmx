@@ -27,26 +27,22 @@
             <kind>1</kind>
             <string>self.jump = 0;  // Size of jump
 self.path = -1;
-self.count[global.X] = 0; // Count from nearest bridge segment in X
-self.count[global.Y] = 0; // Count from nearest bridge segment in Y
+self.count_x = 0; // Count from nearest bridge segment in X
 self.jumping = 0;
 self.image_speed = 0;
 self.recovering = false;
 self.selected = false;
 self.step = 0; // counter for subimage
 self.multiple = 1;    // can be negative also
-self.dir = global.X; // 'x' or 'y'
-self.start_jump[global.X] = 0; // x-value at beginning of jump
-self.start_jump[global.Y] = 0; // y-value at beginning of jump
-self.min_segment[global.X] = 0; // Min x-value for player for this segment
-self.min_segment[global.Y] = 0; // Min y-value for player for this segment
-self.max_segment[global.Y] = 0; // Max x-value for player for this segment
-self.max_segment[global.Y] = 0; // Max y-value for player for this segment
+self.start_jump_x = 0; // x-value at beginning of jump
+self.min_segment_x = 0; // Min x-value for player for this segment
+self.max_segment_x = 0; // Max x-value for player for this segment
 self.wood_id = 0; // Wood corresponding to player
 self.move_ready = false; // Whether move is ready
 self.name = '';   // Name of this player
 self.player = ''; // Which player this is - A or B
 self.move_number = 0; // Logical clock for each player
+self.has_key = false; // Does object have key?
 
 </string>
           </argument>
@@ -110,29 +106,56 @@ self.move_ready = false;
 if (obj_sinhika.speed == 0) return 0;
 
 // If LCM found, take success action
-with obj_player {
-  self.current_count = (self.x - self.min_segment[global.X]) div global.GRID_SPACE_WIDTH;
-}
-if (obj_player.current_count != 0 &amp;&amp; 
-    obj_player_A.current_count == obj_player_B.current_count &amp;&amp; 
-    obj_player_B.current_count mod obj_player_B.jump == 0 &amp;&amp; 
-    obj_player_A.current_count mod obj_player_A.jump == 0 &amp;&amp; 
-    obj_player_B.jumping == 0 and obj_player_A.jumping == 0) {
-  global.lcm_value = obj_player_A.current_count;
-  var weld;
-  weld = instance_create(obj_player_A.x, obj_player_A.y, obj_weld); // Weld the wood together
-  with instance_create(obj_player_A.x, obj_player_A.y - global.GRID_SPACE_WIDTH, obj_delta_score) {
-    delta_score = 100;
+if (global.problem == global.LCM) {
+  with obj_player {
+    self.current_count = (self.x - self.min_segment_x) div global.GRID_SPACE_WIDTH;
   }
+  if (obj_player_A.current_count != 0 &amp;&amp; 
+      obj_player_A.current_count == obj_player_B.current_count &amp;&amp; 
+      obj_player_B.current_count mod obj_player_B.jump == 0 &amp;&amp; 
+      obj_player_A.current_count mod obj_player_A.jump == 0 &amp;&amp; 
+      obj_player_B.jumping == 0 and obj_player_A.jumping == 0) {
+    global.lcm_value = self.current_count;
+    var weld;
+    weld = instance_create(obj_player_A.x, obj_player_A.y, obj_weld); // Weld the wood together
+    with instance_create(obj_player_A.x, obj_player_A.y - global.GRID_SPACE_WIDTH, obj_delta_score) {
+      delta_score = 100;
+    }
+  
+    obj_sinhika.speed = 0;
+    obj_sinhika.x = 0;
+    obj_sinhika.y = 0;
+    return 0;
+  } 
+} 
 
-  obj_sinhika.speed = 0;
-  obj_sinhika.x = 0;
-  obj_sinhika.y = 0;
-} else { // Take time to recover from jump
-  self.alarm[1] = 10;
-  self.image_speed = 1;
-  self.recovering = true;
+// If GCD found, take success action
+if (global.problem == global.GCD) {
+  if (self.x == obj_key.x) {
+    self.has_key = true;
+  }
+  if (self.x == obj_treasure.x &amp;&amp; self.has_key) { // Found
+    global.gcd_value = self.jump;
+    var weld;
+    weld = instance_create(self.x, self.y, obj_weld); // Weld the wood together
+    with instance_create(self.x, self.y - global.GRID_SPACE_WIDTH, obj_delta_score) {
+      delta_score = 100;
+    }
+  
+    obj_sinhika.speed = 0;
+    obj_sinhika.x = 0;
+    obj_sinhika.y = 0;
+    obj_treasure.visible = false;
+    obj_key.visible = false;
+    return 0;
+  }
 }
+
+// Take time to recover from jump
+self.alarm[1] = 10;
+self.image_speed = 1;
+self.recovering = true;
+
 </string>
           </argument>
         </arguments>
@@ -157,16 +180,9 @@ if (obj_player.current_count != 0 &amp;&amp;
             <kind>1</kind>
             <string>if (!self.selected) return 0;
 if (mouse_check_button(mb_left)) {
-  var x_distance, y_distance, new_multiple;
+  var x_distance, new_multiple;
   x_distance = self.x + global.GRID_SPACE_WIDTH/2 - mouse_x;
-  y_distance = self.y + global.GRID_SPACE_WIDTH/2 - mouse_y;
-  if (abs(x_distance) &gt;= abs(y_distance)) {
-    self.dir = global.X;
-    new_multiple = x_distance div 10 + 1; // Converts simple click to 1
-  } else {
-    self.dir = global.Y;
-    new_multiple = y_distance div 10 + 1; // Converts simple click to 1
-  }
+  new_multiple = x_distance div 10 + 1; // Converts simple click to 1
   // Disallow multiple larger than 10
   if (abs(new_multiple) &gt; 10) {
     new_multiple = sign(new_multiple) * 10;
@@ -176,15 +192,15 @@ if (mouse_check_button(mb_left)) {
     self.multiple = new_multiple;
   }
   // Clamp multiple at max possible so that count &gt;= 0
-  if (self.multiple * self.jump + self.count[self.dir] &lt; 0) {
-    self.multiple = - (self.count[self.dir] div self.jump);
+  if (self.multiple * self.jump + self.count_x &lt; 0) {
+    self.multiple = - (self.count_x div self.jump);
   }
 }
 
 if (mouse_check_button(mb_right)) { // Always set in X direction
   var distance, new_jump;
   distance = mouse_x - self.x - global.GRID_SPACE_WIDTH/2;
-  new_jump = distance div 10 + 1; // Drag to one jump away
+  new_jump = distance div 10 + 1; // Drag to one jump away?
   if (abs(new_jump) &gt; 10) {
     new_jump = sign(new_jump) * 10;
   }
@@ -193,8 +209,8 @@ if (mouse_check_button(mb_right)) { // Always set in X direction
     self.jump = new_jump;
     (self.wood_id).num = new_jump;
   }
-  if (self.multiple * self.jump + count[global.X] &lt; 0) {
-    self.multiple = - (self.count[global.X] div self.jump);
+  if (self.multiple * self.jump + count_x &lt; 0) {
+    self.multiple = - (self.count_x div self.jump);
   }
 }
 
@@ -228,7 +244,7 @@ self.selected = false;
 if (self.recovering) return 0;
 
 self.move_ready = true;
-send_move(self.multiple, self.dir);
+send_move(self.multiple);
 </string>
           </argument>
         </arguments>
@@ -259,7 +275,7 @@ self.selected = false;
 if (self.recovering) return 0;
 
 self.move_ready = true;
-send_move(self.multiple, self.dir);
+send_move(self.multiple);
 </string>
           </argument>
         </arguments>
@@ -367,30 +383,23 @@ instance_deactivate_object(obj_sinhika);
             <string>self.jumping -= 1;
 sound_play(snd_wood);
 // Draw wood tiles for numbers - the jump number is a wood_multiple tile
-var j, i_wood, wood_obj, coord;
+var j, i_wood, wood_obj;
 
-coord[global.X] = self.x;
-coord[global.Y] = self.y;
-
-if (self.count[self.dir] != 0) {
+if (self.count_x != 0) {
   wood_obj = obj_wood_multiple;
 } else {
   wood_obj = obj_wood;
 }
 
-if (coord[self.dir] &gt; self.max_segment[self.dir]) {
+if (self.x &gt; self.max_segment_x) {
   var final;
-  final[self.dir] = self.start_jump[self.dir] + sign(self.multiple) * self.jump * global.GRID_SPACE_WIDTH;
-  final[1 - self.dir] = self.start_jump[1 - self.dir];
-  create_wood_bridge(self.start_jump[global.X], self.start_jump[global.Y], 
-       final[global.X], final[global.Y], 
-       self.count[global.X], self.count[global.Y], wood_obj);
-  self.max_segment[self.dir] += self.jump * global.GRID_SPACE_WIDTH;
-  self.count[self.dir] += self.jump;
+  final = self.start_jump_x + sign(self.multiple) * self.jump * global.GRID_SPACE_WIDTH;
+  create_wood_bridge(self.start_jump_x, self.y, final, self.count_x, wood_obj);
+  self.max_segment_x += self.jump * global.GRID_SPACE_WIDTH;
+  self.count_x += self.jump;
 }
 
-self.start_jump[global.X] = self.x;
-self.start_jump[global.Y] = self.y;
+self.start_jump_x = self.x;
 self.alarm[0] = 10; // Timeout so that wood gets drawn
 
 </string>
@@ -424,9 +433,12 @@ if (self.selected) {
   self.step = (self.step + 1) mod sprite_get_number(self.sprite_index);
   draw_sprite(self.sprite_index, step, mouse_x, mouse_y);
   draw_text(self.x + global.GRID_SPACE_WIDTH/2, self.y + global.GRID_SPACE_WIDTH/2, abs(self.multiple));
-  var positive, sprite;
-  positive = self.multiple &gt;= 0;
-  sprite = global.arrow[positive, self.dir];
+  var sprite;
+  if (self.multiple &gt;= 0) {
+    sprite = spr_right_arrow;
+  } else {
+    sprite = spr_left_arrow;
+  }
   draw_sprite_stretched(sprite, -1, 
                         self.x + 0.25 * global.GRID_SPACE_WIDTH, self.y - global.GRID_SPACE_WIDTH/2, 
                         sprite_width/2, sprite_height/2);           

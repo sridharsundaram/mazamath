@@ -184,7 +184,7 @@ if (mouse_check_button(mb_left)) {
 if (mouse_check_button(mb_right)) { // Always set in X direction
   var distance, new_jump;
   distance = mouse_x - self.x - global.GRID_SPACE_WIDTH/2;
-  new_jump = distance div global.GRID_SPACE_WIDTH; // Drag to one jump away
+  new_jump = distance div 10 + 1; // Drag to one jump away
   if (abs(new_jump) &gt; 10) {
     new_jump = sign(new_jump) * 10;
   }
@@ -424,6 +424,12 @@ if (self.selected) {
   self.step = (self.step + 1) mod sprite_get_number(self.sprite_index);
   draw_sprite(self.sprite_index, step, mouse_x, mouse_y);
   draw_text(self.x + global.GRID_SPACE_WIDTH/2, self.y + global.GRID_SPACE_WIDTH/2, abs(self.multiple));
+  var positive, sprite;
+  positive = self.multiple &gt;= 0;
+  sprite = global.arrow[positive, self.dir];
+  draw_sprite_stretched(sprite, -1, 
+                        self.x + 0.25 * global.GRID_SPACE_WIDTH, self.y - global.GRID_SPACE_WIDTH/2, 
+                        sprite_width/2, sprite_height/2);           
 }
 
 </string>

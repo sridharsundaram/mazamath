@@ -25,7 +25,30 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>self.scroll = false;
+            <string>global.GRID_SPACE_WIDTH = 32;
+global.MAIN_VIEW = 0;
+global.BRIDGE_WIDTH = 4 * global.GRID_SPACE_WIDTH; // Dont know how to get sprite width
+global.PLAYER_A = "A";
+global.PLAYER_B = "B";
+global.PLAYER_BOTH = "BOTH";
+global.player_me = global.PLAYER_BOTH; // Initialized to both players
+global.LCM = 'lcm';
+global.GCD = 'gcd';
+global.X = 0; // Convention for direction of movement
+global.Y = 1; // Convention for direction of movement
+
+// 0 is negative and 1 is positive
+global.arrow[0,global.X] = spr_left_arrow;
+global.arrow[0,global.Y] = spr_up_arrow;
+global.arrow[1,global.X] = spr_right_arrow;
+global.arrow[1,global.Y] = spr_down_arrow;
+
+global.rotate_angle[0, global.X] = 180;
+global.rotate_angle[0, global.Y] = 90;
+global.rotate_angle[1, global.X] = 0;
+global.rotate_angle[1, global.Y] = 270;
+
+self.scroll = false;
 
 </string>
           </argument>
@@ -160,18 +183,14 @@ view_object[global.MAIN_VIEW] = noone;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.GRID_SPACE_WIDTH = 32;
-global.num_bridge_segments = -1;
-global.MAIN_VIEW = 0;
-global.bridge_width = 4 * global.GRID_SPACE_WIDTH; // Dont know how to get sprite width
-global.lcm_value = 0;
+            <string>global.lcm_value = 0;
+global.gcd_value = 0;
 global.level = 0;
 global.move_number = 0;
-global.PLAYER_A = "A";
-global.PLAYER_B = "B";
-global.PLAYER_BOTH = "BOTH";
+global.num_bridge_segments = -1;
+global.problem = global.LCM;
 
-global.player_me = global.PLAYER_BOTH; // Initialized to both players
+
 </string>
           </argument>
         </arguments>

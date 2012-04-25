@@ -115,17 +115,19 @@ draw_set_font(-1);
 draw_text_transformed(self.x + global.GRID_SPACE_WIDTH/2, self.y + 1.5*global.GRID_SPACE_WIDTH, 
                       (self.player_id).name, 0.75, 0.75, 0);
 if (object_get_parent(self.player_id) == obj_player) {
-  if (!(self.player_id).move_ready) {
-    self.step = (self.step + 1) mod 80;
-    draw_sprite(spr_wait, self.step div 8, self.x + 2*global.GRID_SPACE_WIDTH, self.y);
-  } else {
-    draw_set_color(c_white);
-    draw_set_font(font_multiple);
-    draw_set_halign(fa_center);
-    draw_set_valign(fa_middle);
-    draw_text(self.x + 2.5*global.GRID_SPACE_WIDTH, self.y + global.GRID_SPACE_WIDTH/2, 
-              " x " + string((self.player_id).multiple));
-  }
+  draw_set_color(c_white);
+  draw_set_font(font_multiple);
+  draw_set_halign(fa_center);
+  draw_set_valign(fa_middle);
+  draw_text(self.x + 2.5*global.GRID_SPACE_WIDTH, self.y + global.GRID_SPACE_WIDTH/2, 
+            " x " + string(abs((self.player_id).multiple)));
+  var positive, sprite;
+  positive = (self.player_id).multiple &gt;= 0;
+  sprite = global.arrow[positive,(self.player_id).dir];
+  draw_sprite_stretched(sprite, -1, 
+                        self.x + 3.25 * global.GRID_SPACE_WIDTH, 
+                        self.y + 0.25 * global.GRID_SPACE_WIDTH,
+                        sprite_width/2, sprite_height/2);           
 }
 </string>
           </argument>

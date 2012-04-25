@@ -1,6 +1,7 @@
 // Move the player - given multiple (-ve multiple indicates backward)
 with obj_player {
   self.multiple = get_move(self.player);
+  self.move_number += 1;
   sound_play(self.sound);
   self.jumping = abs(self.multiple) + 1;
   self.x_start_jump = self.x;

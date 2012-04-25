@@ -189,22 +189,8 @@
     <object>objects\obj_model_controller</object>
     <object>objects\obj_red</object>
   </objects>
-<<<<<<< HEAD
-  <rooms name="rooms" roommaxid="100014" room_maxtileid="10000043">
-=======
-  <rooms name="rooms" roommaxid="100013" room_maxtileid="10000034">
->>>>>>> refs/remotes/origin/master
-
   <rooms name="rooms" roommaxid="100013" room_maxtileid="10000034">
     <room>rooms\lcm</room>
-<<<<<<< HEAD
-    <room>rooms\model</room>
-=======
-    <room>rooms\Celebration_Room</room>
-    <room>rooms\Modelling_Room</room>
-    <room>rooms\dummy_hcf</room>
->>>>>>> refs/remotes/origin/master
-
     <room>rooms\Celebration_Room</room>
     <room>rooms\Modelling_Room</room>
     <room>rooms\dummy_hcf</room>

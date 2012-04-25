@@ -89,6 +89,7 @@
     <sound>sound\snd_explosion</sound>
     <sound>sound\snd_click</sound>
     <sound>sound\snd_applause</sound>
+    <sound>sound\snd_celebrate</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_wood</sprite>
@@ -118,6 +119,12 @@
       <sprite>sprites\spr_sinhika</sprite>
       <sprite>sprites\spr_sinhika_recovering</sprite>
     </sprites>
+    <sprite>sprites\spr_green</sprite>
+    <sprite>sprites\spr_red</sprite>
+    <sprite>sprites\spr_lcm</sprite>
+    <sprite>sprites\spr_me</sprite>
+    <sprite>sprites\spr_hcf</sprite>
+    <sprite>sprites\spr_celebrate</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\back_plane</background>
@@ -125,6 +132,8 @@
     <background>background\back_island1</background>
     <background>background\back_island2</background>
     <background>background\back_island3</background>
+    <background>background\bg_HCF</background>
+    <background>background\bg_LCM</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\path_me</path>
@@ -149,6 +158,7 @@
   </scripts>
   <fonts name="fonts">
     <font>fonts\font_multiple</font>
+    <font>fonts\fnt_h</font>
   </fonts>
   <objects name="objects">
     <object>objects\obj_wood</object>
@@ -171,9 +181,19 @@
     </objects>
     <object>objects\obj_gem</object>
     <object>objects\obj_sword</object>
+    <object>objects\obj_celebrate</object>
+    <object>objects\obj_green</object>
+    <object>objects\obj_hcf</object>
+    <object>objects\obj_lcm</object>
+    <object>objects\obj_me</object>
+    <object>objects\obj_model_controller</object>
+    <object>objects\obj_red</object>
   </objects>
   <rooms name="rooms" roommaxid="100013" room_maxtileid="10000034">
     <room>rooms\lcm</room>
+    <room>rooms\Celebration_Room</room>
+    <room>rooms\Modelling_Room</room>
+    <room>rooms\dummy_hcf</room>
   </rooms>
   <triggers number="1">
     <trigger index="0">triggers\lcm_success</trigger>

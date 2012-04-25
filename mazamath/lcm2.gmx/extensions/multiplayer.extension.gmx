@@ -21,7 +21,13 @@
           <name>js_getPlayerMe</name>
           <externalName></externalName>
           <kind>11</kind>
+<<<<<<< HEAD
           <id>12</id>
+=======
+          <id>1</id>
+>>>>>>> refs/remotes/origin/master
+
+          <id>1</id>
           <help></help>
           <hidden>0</hidden>
           <returnType>1</returnType>
@@ -32,7 +38,13 @@
           <name>js_isReady</name>
           <externalName></externalName>
           <kind>11</kind>
+<<<<<<< HEAD
           <id>13</id>
+=======
+          <id>3</id>
+>>>>>>> refs/remotes/origin/master
+
+          <id>3</id>
           <help>returns true if  moves are ready</help>
           <hidden>0</hidden>
           <returnType>2</returnType>
@@ -43,7 +55,13 @@
           <name>js_getMove</name>
           <externalName></externalName>
           <kind>11</kind>
+<<<<<<< HEAD
           <id>14</id>
+=======
+          <id>5</id>
+>>>>>>> refs/remotes/origin/master
+
+          <id>5</id>
           <help>js_getMove(player) gets move for player - move can be gotten only once per player</help>
           <hidden>0</hidden>
           <returnType>1</returnType>
@@ -56,7 +74,13 @@
           <name>js_getPlayerName</name>
           <externalName></externalName>
           <kind>11</kind>
+<<<<<<< HEAD
           <id>15</id>
+=======
+          <id>7</id>
+>>>>>>> refs/remotes/origin/master
+
+          <id>7</id>
           <help>Returns name of player</help>
           <hidden>0</hidden>
           <returnType>1</returnType>
@@ -69,7 +93,13 @@
           <name>js_sendMove</name>
           <externalName></externalName>
           <kind>11</kind>
+<<<<<<< HEAD
           <id>16</id>
+=======
+          <id>9</id>
+>>>>>>> refs/remotes/origin/master
+
+          <id>9</id>
           <help>send move to server</help>
           <hidden>0</hidden>
           <returnType>3</returnType>
@@ -82,7 +112,13 @@
           <name>js_getRandomSeed</name>
           <externalName></externalName>
           <kind>11</kind>
+<<<<<<< HEAD
           <id>17</id>
+=======
+          <id>11</id>
+>>>>>>> refs/remotes/origin/master
+
+          <id>11</id>
           <help>Gets random seed from js</help>
           <hidden>0</hidden>
           <returnType>2</returnType>

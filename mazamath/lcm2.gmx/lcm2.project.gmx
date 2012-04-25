@@ -105,6 +105,11 @@
     <sprite>sprites\spr_score</sprite>
     <sprite>sprites\spr_control</sprite>
     <sprite>sprites\spr_wait</sprite>
+    <sprite>sprites\spr_left_arrow</sprite>
+    <sprite>sprites\spr_right_arrow</sprite>
+    <sprite>sprites\spr_up_arrow</sprite>
+    <sprite>sprites\spr_down_arrow</sprite>
+    <sprite>sprites\spr_surasa</sprite>
     <sprites name="gems">
       <sprite>sprites\spr_gem_blue</sprite>
       <sprite>sprites\spr_gem_green</sprite>
@@ -144,8 +149,9 @@
     <script>scripts\random_int32.gml</script>
     <script>scripts\maza_irandom_range.gml</script>
     <script>scripts\move_sinhika.gml</script>
-    <script>scripts\move_players.gml</script>
+    <script>scripts\move_player.gml</script>
     <script>scripts\initialize_player.gml</script>
+    <script>scripts\create_wood_bridge.gml</script>
     <scripts name="browser">
       <script>scripts\get_player_me.gml</script>
       <script>scripts\splash_html.gml</script>
@@ -177,6 +183,7 @@
       <object>objects\obj_player_B</object>
       <object>objects\obj_player_A</object>
       <object>objects\obj_sinhika</object>
+      <object>objects\obj_surasa</object>
       <object>objects\obj_control_player</object>
     </objects>
     <object>objects\obj_gem</object>

@@ -380,7 +380,7 @@ if (self.count[self.dir] != 0) {
 
 if (coord[self.dir] &gt; self.max_segment[self.dir]) {
   var final;
-  final[self.dir] = self.start_jump[self.dir] + self.jump * global.GRID_SPACE_WIDTH;
+  final[self.dir] = self.start_jump[self.dir] + sign(self.multiple) * self.jump * global.GRID_SPACE_WIDTH;
   final[1 - self.dir] = self.start_jump[1 - self.dir];
   create_wood_bridge(self.start_jump[global.X], self.start_jump[global.Y], 
        final[global.X], final[global.Y], 

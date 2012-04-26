@@ -50,17 +50,14 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="640" hview="480" xport="0" yport="0" wport="640" hport="480" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance index="3" objName="obj_controller" x="0" y="0" name="inst_92CD67B1" locked="0" code="" scaleX="1" scaleY="1" colour="-1" rotation="0"/>
-    <instance index="6" objName="obj_wood_multiple" x="192" y="0" name="inst_24089B49" locked="0" code="self.player = &quot;A&quot;;" scaleX="1" scaleY="1" colour="-1" rotation="0"/>
-    <instance index="6" objName="obj_wood_multiple" x="320" y="0" name="inst_5969517D" locked="0" code="self.player = &quot;B&quot;;" scaleX="1" scaleY="1" colour="-1" rotation="0"/>
+    <instance index="3" objName="obj_controller" x="0" y="0" name="inst_4BDA8EFD" locked="0" code="" scaleX="1" scaleY="1" colour="-1" rotation="0"/>
     <instance index="5" objName="obj_bridge" x="0" y="160" name="inst_088F1E91" locked="0" code="global.lcm_value = 0;&#xA;global.gcd_value = 0;" scaleX="1" scaleY="1" colour="-1" rotation="0"/>
-    <instance index="15" objName="obj_surasa" x="0" y="0" name="inst_B3C6F2D4" locked="0" code="" scaleX="1" scaleY="1" colour="-1" rotation="0"/>
     <instance index="13" objName="obj_player_A" x="128" y="160" name="inst_5C956679" locked="0" code="self.sound = snd_monkey;" scaleX="1" scaleY="1" colour="-1" rotation="0"/>
     <instance index="14" objName="obj_sinhika" x="0" y="96" name="inst_F701B7D2" locked="0" code="" scaleX="1" scaleY="1" colour="-1" rotation="0"/>
     <instance index="12" objName="obj_player_B" x="128" y="192" name="inst_6C23E1E1" locked="0" code="self.sound = snd_me;" scaleX="1" scaleY="1" colour="-1" rotation="0"/>
     <instance index="7" objName="obj_help" x="0" y="32" name="inst_9741CEB7" locked="0" code="" scaleX="1" scaleY="1" colour="-1" rotation="0"/>
     <instance index="9" objName="obj_score" x="0" y="0" name="inst_5B31C316" locked="0" code="" scaleX="1" scaleY="1" colour="-1" rotation="0"/>
-    <instance index="16" objName="obj_control_player" x="160" y="0" name="inst_528A57DE" locked="0" code="self.player_id = obj_player_A;&#xA;self.sprite_index = spr_monkey;&#xA;self.image_speed = 0;" scaleX="1" scaleY="1" colour="-1" rotation="0"/>
+    <instance index="16" objName="obj_control_player" x="160" y="0" name="inst_528A57DE" locked="0" code="self.player_id = obj_player_A;&#xA;self.sprite_index = spr_me2;&#xA;self.image_speed = 0;" scaleX="1" scaleY="1" colour="-1" rotation="0"/>
     <instance index="16" objName="obj_control_player" x="288" y="0" name="inst_0302B977" locked="0" code="self.player_id = obj_player_B;&#xA;self.sprite_index = spr_me;&#xA;self.image_speed = 0;" scaleX="1" scaleY="1" colour="-1" rotation="0"/>
     <instance index="16" objName="obj_control_player" x="416" y="0" name="inst_4A20826B" locked="0" code="self.player_id = obj_sinhika;&#xA;self.sprite_index = spr_sinhika;&#xA;self.image_speed = 0;" scaleX="1" scaleY="1" colour="-1" rotation="0"/>
     <instance index="10" objName="obj_client" x="0" y="0" name="inst_2DF71105" locked="0" code="" scaleX="1" scaleY="1" colour="-1" rotation="0"/>

@@ -49,18 +49,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (object_get_parent(self.player_id) == obj_player) {
-  var me;
-  me = get_player_me();
-  if (false &amp;&amp; me != 'BOTH' &amp;&amp; (self.player_id).player != me &amp;&amp; !(self.player_id).move_ready &amp;&amp; self.step mod 20 == 0) {
-    with instance_create(self.x, self.y, obj_gem) {
-      self.sprite_index = spr_gem_blue;
-      self.vspeed = 5;
-    }
-  }
+            <string>if (!instance_exists(self.player_id)) return 0;
+
+if (object_get_parent(self.player_id) == obj_player) {
+  image_index = sign((self.player_id).multiple) + 1;
 }
     
-
 </string>
           </argument>
         </arguments>
@@ -83,7 +77,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>view_object[global.MAIN_VIEW] = self.player_id;
+            <string>if (!instance_exists(self.player_id)) return 0;
+view_object[global.MAIN_VIEW] = self.player_id;
 </string>
           </argument>
         </arguments>
@@ -106,7 +101,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_self();
+            <string>if (!instance_exists(self.player_id)) return 0;
+
+draw_self();
 draw_set_color(c_white);
 draw_set_halign(fa_center);
 draw_set_valign(fa_bottom);
@@ -115,10 +112,14 @@ draw_set_font(-1);
 draw_text_transformed(self.x + global.GRID_SPACE_WIDTH/2, self.y + 1.5*global.GRID_SPACE_WIDTH, 
                       (self.player_id).name, 0.75, 0.75, 0);
 if (object_get_parent(self.player_id) == obj_player) {
-  draw_set_color(c_white);
   draw_set_font(font_multiple);
   draw_set_halign(fa_center);
   draw_set_valign(fa_middle);
+  draw_sprite(spr_wood_multiple, -1, self.x + global.GRID_SPACE_WIDTH, self.y);
+  draw_set_color(c_black);
+  draw_text(self.x + 1.5*global.GRID_SPACE_WIDTH, self.y + global.GRID_SPACE_WIDTH/2, 
+            (self.player_id).jump);
+  draw_set_color(c_white);
   draw_text(self.x + 2.5*global.GRID_SPACE_WIDTH, self.y + global.GRID_SPACE_WIDTH/2, 
             " x " + string(abs((self.player_id).multiple)));
   var sprite;

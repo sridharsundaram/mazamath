@@ -6,7 +6,7 @@ x2 = argument2;
 count_x = argument3;
 wood_obj = argument4;
 
-while (x1 <= x2) {
+while (x1 < x2) {
   i_wood = instance_create(x1, y1, wood_obj);
   i_wood.num = count_x;
   count_x += 1;

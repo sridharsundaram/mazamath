@@ -5,11 +5,11 @@
   <colkind>1</colkind>
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
-  <bboxmode>0</bboxmode>
+  <bboxmode>2</bboxmode>
   <bbox_left>1</bbox_left>
   <bbox_right>30</bbox_right>
   <bbox_top>10</bbox_top>
-  <bbox_bottom>20</bbox_bottom>
+  <bbox_bottom>50</bbox_bottom>
   <frames>
     <frame index="0">images\spr_key_0.png</frame>
   </frames>

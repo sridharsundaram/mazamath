@@ -28,7 +28,9 @@
             <string>sound_play(snd_applause);
 sleep(50);
 self.hspeed = -10;
-with obj_player {hspeed = -10;}
+with obj_player {
+  self.hspeed = -10;
+}
 
 </string>
           </argument>
@@ -52,7 +54,7 @@ with obj_player {hspeed = -10;}
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>with obj_player { hspeed = 0; }
+            <string>with obj_player { hspeed = 0; vspeed = 0;}
 instance_destroy();
 reinitialize("Multiple.htm", 10);
 

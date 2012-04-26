@@ -107,9 +107,6 @@
     <sprite>sprites\spr_wait</sprite>
     <sprite>sprites\spr_left_arrow</sprite>
     <sprite>sprites\spr_right_arrow</sprite>
-    <sprite>sprites\spr_up_arrow</sprite>
-    <sprite>sprites\spr_down_arrow</sprite>
-    <sprite>sprites\spr_surasa</sprite>
     <sprites name="gems">
       <sprite>sprites\spr_gem_blue</sprite>
       <sprite>sprites\spr_gem_green</sprite>
@@ -119,17 +116,18 @@
       <sprite>sprites\spr_sword</sprite>
     </sprites>
     <sprites name="players">
-      <sprite>sprites\spr_monkey</sprite>
       <sprite>sprites\spr_me</sprite>
+      <sprite>sprites\spr_me2</sprite>
       <sprite>sprites\spr_sinhika</sprite>
       <sprite>sprites\spr_sinhika_recovering</sprite>
     </sprites>
     <sprite>sprites\spr_green</sprite>
     <sprite>sprites\spr_red</sprite>
     <sprite>sprites\spr_lcm</sprite>
-    <sprite>sprites\spr_me</sprite>
     <sprite>sprites\spr_hcf</sprite>
     <sprite>sprites\spr_celebrate</sprite>
+    <sprite>sprites\spr_key</sprite>
+    <sprite>sprites\spr_treasure</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\back_plane</background>
@@ -183,7 +181,6 @@
       <object>objects\obj_player_B</object>
       <object>objects\obj_player_A</object>
       <object>objects\obj_sinhika</object>
-      <object>objects\obj_surasa</object>
       <object>objects\obj_control_player</object>
     </objects>
     <object>objects\obj_gem</object>
@@ -195,8 +192,10 @@
     <object>objects\obj_me</object>
     <object>objects\obj_model_controller</object>
     <object>objects\obj_red</object>
+    <object>objects\obj_treasure</object>
+    <object>objects\obj_key</object>
   </objects>
-  <rooms name="rooms" roommaxid="100013" room_maxtileid="10000034">
+  <rooms name="rooms" roommaxid="100020" room_maxtileid="10000034">
     <room>rooms\lcm</room>
     <room>rooms\Celebration_Room</room>
     <room>rooms\Modelling_Room</room>

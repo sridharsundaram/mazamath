@@ -84,8 +84,8 @@ if (self.recovering) {
 }
 // Players in initial location do not collide
 // Jumping players do not collide
-with instance_nearest(self.x, self.y, obj_player) {
-  if (jumping &gt; 0) return 0;
+with other {
+  if (self.jumping &gt; 0) return 0;
   if (self.x == self.min_segment_x) return 0;
 }
 // If both players in same number, do not collide

@@ -83,7 +83,7 @@ room_goto(Modelling_Room);
           <argument>
             <kind>1</kind>
             <string>sound_play(snd_click);
-with instance_nearest(self.x, self.y, obj_wood) {
+with other {
   instance_destroy();
 }
 

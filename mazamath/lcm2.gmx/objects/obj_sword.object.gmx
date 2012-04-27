@@ -50,7 +50,7 @@ self.y = mouse_y;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>with instance_nearest(self.x, self.y, obj_gem) { instance_destroy(); }
+            <string>with other { instance_destroy(); }
 
 </string>
           </argument>

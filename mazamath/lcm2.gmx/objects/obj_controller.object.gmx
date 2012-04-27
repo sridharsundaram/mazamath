@@ -154,6 +154,30 @@ view_object[global.MAIN_VIEW] = noone;
         </arguments>
       </action>
     </event>
+    <event eventtype="7" enumb="5">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>self.visible = false;
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="7" enumb="4">
       <action>
         <libid>1</libid>
@@ -176,6 +200,7 @@ if (global.num_bridge_segments == 0) {
   obj_help.splash = "Intro.htm";
   obj_help.alarm[0] = 10;
 }
+self.visible = true;
 
 </string>
           </argument>

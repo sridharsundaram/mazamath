@@ -47,6 +47,12 @@ if (global.problem == global.LCM) {
   rnd[2] = maza_irandom_range(2,10);
   key_rnd = rnd[0] * rnd[1];
   treasure_rnd = rnd[1] * rnd[2];
+  if (key_rnd > treasure_rnd) {
+    var t;
+    t = treasure_rnd;
+    treasure_rnd = key_rnd;
+    key_rnd = t;
+  }
   obj_treasure.x = xval + treasure_rnd * global.GRID_SPACE_WIDTH;
   obj_treasure.y = yval - obj_player_B.sprite_height;
   obj_treasure.num = treasure_rnd;
@@ -62,7 +68,7 @@ with obj_player {
     self.jump = maza_irandom_range(2,10);
   } else {
     global.problem = global.GCD;
-    self.jump = 1;
+    self.jump = 0;
   }
 }
 
@@ -70,7 +76,8 @@ if (global.problem == global.GCD) {
     create_wood_bridge(obj_player_B.x + global.GRID_SPACE_WIDTH, obj_player_B.y,
                        obj_treasure.x + global.GRID_SPACE_WIDTH, 1, obj_wood);
 }
-if (global.num_bridge_segments mod 5 == 0) {
+
+if (global.num_bridge_segments == 0) {
   obj_help.splash = splash;
   obj_help.alarm[0] = timer;
 }

@@ -323,8 +323,8 @@ if (global.problem == global.GCD &amp;&amp; self.jumping == 0 &amp;&amp; self.x 
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// Select only if user is allowed to move this player
-if ((get_player_me() == "BOTH" || get_player_me() == self.player) &amp;&amp; self.jumping == 0) {
+            <string>// Select only if there is a positive jump
+if (self.jump &gt; 0) {
   self.selected = true;
 }
 </string>

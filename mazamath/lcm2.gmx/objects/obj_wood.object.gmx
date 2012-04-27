@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>self.num = 0;
 self.text_color = c_white;
-self.player = '';
+
 </string>
           </argument>
         </arguments>

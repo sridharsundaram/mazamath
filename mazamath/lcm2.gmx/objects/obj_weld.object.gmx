@@ -56,8 +56,9 @@ with obj_player {
             <kind>1</kind>
             <string>with obj_player { hspeed = 0; vspeed = 0;}
 instance_destroy();
-reinitialize("Multiple.htm", 10);
 
+transition_kind = 21;
+room_goto(Modelling_Room);
 
 
 </string>

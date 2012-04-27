@@ -34,6 +34,7 @@ global.PLAYER_BOTH = "BOTH";
 global.player_me = global.PLAYER_BOTH; // Initialized to both players
 global.LCM = 'lcm';
 global.GCD = 'gcd';
+global.CURRENT_STORY = -1; // Location in story
 
 self.scroll = false;
 
@@ -153,6 +154,34 @@ view_object[global.MAIN_VIEW] = noone;
         </arguments>
       </action>
     </event>
+    <event eventtype="7" enumb="4">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>reinitialize();
+if (global.num_bridge_segments == 0) {
+  obj_help.splash = "Intro.htm";
+  obj_help.alarm[0] = 10;
+}
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="7" enumb="2">
       <action>
         <libid>1</libid>
@@ -178,6 +207,19 @@ global.num_bridge_segments = -1;
 global.problem = global.LCM;
 health = 100;
 score = 0;
+
+global.x_n = get_random_seed();
+obj_player_B.name = get_player_name('B');
+var i;
+obj_player_A.name = '';
+for (i = 1; i &lt;= string_length(obj_player_B.name); i += 1) {
+  obj_player_A.name += string_char_at(obj_player_B.name, i);
+}
+
+transition_kind = 15;
+room_goto(Modelling_Room);
+global.lcm_correct = "true"; // ??? 
+
 
 </string>
           </argument>
@@ -244,7 +286,7 @@ draw_healthbar(x_health, y_health, x_health + 250, y_health + 15, health, c_silv
           <argument>
             <kind>1</kind>
             <string>global.level = get_integer("Enter level", 0)
-reinitialize("Intro.htm", 10);
+reinitialize();
 </string>
           </argument>
         </arguments>

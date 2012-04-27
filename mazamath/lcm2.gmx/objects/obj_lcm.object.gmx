@@ -25,18 +25,16 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (global.tp = "lcm"){
+            <string>if (global.problem == global.LCM){
     global.correctChoice = 1;
     show_message("Correct it is LCM !! Play the LCM Game...");
-    transition_kind = 15;
-    room_goto(lcm);
 }
-if (global.tp = "hcf"){
+if (global.problem == global.GCD){
     global.correctChoice = -1;
     show_message("Worng Answer... The correct answer is HCF... Play the HCF Game...");
-    transition_kind = 15;
-    room_goto(dummy_hcf);
 }
+//transition_kind = 21;
+room_goto(lcm);
 
 </string>
           </argument>

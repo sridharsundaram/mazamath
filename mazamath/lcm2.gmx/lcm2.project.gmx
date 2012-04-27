@@ -4,7 +4,7 @@
     <datafile>
       <name>sundar_kaand.dt</name>
       <filename>sundar_kaand.dt</filename>
-      <origname>C:\Users\rishi\git\mazamath\mazamath\sundar_kaand.dt</origname>
+      <origname>C:\Users\sridhar\git\mazamath\mazamath\lcm2.gmx\\\datafiles\sundar_kaand.dt</origname>
       <exists>-1</exists>
       <size>4008</size>
       <exportAction>2</exportAction>
@@ -175,6 +175,8 @@
       <script>scripts\send_move.gml</script>
       <script>scripts\get_random_seed.gml</script>
     </scripts>
+    <script>scripts\initialize_gcd.gml</script>
+    <script>scripts\initialize_lcm.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font_multiple</font>
@@ -211,10 +213,10 @@
     <object>objects\obj_treasure</object>
     <object>objects\obj_key</object>
   </objects>
-  <rooms name="rooms" roommaxid="100000" room_maxtileid="10000000">
+  <rooms name="rooms" roommaxid="100020" room_maxtileid="10000034">
     <room>rooms\lcm</room>
-    <room>rooms\Celebration_Room</room>
     <room>rooms\Modelling_Room</room>
+    <room>rooms\Celebration_Room</room>
     <room>rooms\dummy_hcf</room>
   </rooms>
   <triggers number="1">

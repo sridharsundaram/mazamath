@@ -25,26 +25,24 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.iRnd = irandom_range(1,2);
+            <string>// If Story is already loaded, no need to load
+if (global.CURRENT_STORY != -1) return 0;
+var txtfile, i;
 
-if (global.lcm_correct = "true"){
-    global.lcm_correct = "false";
-}
-//txtfile = file_text_open_read("G:\lurn\Math\website\ramayan\sundar_kaand.dt");
 txtfile = file_text_open_read("sundar_kaand.dt");
 i=0;
 
 do{
-read = file_text_read_string(txtfile);
-global.story[i,0] = string_copy(read,0,3);
-global.story[i,1] = string_copy(read,5,2);
-global.story[i,2] = string_copy(read,8,string_length(read));
-i+=1;
-read = file_text_readln(txtfile);
+  read = file_text_read_string(txtfile);
+  global.story[i,0] = string_copy(read, 0, 3);
+  global.story[i,1] = string_copy(read, 5, 2);
+  global.story[i,2] = string_copy(read, 8, string_length(read));
+  i += 1;
+  read = file_text_readln(txtfile);
 }until(file_text_eof(txtfile));
 
 file_text_close(txtfile); 
-global.current_story = 0;
+global.CURRENT_STORY = 0;
 </string>
           </argument>
         </arguments>
@@ -91,8 +89,47 @@ global.current_story = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.current_story += 1;
+            <string>// Story next line alarm
+global.CURRENT_STORY += 1;
 alarm[0] = 100;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="4">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>var coin_toss;
+coin_toss = maza_irandom_range(1,100);
+
+if (coin_toss &lt;= 50){
+  global.problem = global.LCM;
+  self.problem = 'Monkey and its shadow reaching the same point with different jump lengths' ;
+}
+else {
+  self.problem = 'Monkey picking up key and going to treasure with the same jump length';
+  global.problem = global.GCD;
+}
+
+if (global.lcm_correct == "true"){
+    global.lcm_correct = "false";
+}
+
 </string>
           </argument>
         </arguments>
@@ -117,20 +154,9 @@ alarm[0] = 100;
             <kind>1</kind>
             <string>draw_set_color( c_blue );
 draw_set_font( fnt_h );
-lcm_problem = 'Two monkeys reaching the same point with different step-motions' ;
-hcf_problem = 'One monkey trying to kill two rakhshas at different points with one step-motion' ;
-
-if (global.iRnd = 1){
-    draw_text( 300, 100, 'What do you think will solve the following problem, LCM or HCF ?##' + lcm_problem );
-    global.tp = "lcm";
-}
-else{
-    draw_text( 300, 100, 'What do you think will solve the following problem, LCM or HCF ?##' + hcf_problem );
-    global.tp="hcf";
-}
-
-
-draw_text(300,400, global.story[global.current_story,1] + global.story[global.current_story,2]);
+draw_text( 300, 100, 'What do you think will solve the following problem, LCM or HCF ?##' + self.problem );
+// Story
+draw_text(300,400, global.story[global.CURRENT_STORY, 1] + global.story[global.CURRENT_STORY,2]);
 </string>
           </argument>
         </arguments>

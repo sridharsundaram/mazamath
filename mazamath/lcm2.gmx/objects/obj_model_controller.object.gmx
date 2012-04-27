@@ -30,6 +30,69 @@
 if (global.lcm_correct = "true"){
     global.lcm_correct = "false";
 }
+//txtfile = file_text_open_read("G:\lurn\Math\website\ramayan\sundar_kaand.dt");
+txtfile = file_text_open_read("sundar_kaand.dt");
+i=0;
+
+do{
+read = file_text_read_string(txtfile);
+global.story[i,0] = string_copy(read,0,3);
+global.story[i,1] = string_copy(read,5,2);
+global.story[i,2] = string_copy(read,8,string_length(read));
+i+=1;
+read = file_text_readln(txtfile);
+}until(file_text_eof(txtfile));
+
+file_text_close(txtfile); 
+global.current_story = 0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>301</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_set_alarm</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>220</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>global.current_story += 1;
+alarm[0] = 100;
 </string>
           </argument>
         </arguments>
@@ -57,7 +120,6 @@ draw_set_font( fnt_h );
 lcm_problem = 'Two monkeys reaching the same point with different step-motions' ;
 hcf_problem = 'One monkey trying to kill two rakhshas at different points with one step-motion' ;
 
-
 if (global.iRnd = 1){
     draw_text( 300, 100, 'What do you think will solve the following problem, LCM or HCF ?##' + lcm_problem );
     global.tp = "lcm";
@@ -67,6 +129,8 @@ else{
     global.tp="hcf";
 }
 
+
+draw_text(300,400, global.story[global.current_story,1] + global.story[global.current_story,2]);
 </string>
           </argument>
         </arguments>

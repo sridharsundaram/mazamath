@@ -125,7 +125,7 @@ class NewGame(webapp.RequestHandler):
                          'game_link': game_link,
                          'initial_message': GameUpdater(game).get_game_message()
                         }
-      path = os.path.join(os.path.dirname(__file__), '../html/index.html')
+      path = os.path.join(os.path.dirname(__file__), '../html/game.html')
 
       self.response.out.write(template.render(path, template_values))
     else:

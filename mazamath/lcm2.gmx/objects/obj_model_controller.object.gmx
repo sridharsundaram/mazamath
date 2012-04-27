@@ -32,14 +32,13 @@ var txtfile, i;
 txtfile = file_text_open_read("sundar_kaand.dt");
 i=0;
 
-do{
+for (i = 0; !file_text_eof(txtfile); i += 1) {
   read = file_text_read_string(txtfile);
   global.story[i,0] = string_copy(read, 0, 3);
   global.story[i,1] = string_copy(read, 5, 2);
   global.story[i,2] = string_copy(read, 8, string_length(read));
-  i += 1;
   read = file_text_readln(txtfile);
-}until(file_text_eof(txtfile));
+}
 
 file_text_close(txtfile); 
 global.CURRENT_STORY = 0;
@@ -154,9 +153,9 @@ if (global.lcm_correct == "true"){
             <kind>1</kind>
             <string>draw_set_color( c_blue );
 draw_set_font( fnt_h );
-draw_text( 300, 100, 'What do you think will solve the following problem, LCM or HCF ?##' + self.problem );
+draw_text_ext( 200, 100, 'What do you think will solve the following problem, LCM or HCF ?##' + self.problem, 20, 400);
 // Story
-draw_text(300,400, global.story[global.CURRENT_STORY, 1] + global.story[global.CURRENT_STORY,2]);
+draw_text_ext(200,400, global.story[global.CURRENT_STORY, 1] + global.story[global.CURRENT_STORY,2], 20, 400);
 </string>
           </argument>
         </arguments>

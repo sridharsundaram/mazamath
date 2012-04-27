@@ -204,16 +204,14 @@
     <object>objects\obj_gem</object>
     <object>objects\obj_sword</object>
     <object>objects\obj_celebrate</object>
-    <object>objects\obj_green</object>
     <object>objects\obj_hcf</object>
     <object>objects\obj_lcm</object>
     <object>objects\obj_me</object>
     <object>objects\obj_model_controller</object>
-    <object>objects\obj_red</object>
     <object>objects\obj_treasure</object>
     <object>objects\obj_key</object>
   </objects>
-  <rooms name="rooms" roommaxid="100020" room_maxtileid="10000034">
+  <rooms name="rooms" roommaxid="100018" room_maxtileid="10000034">
     <room>rooms\lcm</room>
     <room>rooms\Modelling_Room</room>
     <room>rooms\Celebration_Room</room>

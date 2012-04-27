@@ -57,7 +57,6 @@ with obj_player {
             <string>with obj_player { hspeed = 0; vspeed = 0;}
 instance_destroy();
 
-transition_kind = 21;
 room_goto(Modelling_Room);
 
 

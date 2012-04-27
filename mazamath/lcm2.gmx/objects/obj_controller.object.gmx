@@ -216,7 +216,6 @@ for (i = 1; i &lt;= string_length(obj_player_B.name); i += 1) {
   obj_player_A.name += string_char_at(obj_player_B.name, i);
 }
 
-transition_kind = 15;
 room_goto(Modelling_Room);
 global.lcm_correct = "true"; // ??? 
 

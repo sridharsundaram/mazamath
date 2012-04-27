@@ -2,5 +2,5 @@
 if (os_browser == browser_not_a_browser) {
   return global.player_me;
 } else {
-  return js_getPlayerMe();
+  return global.PLAYER_BOTH; // js_getPlayerMe();
 }

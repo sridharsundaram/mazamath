@@ -34,7 +34,6 @@ if (global.problem = global.LCM){
     show_message("Worng Answer... The correct answer is LCM... Play the LCM Game...");
 }
 
-transition_kind = 15;
 room_goto(lcm);
 
 </string>

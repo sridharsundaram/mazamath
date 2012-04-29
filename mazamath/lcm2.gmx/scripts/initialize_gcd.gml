@@ -32,4 +32,10 @@ with obj_player {
 }
 create_wood_bridge(obj_player_B.x + global.GRID_SPACE_WIDTH, obj_player_B.y,
                    obj_treasure.x + global.GRID_SPACE_WIDTH, 1, obj_wood);
+                   
+view_object[global.MAIN_VIEW] = obj_treasure.id;
+view_xview[global.MAIN_VIEW] = obj_treasure.x - 3 * global.GRID_SPACE_WIDTH;
+obj_treasure.alarm[0] = room_speed * 3; // 3 seconds
+// No idea why we need following line - seems to be bug in GM:HTML5
+view_visible[0] = true;
 

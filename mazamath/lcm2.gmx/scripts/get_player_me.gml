@@ -1,6 +1,6 @@
 // Return which player I am
-if (os_browser == browser_not_a_browser) {
-  return global.player_me;
-} else {
-  return global.PLAYER_BOTH; // js_getPlayerMe();
+switch(get_mode()) {
+  case global.NOT_BROWSER: return global.player_me;
+  case global.GM_BROWSER: return global.player_me;
+  case global.BROWSER: return global.PLAYER_BOTH; // js_getPlayerMe();
 }

@@ -2,7 +2,9 @@
 var multiple;
 multiple = argument0;
 
-if (os_browser != browser_not_a_browser) {
-  js_sendMove(multiple);
+switch(get_mode()) {
+  case global.NOT_BROWSER: break;
+  case global.GM_BROWSER: break;
+  case global.BROWSER: js_sendMove(multiple);
 }
 

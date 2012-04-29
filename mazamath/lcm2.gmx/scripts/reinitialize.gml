@@ -1,8 +1,6 @@
 // Reinitialize Game
 var xval, yval;
-
 global.num_bridge_segments += 1;
-
 if (global.num_bridge_segments > 0) { // Create new bridge segment
   yval := obj_player_B.y - obj_player_B.sprite_height;
   instance_create(global.num_bridge_segments * global.BRIDGE_WIDTH, yval, obj_bridge);
@@ -17,6 +15,8 @@ xval = (global.num_bridge_segments + 1) * global.BRIDGE_WIDTH - obj_player_B.spr
 yval = obj_player_B.y;
 global.gcd_value = 0;
 global.lcm_value = 0;
+// 2 minutes == 120s to finish.
+global.timer = room_speed * 120;
 
 // Choose type of problem
 if (global.problem == global.LCM) {

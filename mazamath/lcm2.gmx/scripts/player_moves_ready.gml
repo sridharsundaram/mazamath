@@ -6,8 +6,10 @@ if (get_player_me() == global.PLAYER_BOTH) {
   return false;
 }
 
-if (os_browser == browser_not_a_browser) {
-  return false; // Dont know how to get distributed teamplay without a browser
+switch(get_mode()) {
+  case global.NOT_BROWSER: return false;
+  case global.GM_BROWSER: return false;
+  case global.BROWSER: return js_isReady();
 }
-return js_isReady();
+
 

@@ -1,5 +1,6 @@
-if (os_browser != browser_not_a_browser) {
-  return 8762383619;
+switch(get_mode()) {
+  case global.NOT_BROWSER: 
+  case global.GM_BROWSER: return 876238619;
+  case global.BROWSER: return js_getRandomSeed();
 }
-return js_getRandomSeed();
 

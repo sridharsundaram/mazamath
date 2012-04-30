@@ -4,7 +4,7 @@
     <datafile>
       <name>sundar_kaand.dt</name>
       <filename>sundar_kaand.dt</filename>
-      <origname>C:\Users\sridhar\git\mazamath\mazamath\lcm2.gmx\\\datafiles\sundar_kaand.dt</origname>
+      <origname>C:\Users\rishi\git\mazamath\mazamath\lcm2.gmx\\\datafiles\sundar_kaand.dt</origname>
       <exists>-1</exists>
       <size>4008</size>
       <exportAction>2</exportAction>
@@ -106,6 +106,10 @@
     <sound>sound\snd_click</sound>
     <sound>sound\snd_applause</sound>
     <sound>sound\snd_celebrate</sound>
+    <sound>sound\snd_shout1</sound>
+    <sound>sound\snd_shout2</sound>
+    <sound>sound\snd_shout3</sound>
+    <sound>sound\snd_shout4</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_wood</sprite>
@@ -144,6 +148,13 @@
     <sprite>sprites\spr_celebrate</sprite>
     <sprite>sprites\spr_key</sprite>
     <sprite>sprites\spr_treasure</sprite>
+    <sprite>sprites\spr_neel</sprite>
+    <sprite>sprites\spr_left</sprite>
+    <sprite>sprites\spr_path</sprite>
+    <sprite>sprites\spr_play</sprite>
+    <sprite>sprites\spr_right</sprite>
+    <sprite>sprites\spr_select</sprite>
+    <sprite>sprites\spr_sound</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\back_plane</background>
@@ -157,6 +168,10 @@
   <paths name="paths">
     <path>paths\path_me</path>
     <path>paths\path_monkey</path>
+    <path>paths\path0</path>
+    <path>paths\path1</path>
+    <path>paths\path2</path>
+    <path>paths\path3</path>
   </paths>
   <scripts name="scripts">
     <script>scripts\initialize_stage.gml</script>
@@ -215,12 +230,22 @@
     <object>objects\obj_model_controller</object>
     <object>objects\obj_treasure</object>
     <object>objects\obj_key</object>
+    <object>objects\obj_left_arrow</object>
+    <object>objects\obj_neel</object>
+    <object>objects\obj_play_game</object>
+    <object>objects\obj_right_arrow</object>
+    <object>objects\obj_sel_path</object>
+    <object>objects\obj_sel_shout</object>
+    <object>objects\obj_snd_left</object>
+    <object>objects\obj_snd_right</object>
+    <object>objects\obj_snd_play</object>
   </objects>
-  <rooms name="rooms" roommaxid="100019" room_maxtileid="10000034">
+  <rooms name="rooms" roommaxid="100027" room_maxtileid="10000034">
     <room>rooms\lcm</room>
     <room>rooms\Modelling_Room</room>
     <room>rooms\Celebration_Room</room>
     <room>rooms\dummy_hcf</room>
+    <room>rooms\home</room>
   </rooms>
   <triggers number="1">
     <trigger index="0">triggers\lcm_success</trigger>

@@ -119,19 +119,11 @@ if (object_get_parent(self.player_id) == obj_player) {
   draw_set_color(c_black);
   draw_text(self.x + 1.5*global.GRID_SPACE_WIDTH, self.y + global.GRID_SPACE_WIDTH/2, 
             (self.player_id).jump);
-  draw_set_color(c_white);
-  draw_text(self.x + 2.5*global.GRID_SPACE_WIDTH, self.y + global.GRID_SPACE_WIDTH/2, 
-            " x " + string(abs((self.player_id).multiple)));
-  var sprite;
-  if ((self.player_id).multiple &gt;= 0) {
-    sprite = spr_right_arrow;
-  } else {
-    sprite = spr_left_arrow;
+  if ((self.player_id).multiple != 0) {            
+      draw_set_color(c_white);
+      draw_text(self.x + 2.5*global.GRID_SPACE_WIDTH, self.y + global.GRID_SPACE_WIDTH/2, 
+                " x " + string(abs((self.player_id).multiple)));
   }
-  draw_sprite_stretched(sprite, -1, 
-                        self.x + 3.25 * global.GRID_SPACE_WIDTH, 
-                        self.y + 0.25 * global.GRID_SPACE_WIDTH,
-                        sprite_width/2, sprite_height/2);           
 }
 </string>
           </argument>

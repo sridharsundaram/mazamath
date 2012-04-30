@@ -108,49 +108,12 @@ if (obj_sinhika.speed == 0) return 0;
 
 // If LCM found, take success action
 if (global.problem == global.LCM) {
-  with obj_player {
-    self.current_count = (self.x - self.min_segment_x) div global.GRID_SPACE_WIDTH;
-  }
-  if (obj_player_A.current_count != 0 &amp;&amp; 
-      obj_player_A.current_count == obj_player_B.current_count &amp;&amp; 
-      obj_player_B.current_count mod obj_player_B.jump == 0 &amp;&amp; 
-      obj_player_A.current_count mod obj_player_A.jump == 0 &amp;&amp; 
-      obj_player_B.jumping == 0 and obj_player_A.jumping == 0) {
-    global.lcm_value = self.current_count;
-    var weld;
-    weld = instance_create(obj_player_A.x, obj_player_A.y, obj_weld); // Weld the wood together
-    with instance_create(obj_player_A.x, obj_player_A.y - global.GRID_SPACE_WIDTH, obj_delta_score) {
-      delta_score = 100;
-    }
-  
-    obj_sinhika.speed = 0;
-    obj_sinhika.x = 0;
-    obj_sinhika.y = 0;
-    return 0;
-  } 
+  end_lcm();
 } 
 
 // If GCD found, take success action
 if (global.problem == global.GCD) {
-  if (self.x == obj_key.x) {
-    self.has_key = true;
-    obj_key.visible = false;
-  }
-  if (self.x == obj_treasure.x &amp;&amp; self.has_key) { // Found
-    global.gcd_value = self.jump;
-    var weld;
-    weld = instance_create(self.x, self.y - self.sprite_height, obj_weld); // Weld the wood together
-    with instance_create(self.x, self.y - global.GRID_SPACE_WIDTH, obj_delta_score) {
-      delta_score = 100;
-    }
-  
-    obj_sinhika.speed = 0;
-    obj_sinhika.x = 0;
-    obj_sinhika.y = 0;
-    obj_treasure.visible = false;
-    obj_key.visible = false;
-    return 0;
-  }
+  end_gcd();
 }
 
 // Take time to recover from jump

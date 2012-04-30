@@ -40,8 +40,8 @@
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
   </backgrounds>
   <views>
-    <view visible="-1" objName="obj_player_B" xview="0" yview="0" wview="640" hview="480" xport="0" yport="0" wport="640" hport="480" hborder="200" vborder="200" hspeed="15" vspeed="1"/>
-    <view visible="-1" objName="&lt;undefined&gt;" xview="0" yview="0" wview="640" hview="64" xport="0" yport="0" wport="640" hport="64" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="-1" objName="obj_player_B" xview="0" yview="0" wview="640" hview="480" xport="0" yport="0" wport="640" hport="480" hborder="200" vborder="200" hspeed="10" vspeed="10"/>
+    <view visible="-1" objName="&lt;undefined&gt;" xview="0" yview="0" wview="640" hview="96" xport="0" yport="0" wport="640" hport="96" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="64" wview="1280" hview="256" xport="320" yport="0" wport="320" hport="64" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="640" hview="480" xport="0" yport="0" wport="640" hport="480" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="640" hview="480" xport="0" yport="0" wport="640" hport="480" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
@@ -51,6 +51,7 @@
   </views>
   <instances>
     <instance index="3" objName="obj_controller" x="0" y="0" name="inst_4BDA8EFD" locked="0" code="" scaleX="1" scaleY="1" colour="-1" rotation="0"/>
+    <instance index="25" objName="obj_dashboard" x="0" y="0" name="inst_344FA258" locked="0" code="" scaleX="1" scaleY="1" colour="-1" rotation="0"/>
     <instance index="5" objName="obj_bridge" x="0" y="160" name="inst_088F1E91" locked="0" code="global.lcm_value = 0;&#xA;global.gcd_value = 0;" scaleX="1" scaleY="1" colour="-1" rotation="0"/>
     <instance index="23" objName="obj_treasure" x="0" y="96" name="inst_60D78DF8" locked="0" code="" scaleX="1" scaleY="1" colour="-1" rotation="0"/>
     <instance index="13" objName="obj_player_A" x="128" y="160" name="inst_5C956679" locked="0" code="self.sound = snd_monkey;" scaleX="1" scaleY="1" colour="-1" rotation="0"/>

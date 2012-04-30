@@ -159,7 +159,7 @@
     <path>paths\path_monkey</path>
   </paths>
   <scripts name="scripts">
-    <script>scripts\reinitialize.gml</script>
+    <script>scripts\initialize_stage.gml</script>
     <script>scripts\random_int32.gml</script>
     <script>scripts\maza_irandom_range.gml</script>
     <script>scripts\move_sinhika.gml</script>
@@ -174,9 +174,13 @@
       <script>scripts\get_player_name.gml</script>
       <script>scripts\send_move.gml</script>
       <script>scripts\get_random_seed.gml</script>
+      <script>scripts\get_mode.gml</script>
     </scripts>
     <script>scripts\initialize_gcd.gml</script>
     <script>scripts\initialize_lcm.gml</script>
+    <script>scripts\end_stage.gml</script>
+    <script>scripts\end_lcm.gml</script>
+    <script>scripts\end_gcd.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font_multiple</font>
@@ -187,6 +191,7 @@
     <object>objects\obj_weld</object>
     <object>objects\obj_explosion</object>
     <object>objects\obj_controller</object>
+    <object>objects\obj_dashboard</object>
     <object>objects\obj_spinner</object>
     <object>objects\obj_bridge</object>
     <object>objects\obj_wood_multiple</object>
@@ -211,7 +216,7 @@
     <object>objects\obj_treasure</object>
     <object>objects\obj_key</object>
   </objects>
-  <rooms name="rooms" roommaxid="100018" room_maxtileid="10000034">
+  <rooms name="rooms" roommaxid="100019" room_maxtileid="10000034">
     <room>rooms\lcm</room>
     <room>rooms\Modelling_Room</room>
     <room>rooms\Celebration_Room</room>

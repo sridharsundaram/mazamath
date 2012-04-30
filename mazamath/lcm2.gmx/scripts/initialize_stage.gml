@@ -1,6 +1,5 @@
-// Reinitialize Game
+// Initialize Stage for Game
 var xval, yval;
-global.num_bridge_segments += 1;
 
 xval = (global.num_bridge_segments + 1) * global.BRIDGE_WIDTH - obj_player_B.sprite_width;
 yval = obj_player_B.y;

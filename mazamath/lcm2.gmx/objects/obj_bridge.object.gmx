@@ -25,22 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (global.lcm_value != 0) {
-  self.lcm_value = global.lcm_value;
-  self.gcd_value = 0;
-  self.num1 = obj_player_A.jump;
-  self.num2 = obj_player_B.jump;
-} else if (global.gcd_value != 0) {
-  self.gcd_value = global.gcd_value;
-  self.lcm_value = 0;
-  self.num1 = obj_key.num;
-  self.num2 = obj_treasure.num;
-} else {
-  self.lcm_value = 0;
-  self.gcd_value = 0;
-  self.num1 = 0;
-  self.num2 = 0;
-}
+            <string>self.problem_type = '';
+self.problem_value = 0;
+self.num1 = 0;
+self.num2 = 0;
 
 </string>
           </argument>
@@ -68,20 +56,20 @@
 draw_set_color(c_blue);
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
-if (self.lcm_value != 0) { // LCM segment
-  var display;
-  display = string(self.num1) + " x " + string(self.lcm_value div self.num1);
-  display += "# LCM = " + string(self.lcm_value);
-  display += "#" + string(self.num2) + " x " + string(self.lcm_value div self.num2);
-  draw_text(x + sprite_width/2, y + sprite_height/2, display);
-} else if (self.gcd_value != 0) { // GCD segment
-  var display;
-  display = string(self.num1) + " / " + string(self.num1 div self.gcd_value);
-  display += "# GCD = " + string(self.gcd_value);
-  display += "#" + string(self.num2) + " / " + string(self.num2 div self.gcd_value);
-  draw_text(x + sprite_width/2, y + sprite_height/2, display);
-} else { // Neither LCM nor GCD - this is the BEGIN segment
+if (self.problem_type == '') { // Neither LCM nor GCD - this is the BEGIN segment
   draw_text(x + sprite_width/2, y + sprite_height/2, "BEGIN");
+} else if (self.problem_type == global.LCM) { // LCM segment
+  var display;
+  display = string(self.num1) + " x " + string(self.problem_value div self.num1);
+  display += "# LCM = " + string(self.problem_value);
+  display += "#" + string(self.num2) + " x " + string(self.problem_value div self.num2);
+  draw_text(x + sprite_width/2, y + sprite_height/2, display);
+} else if (self.problem_type == global.GCD) { // GCD segment
+  var display;
+  display = string(self.num1) + " / " + string(self.num1 div self.problem_value);
+  display += "# GCD = " + string(self.problem_value);
+  display += "#" + string(self.num2) + " / " + string(self.num2 div self.problem_value);
+  draw_text(x + sprite_width/2, y + sprite_height/2, display);
 }
 
 </string>

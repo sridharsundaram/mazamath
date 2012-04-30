@@ -25,7 +25,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>initialize_stage();
+            <string>obj_player_B.name = get_player_name('B');
+var i;
+obj_player_A.name = '';
+for (i = 1; i &lt;= string_length(obj_player_B.name); i += 1) {
+  obj_player_A.name += string_char_at(obj_player_B.name, i);
+}
+initialize_stage();
 
 </string>
           </argument>

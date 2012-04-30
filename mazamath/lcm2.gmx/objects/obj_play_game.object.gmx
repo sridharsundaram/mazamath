@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(lcm);
+            <string>goto_room(lcm);
 </string>
           </argument>
         </arguments>

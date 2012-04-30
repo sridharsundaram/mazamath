@@ -7,7 +7,7 @@ if (obj_player_A.current_count != 0 &&
     obj_player_B.current_count mod obj_player_B.jump == 0 && 
     obj_player_A.current_count mod obj_player_A.jump == 0 && 
     obj_player_B.jumping == 0 and obj_player_A.jumping == 0) {
-  global.lcm_value = self.current_count;
+  global.problem_value[global.num_bridge_segments] = self.current_count;
   var weld;
   weld = instance_create(obj_player_A.x, obj_player_A.y, obj_weld); // Weld the wood together
   with instance_create(obj_player_A.x, obj_player_A.y - global.GRID_SPACE_WIDTH, obj_delta_score) {

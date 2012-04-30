@@ -9,4 +9,6 @@ instance_activate_object(obj_player_A);
 with obj_player {
   initialize_player(xval, maza_irandom_range(2,10));
 }
+global.problem_num1[global.num_bridge_segments] = obj_player_A.jump;
+global.problem_num2[global.num_bridge_segments] = obj_player_B.jump;
 

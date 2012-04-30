@@ -51,7 +51,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(Modelling_Room);
+            <string>goto_room(Modelling_Room);
 </string>
           </argument>
         </arguments>

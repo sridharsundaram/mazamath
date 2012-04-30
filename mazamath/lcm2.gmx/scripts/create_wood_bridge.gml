@@ -1,5 +1,5 @@
 // Create a wooden bridge from (x1, y1) to (x2, y1) 
-var x1, y1, x2, y2, count_x, count_y, wood_obj;
+var x1, y1, x2, y2, count_x, wood_obj;
 x1 = argument0;
 y1 = argument1;
 x2 = argument2;

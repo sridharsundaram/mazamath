@@ -43,6 +43,11 @@ global.GM_BROWSER = 1;  // GM browser
 global.BROWSER = 2;     // Hosted 
 
 self.scroll = false;
+global.problem_type[0] = ''; // Problem
+global.problem_value[0] = 0;
+global.problem_num1[0] = 0;
+global.problem_num2[0] = 0;
+global.num_bridge_segments = 0;
 
 </string>
           </argument>
@@ -169,24 +174,15 @@ view_object[global.MAIN_VIEW] = noone;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.lcm_value = 0;
-global.gcd_value = 0;
-global.level = 0;
-global.move_number = 0;
+            <string>global.problem_value[0] = 0;
 global.num_bridge_segments = 0;
-global.problem = global.LCM;
+global.problem = '';
 health = 100;
 score = 0;
 
 global.x_n = get_random_seed();
-obj_player_B.name = get_player_name('B');
-var i;
-obj_player_A.name = '';
-for (i = 1; i &lt;= string_length(obj_player_B.name); i += 1) {
-  obj_player_A.name += string_char_at(obj_player_B.name, i);
-}
 
-room_goto(Modelling_Room);
+goto_room(Modelling_Room);
 global.lcm_correct = "true"; // ??? 
 
 obj_help.splash = "Intro.htm";

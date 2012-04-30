@@ -53,7 +53,7 @@ splash_html(self.splash);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(home);
+            <string>goto_room(home);
 </string>
           </argument>
         </arguments>

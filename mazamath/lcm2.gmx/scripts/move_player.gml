@@ -1,6 +1,5 @@
 // Move the player - given multiple and direction (-ve multiple indicates backward)
 self.multiple = get_move(self.player);
-self.move_number += 1;
 sound_play(self.sound);
 self.start_jump_x = self.x;
 if (path_exists(self.path)) {

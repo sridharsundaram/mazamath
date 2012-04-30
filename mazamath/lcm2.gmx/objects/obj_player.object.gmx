@@ -41,7 +41,6 @@ self.max_segment_x = 0; // Max x-value for player for this segment
 self.move_ready = false; // Whether move is ready
 self.name = '';   // Name of this player
 self.player = ''; // Which player this is - A or B
-self.move_number = 0; // Logical clock for each player
 self.has_key = false; // Does object have key?
 
 </string>
@@ -107,12 +106,12 @@ self.move_ready = false;
 if (obj_sinhika.speed == 0) return 0;
 
 // If LCM found, take success action
-if (global.problem == global.LCM) {
+if (global.problem_type[global.num_bridge_segments] == global.LCM) {
   end_lcm();
 } 
 
 // If GCD found, take success action
-if (global.problem == global.GCD) {
+if (global.problem_type[global.num_bridge_segments] == global.GCD) {
   end_gcd();
 }
 
@@ -259,7 +258,7 @@ send_move(self.multiple);
           <argument>
             <kind>1</kind>
             <string>// Select only if user is at beginning location on bridge for GCD problem
-if (global.problem == global.GCD &amp;&amp; self.jumping == 0 &amp;&amp; self.x == self.min_segment_x) {
+if (global.problem_type[global.num_bridge_segments] == global.GCD &amp;&amp; self.jumping == 0 &amp;&amp; self.x == self.min_segment_x) {
   self.selected = true;
   self.has_key = false;
   obj_key.visible = true;

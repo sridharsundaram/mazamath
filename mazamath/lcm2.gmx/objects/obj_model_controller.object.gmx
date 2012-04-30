@@ -117,12 +117,12 @@ alarm[0] = 100;
 coin_toss = maza_irandom_range(1,100);
 
 if (coin_toss &lt;= 50){
-  global.problem = global.LCM;
+  global.problem_type[global.num_bridge_segments] = global.LCM;
   self.problem = 'Monkey and its shadow reaching the same point with different jump lengths' ;
 }
 else {
   self.problem = 'Monkey picking up key and going to treasure with the same jump length';
-  global.problem = global.GCD;
+  global.problem_type[global.num_bridge_segments] = global.GCD;
 }
 
 if (global.lcm_correct == "true"){

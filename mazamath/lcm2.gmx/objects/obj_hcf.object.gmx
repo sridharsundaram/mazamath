@@ -25,16 +25,16 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (global.problem = global.GCD){
+            <string>if (global.problem_type[global.num_bridge_segments] = global.GCD){
     global.correctChoice = 1;
     show_message("Correct it is HCF !! Play the HCF Game...");
 }
-if (global.problem = global.LCM){
+if (global.problem_type[global.num_bridge_segments] = global.LCM){
     global.correctChoice = -1;
     show_message("Worng Answer... The correct answer is LCM... Play the LCM Game...");
 }
 
-room_goto(lcm);
+goto_room(lcm);
 
 </string>
           </argument>

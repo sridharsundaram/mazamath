@@ -4,7 +4,7 @@ if (self.x == obj_key.x) {
   obj_key.visible = false;
 }
 if (self.x == obj_treasure.x && self.has_key) { // Found
-  global.gcd_value = self.jump;
+  global.problem_value[global.num_bridge_segments] = self.jump;
   var weld;
   // Weld the wood together
   weld = instance_create(self.x, self.y - self.sprite_height, obj_weld);

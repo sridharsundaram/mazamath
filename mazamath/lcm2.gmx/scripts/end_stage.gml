@@ -1,4 +1,5 @@
 with obj_player { hspeed = 0; vspeed = 0;}
+
 global.num_bridge_segments += 1;
 var yval;
 yval = obj_player_B.y - obj_player_B.sprite_height;
@@ -7,7 +8,6 @@ instance_create(global.num_bridge_segments * global.BRIDGE_WIDTH, yval, obj_brid
 with obj_wood {
   instance_destroy();
 }
-global.move_number += 1;
 
-room_goto(Modelling_Room);
+goto_room(Modelling_Room);
 

@@ -100,8 +100,8 @@ class OpenedPage(webapp.RequestHandler):
     GameUpdater(game).send_update()
 
 
-class NewGame(webapp.RequestHandler):
-  """The new game UI page, renders the 'index.html' template."""
+class NewSinglePlayerGame(webapp.RequestHandler):
+  """The new game UI page for single player, renders the 'index.html' template."""
 
   def get(self):
     """Renders the main page. When this page is shown, we create a new
@@ -121,6 +121,39 @@ class NewGame(webapp.RequestHandler):
       token = channel.create_channel(player.user_id() + game_key)
       template_values = {'token': token,
                          'me': player.user_id(),
+                         'mode': 1,
+                         'game_key': game_key,
+                         'game_link': game_link,
+                         'initial_message': GameUpdater(game).get_game_message()
+                        }
+      path = os.path.join(os.path.dirname(__file__), '../html/game.html')
+
+      self.response.out.write(template.render(path, template_values))
+    else:
+      self.redirect(users.create_login_url(self.request.uri))
+
+class NewMultiPlayerGame(webapp.RequestHandler):
+  """The new game UI page for multi players, renders the 'index.html' template."""
+
+  def get(self):
+    """Renders the main page. When this page is shown, we create a new
+    channel to push asynchronous updates to the client."""
+    player = users.get_current_user()
+    game = None
+    if player:
+      game_key = player.user_id()
+      game = Game(key_name = game_key,
+                  playerA = player,
+                  move_state = Game.MOVE_STATE_NOT_STARTED,
+                  state = '         ')
+      game.put()
+
+      game_link = 'http://localhost:8081/join?g=' + game_key
+
+      token = channel.create_channel(player.user_id() + game_key)
+      template_values = {'token': token,
+                         'me': player.user_id(),
+                         'mode': 2,
                          'game_key': game_key,
                          'game_link': game_link,
                          'initial_message': GameUpdater(game).get_game_message()
@@ -172,7 +205,8 @@ class JoinGame(webapp.RequestHandler):
     self.response.out.write(template.render(path, template_values))
 
 application = webapp.WSGIApplication([
-    ('/', NewGame),
+    ('/single', NewSinglePlayerGame),
+    ('/multi', NewMultiPlayerGame),
     ('/opened', OpenedPage),
     ('/move', MovePage),
     ('/start', StartPage),

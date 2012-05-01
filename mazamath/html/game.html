@@ -70,7 +70,7 @@
       };
       
       updateGame = function() {
-        if (!gameState.playerB || gameState.playerB == '') {
+        if ({{mode}} == 2 && gameState.playerB && gameState.playerB != '') {
           document.getElementById('other-player').style.display = 'block';
           document.getElementById('lcmgame').style.display = 'none';
           return;

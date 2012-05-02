@@ -35,7 +35,7 @@ global.PLAYER_BOTH = "BOTH";
 global.player_me = global.PLAYER_BOTH; // Initialized to both players
 global.LCM = 'lcm';
 global.GCD = 'gcd';
-global.CURRENT_STORY = -1; // Location in story
+global.current_story = -1; // Location in story
 
 // Modes of operation
 global.NOT_BROWSER = 0; // Windows

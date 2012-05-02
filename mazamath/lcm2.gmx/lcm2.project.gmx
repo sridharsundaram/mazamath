@@ -155,6 +155,14 @@
     <sprite>sprites\spr_right</sprite>
     <sprite>sprites\spr_select</sprite>
     <sprite>sprites\spr_sound</sprite>
+    <sprites name="actors">
+      <sprite>sprites\spr_sampati</sprite>
+      <sprite>sprites\spr_ravana</sprite>
+      <sprite>sprites\spr_sita</sprite>
+      <sprite>sprites\spr_hanuman</sprite>
+      <sprite>sprites\spr_sugriva</sprite>
+    </sprites>
+    <sprite>sprites\spr_whiteboard</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\back_plane</background>
@@ -198,6 +206,9 @@
     <script>scripts\end_lcm.gml</script>
     <script>scripts\end_gcd.gml</script>
     <script>scripts\goto_room.gml</script>
+    <script>scripts\next_state.gml</script>
+    <script>scripts\load_game_narrative.gml</script>
+    <script>scripts\load_story.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font_multiple</font>
@@ -241,8 +252,11 @@
     <object>objects\obj_snd_left</object>
     <object>objects\obj_snd_right</object>
     <object>objects\obj_snd_play</object>
+    <object>objects\obj_whiteboard</object>
+    <object>objects\obj_sugriva</object>
+    <object>objects\obj_boundary</object>
   </objects>
-  <rooms name="rooms" roommaxid="100028" room_maxtileid="10000034">
+  <rooms name="rooms" roommaxid="100033" room_maxtileid="10000034">
     <room>rooms\lcm</room>
     <room>rooms\Modelling_Room</room>
     <room>rooms\Celebration_Room</room>

@@ -1,0 +1,39 @@
+// INTRO
+0
+Hi, I am Sugriva - the commander of Rama's army.
+You are here to get some training in jumping.
+Each of you has a fixed jump distance.
+Each time you can jump multiples of this jump.
+After this training is completed, we will build a bridge to Lanka.
+Let us start with a little background on why we are building this bridge.
+// ENCOURAGE
+1
+Good job, trainees.
+You are getting the hang of jumping. Soon you will be very good.
+Here is some more background on why we are building this bridge.
+// State 2 = STORY is the Ramayana Story
+2
+// TRAINING
+3
+Let us move on to a training exercise.
+What do you think will solve the following problem, LCM or HCF ?
+// PROBLEM is the actual problem - this is a placeholder
+4
+Placeholder problem
+// HCF_CORRECT
+5
+Excellent. HCF is correct.
+Trainees, all the best with this exercise, which begins now.
+// HCF_WRONG
+6
+Oops! You got that wrong - we need solve this using LCM, not HCF.
+Trainees, all the best with this exercise, which begins now.
+// LCM_CORRECT
+7
+Excellent. LCM is correct.
+Trainees, all the best with this exercise, which begins now.
+// LCM_WRONG
+8
+Oops! You got that wrong - we need solve this using HCF, not LCM.
+Trainees, all the best with this exercise, which begins now.
+//

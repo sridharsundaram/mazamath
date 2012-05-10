@@ -155,26 +155,20 @@ if (mouse_check_button(mb_left)) {
     sound_play(snd_click);
     self.multiple = new_multiple;
   }
-  // Clamp multiple at max possible so that count &gt;= 0 ??? should be from current
-  if (self.multiple * self.jump + self.count_x &lt; 0) {
-    self.multiple = - (self.count_x div self.jump);
+  // Clamp multiple so that self.x &gt;= self.min_segment_x i.e. cannot go behind stage beginning.
+  if (self.x + self.multiple * self.jump &lt; self.min_segment_x) {
+    self.multiple = (self.min_segment_x - self.x) div self.jump;
   }
   image_index = sign(self.multiple) + 1; // 0 = right, 1 = straight, 2 = left
 }
 
 if (mouse_check_button(mb_right)) { // Always set in X direction
   var distance, new_jump;
-  distance = mouse_x - self.x - global.GRID_SPACE_WIDTH/2;
-  new_jump = distance div 10 + 1; // Drag to one jump away?
-  if (abs(new_jump) &gt; 10) {
-    new_jump = sign(new_jump) * 10;
-  }
+  distance = distance_to_point(mouse_x - global.GRID_SPACE_WIDTH/2, mouse_y - global.GRID_SPACE_WIDTH/2);
+  new_jump = min(10, distance div 10 + 1);
   if (self.jump != new_jump) {
     sound_play(snd_click);
     self.jump = new_jump;
-  }
-  if (self.multiple * self.jump + count_x &lt; 0) {
-    self.multiple = - (self.count_x div self.jump);
   }
 }
 
@@ -288,37 +282,9 @@ if (global.problem_type[global.num_bridge_segments] == global.GCD &amp;&amp; sel
             <string>// Select only if there is a positive jump
 if (self.jump &gt; 0) {
   self.selected = true;
+} else if (self.jump == 0) {
+  show_message("Use right mouse to set jump length.");
 }
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="7" enumb="9">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>show_message("Sorry, you lost");
-sleep(2000);
-instance_deactivate_object(obj_player_A);
-instance_deactivate_object(obj_player_B);
-instance_deactivate_object(obj_sinhika);
-
-
-
 </string>
           </argument>
         </arguments>

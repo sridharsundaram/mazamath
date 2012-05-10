@@ -183,12 +183,14 @@
   </paths>
   <scripts name="scripts">
     <script>scripts\initialize_stage.gml</script>
+    <script>scripts\initialize_player.gml</script>
+    <script>scripts\initialize_gcd.gml</script>
+    <script>scripts\initialize_lcm.gml</script>
     <script>scripts\create_bridge_segments.gml</script>
     <script>scripts\random_int32.gml</script>
     <script>scripts\maza_irandom_range.gml</script>
     <script>scripts\move_sinhika.gml</script>
     <script>scripts\move_player.gml</script>
-    <script>scripts\initialize_player.gml</script>
     <script>scripts\create_wood_bridge.gml</script>
     <scripts name="browser">
       <script>scripts\get_player_me.gml</script>
@@ -200,8 +202,6 @@
       <script>scripts\get_random_seed.gml</script>
       <script>scripts\get_mode.gml</script>
     </scripts>
-    <script>scripts\initialize_gcd.gml</script>
-    <script>scripts\initialize_lcm.gml</script>
     <script>scripts\end_stage.gml</script>
     <script>scripts\end_lcm.gml</script>
     <script>scripts\end_gcd.gml</script>
@@ -253,10 +253,9 @@
     <object>objects\obj_snd_right</object>
     <object>objects\obj_snd_play</object>
     <object>objects\obj_whiteboard</object>
-    <object>objects\obj_sugriva</object>
     <object>objects\obj_boundary</object>
   </objects>
-  <rooms name="rooms" roommaxid="100033" room_maxtileid="10000034">
+  <rooms name="rooms" roommaxid="100030" room_maxtileid="10000034">
     <room>rooms\lcm</room>
     <room>rooms\Modelling_Room</room>
     <room>rooms\Celebration_Room</room>

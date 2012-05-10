@@ -33,6 +33,7 @@ if (global.problem_type[global.num_bridge_segments] = global.LCM){
 }
 with obj_lcm { instance_destroy();}
 instance_destroy();
+obj_whiteboard.counter = global.state_end_counter[obj_model_controller.state - 1];
 obj_whiteboard.alarm[0] = 1;
 
 </string>

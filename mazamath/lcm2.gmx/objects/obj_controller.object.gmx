@@ -174,7 +174,9 @@ view_object[global.MAIN_VIEW] = noone;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>show_message("Sorry, you lost");
+            <string>var msg;
+msg = instance_create(200,200, obj_message);
+msg.message = "Sorry, you lost";
 sleep(2000);
 instance_deactivate_object(obj_player_A);
 instance_deactivate_object(obj_player_B);

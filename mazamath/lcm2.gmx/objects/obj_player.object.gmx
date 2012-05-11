@@ -283,7 +283,9 @@ if (global.problem_type[global.num_bridge_segments] == global.GCD &amp;&amp; sel
 if (self.jump &gt; 0) {
   self.selected = true;
 } else if (self.jump == 0) {
-  show_message("Use right mouse to set jump length.");
+  var msg;
+  msg = instance_create(self.x, self.y, obj_message);
+  msg.message = "Use right mouse to set jump length.";
 }
 </string>
           </argument>

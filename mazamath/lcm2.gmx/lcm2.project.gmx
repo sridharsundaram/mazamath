@@ -282,6 +282,7 @@
     <object>objects\obj_snd_right</object>
     <object>objects\obj_snd_play</object>
     <object>objects\obj_whiteboard</object>
+    <object>objects\obj_message</object>
   </objects>
   <rooms name="rooms" roommaxid="100030" room_maxtileid="10000034">
     <room>rooms\lcm</room>

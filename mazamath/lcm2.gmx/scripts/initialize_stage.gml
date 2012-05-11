@@ -12,8 +12,6 @@ if (global.problem_type[global.num_bridge_segments] == global.LCM) {
   initialize_lcm(xval, yval);
 } else if (global.problem_type[global.num_bridge_segments] == global.GCD) {
   initialize_gcd(xval, yval);
-} else {
-  show_message('Unknown problem type: ' + global.problem_type[global.num_bridge_segments]);
 }
 
 with obj_sinhika {

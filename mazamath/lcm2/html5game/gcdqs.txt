@@ -5,14 +5,14 @@ Neela has two pieces of cloth. One piece is 28 inches wide and the other piece i
 Ans:4
 3
 
-Jambavan has 4 shields and 18 swords to give to his soldiers. What is the largest number of soldiers he can have in his regiment so that each soldier gets equal number of shields and equal number of swords?
+Jambavan has 4 shields and 18 swords to give to his soldiers. What is the largest # of soldiers he can have in his class so that each soldier gets equal # of shields and equal # of swords?
 Ans:2
 8
 5
 9
 3
 
-Jambavan has 16 shields and 12 swords to give to his soldiers. What is the largest number of soldiers he can have in his regiment so that each soldier gets equal number of shields and equal number of swords?
+Jambavan has 16 shields and 12 swords to give to his soldiers. What is the largest # of soldiers he can have in his class so that each soldier gets equal # of shields and equal # of swords?
 3
 9
 Ans:4
@@ -26,7 +26,7 @@ Neela has two pieces of cloth. One piece is 18 inches wide and the other piece i
 Ans:2
 4
 
-Jambavan has 28 shields and 21 swords to give to his soldiers. What is the largest number of soldiers he can have in his regiment so that each soldier gets equal number of shields and equal number of swords?
+Jambavan has 28 shields and 21 swords to give to his soldiers. What is the largest # of soldiers he can have in his class so that each soldier gets equal # of shields and equal # of swords?
 6
 5
 Ans:7
@@ -40,7 +40,7 @@ Ans:2
 6
 3
 
-Jambavan has 24 shields and 40 swords to give to his soldiers. What is the largest number of soldiers he can have in his regiment so that each soldier gets equal number of shields and equal number of swords?
+Jambavan has 24 shields and 40 swords to give to his soldiers. What is the largest # of soldiers he can have in his class so that each soldier gets equal # of shields and equal # of swords?
 7
 6
 3
@@ -61,7 +61,7 @@ Ans:8
 5
 6
 
-Jambavan has 24 shields and 32 swords to give to his soldiers. What is the largest number of soldiers he can have in his regiment so that each soldier gets equal number of shields and equal number of swords?
+Jambavan has 24 shields and 32 swords to give to his soldiers. What is the largest # of soldiers he can have in his class so that each soldier gets equal # of shields and equal # of swords?
 5
 7
 Ans:8
@@ -89,7 +89,7 @@ Ans:8
 7
 6
 
-Jambavan has 81 shields and 54 swords to give to his soldiers. What is the largest number of soldiers he can have in his regiment so that each soldier gets equal number of shields and equal number of swords?
+Jambavan has 81 shields and 54 swords to give to his soldiers. What is the largest # of soldiers he can have in his class so that each soldier gets equal # of shields and equal # of swords?
 Ans:27
 3
 6
@@ -110,14 +110,14 @@ Neela has two pieces of cloth. One piece is 28 inches wide and the other piece i
 Ans:14
 4
 
-Jambavan has 48 shields and 24 swords to give to his soldiers. What is the largest number of soldiers he can have in his regiment so that each soldier gets equal number of shields and equal number of swords?
+Jambavan has 48 shields and 24 swords to give to his soldiers. What is the largest # of soldiers he can have in his class so that each soldier gets equal # of shields and equal # of swords?
 4
 5
 7
 Ans:24
 6
 
-Jambavan has 25 shields and 10 swords to give to his soldiers. What is the largest number of soldiers he can have in his regiment so that each soldier gets equal number of shields and equal number of swords?
+Jambavan has 25 shields and 10 swords to give to his soldiers. What is the largest # of soldiers he can have in his class so that each soldier gets equal # of shields and equal # of swords?
 Ans:5
 7
 3
@@ -131,7 +131,7 @@ Neela has two pieces of cloth. One piece is 24 inches wide and the other piece i
 Ans:24
 8
 
-Jambavan has 28 shields and 63 swords to give to his soldiers. What is the largest number of soldiers he can have in his regiment so that each soldier gets equal number of shields and equal number of swords?
+Jambavan has 28 shields and 63 swords to give to his soldiers. What is the largest # of soldiers he can have in his class so that each soldier gets equal # of shields and equal # of swords?
 6
 4
 8
@@ -145,7 +145,7 @@ Neela has two pieces of cloth. One piece is 42 inches wide and the other piece i
 Ans:6
 4
 
-Jambavan has 21 shields and 42 swords to give to his soldiers. What is the largest number of soldiers he can have in his regiment so that each soldier gets equal number of shields and equal number of swords?
+Jambavan has 21 shields and 42 swords to give to his soldiers. What is the largest # of soldiers he can have in his class so that each soldier gets equal # of shields and equal # of swords?
 8
 4
 5
@@ -159,7 +159,7 @@ Ans:4
 5
 9
 
-Jambavan has 25 shields and 40 swords to give to his soldiers. What is the largest number of soldiers he can have in his regiment so that each soldier gets equal number of shields and equal number of swords?
+Jambavan has 25 shields and 40 swords to give to his soldiers. What is the largest # of soldiers he can have in his class so that each soldier gets equal # of shields and equal # of swords?
 7
 Ans:5
 6
@@ -229,21 +229,21 @@ Ans:8
 7
 5
 
-Jambavan has 6 shields and 10 swords to give to his soldiers. What is the largest number of soldiers he can have in his regiment so that each soldier gets equal number of shields and equal number of swords?
+Jambavan has 6 shields and 10 swords to give to his soldiers. What is the largest # of soldiers he can have in his class so that each soldier gets equal # of shields and equal # of swords?
 8
 Ans:2
 9
 5
 7
 
-Jambavan has 6 shields and 12 swords to give to his soldiers. What is the largest number of soldiers he can have in his regiment so that each soldier gets equal number of shields and equal number of swords?
+Jambavan has 6 shields and 12 swords to give to his soldiers. What is the largest # of soldiers he can have in his class so that each soldier gets equal # of shields and equal # of swords?
 5
 9
 Ans:6
 3
 4
 
-Jambavan has 30 shields and 35 swords to give to his soldiers. What is the largest number of soldiers he can have in his regiment so that each soldier gets equal number of shields and equal number of swords?
+Jambavan has 30 shields and 35 swords to give to his soldiers. What is the largest # of soldiers he can have in his class so that each soldier gets equal # of shields and equal # of swords?
 9
 4
 Ans:5
@@ -264,7 +264,7 @@ Ans:3
 8
 4
 
-Jambavan has 35 shields and 30 swords to give to his soldiers. What is the largest number of soldiers he can have in his regiment so that each soldier gets equal number of shields and equal number of swords?
+Jambavan has 35 shields and 30 swords to give to his soldiers. What is the largest # of soldiers he can have in his class so that each soldier gets equal # of shields and equal # of swords?
 Ans:5
 8
 7
@@ -278,7 +278,7 @@ Neela has two pieces of cloth. One piece is 28 inches wide and the other piece i
 Ans:7
 9
 
-Jambavan has 12 shields and 4 swords to give to his soldiers. What is the largest number of soldiers he can have in his regiment so that each soldier gets equal number of shields and equal number of swords?
+Jambavan has 12 shields and 4 swords to give to his soldiers. What is the largest # of soldiers he can have in his class so that each soldier gets equal # of shields and equal # of swords?
 8
 5
 3
@@ -362,7 +362,7 @@ We have to divide 12 bear soldiers and 6 monkey soldiers in rows. We want to mix
 9
 Ans:6
 
-Jambavan has 9 shields and 27 swords to give to his soldiers. What is the largest number of soldiers he can have in his regiment so that each soldier gets equal number of shields and equal number of swords?
+Jambavan has 9 shields and 27 swords to give to his soldiers. What is the largest # of soldiers he can have in his class so that each soldier gets equal # of shields and equal # of swords?
 5
 Ans:9
 3
@@ -376,28 +376,28 @@ Ans:3
 7
 6
 
-Jambavan has 56 shields and 49 swords to give to his soldiers. What is the largest number of soldiers he can have in his regiment so that each soldier gets equal number of shields and equal number of swords?
+Jambavan has 56 shields and 49 swords to give to his soldiers. What is the largest # of soldiers he can have in his class so that each soldier gets equal # of shields and equal # of swords?
 3
 Ans:7
 6
 9
 8
 
-Jambavan has 36 shields and 81 swords to give to his soldiers. What is the largest number of soldiers he can have in his regiment so that each soldier gets equal number of shields and equal number of swords?
+Jambavan has 36 shields and 81 swords to give to his soldiers. What is the largest # of soldiers he can have in his class so that each soldier gets equal # of shields and equal # of swords?
 8
 Ans:9
 5
 7
 4
 
-Jambavan has 15 shields and 21 swords to give to his soldiers. What is the largest number of soldiers he can have in his regiment so that each soldier gets equal number of shields and equal number of swords?
+Jambavan has 15 shields and 21 swords to give to his soldiers. What is the largest # of soldiers he can have in his class so that each soldier gets equal # of shields and equal # of swords?
 Ans:3
 9
 5
 4
 6
 
-Jambavan has 15 shields and 35 swords to give to his soldiers. What is the largest number of soldiers he can have in his regiment so that each soldier gets equal number of shields and equal number of swords?
+Jambavan has 15 shields and 35 swords to give to his soldiers. What is the largest # of soldiers he can have in his class so that each soldier gets equal # of shields and equal # of swords?
 9
 Ans:5
 8
@@ -432,7 +432,7 @@ Nala is making a game board that is 27 inches by 18 inches. She wants  to use sq
 8
 Ans:9
 
-Jambavan has 63 shields and 18 swords to give to his soldiers. What is the largest number of soldiers he can have in his regiment so that each soldier gets equal number of shields and equal number of swords?
+Jambavan has 63 shields and 18 swords to give to his soldiers. What is the largest # of soldiers he can have in his class so that each soldier gets equal # of shields and equal # of swords?
 4
 Ans:9
 6
@@ -453,7 +453,7 @@ Neela has two pieces of cloth. One piece is 24 inches wide and the other piece i
 Ans:6
 9
 
-Jambavan has 40 shields and 56 swords to give to his soldiers. What is the largest number of soldiers he can have in his regiment so that each soldier gets equal number of shields and equal number of swords?
+Jambavan has 40 shields and 56 swords to give to his soldiers. What is the largest # of soldiers he can have in his class so that each soldier gets equal # of shields and equal # of swords?
 3
 4
 Ans:8
@@ -495,7 +495,7 @@ Ans:12
 5
 3
 
-Jambavan has 12 shields and 36 swords to give to his soldiers. What is the largest number of soldiers he can have in his regiment so that each soldier gets equal number of shields and equal number of swords?
+Jambavan has 12 shields and 36 swords to give to his soldiers. What is the largest # of soldiers he can have in his class so that each soldier gets equal # of shields and equal # of swords?
 5
 4
 Ans:12
@@ -516,7 +516,7 @@ Ans:6
 4
 8
 
-Jambavan has 6 shields and 14 swords to give to his soldiers. What is the largest number of soldiers he can have in his regiment so that each soldier gets equal number of shields and equal number of swords?
+Jambavan has 6 shields and 14 swords to give to his soldiers. What is the largest # of soldiers he can have in his class so that each soldier gets equal # of shields and equal # of swords?
 9
 7
 4
@@ -544,14 +544,14 @@ Ans:4
 7
 6
 
-Jambavan has 48 shields and 64 swords to give to his soldiers. What is the largest number of soldiers he can have in his regiment so that each soldier gets equal number of shields and equal number of swords?
+Jambavan has 48 shields and 64 swords to give to his soldiers. What is the largest # of soldiers he can have in his class so that each soldier gets equal # of shields and equal # of swords?
 Ans:16
 4
 3
 8
 9
 
-Jambavan has 8 shields and 32 swords to give to his soldiers. What is the largest number of soldiers he can have in his regiment so that each soldier gets equal number of shields and equal number of swords?
+Jambavan has 8 shields and 32 swords to give to his soldiers. What is the largest # of soldiers he can have in his class so that each soldier gets equal # of shields and equal # of swords?
 Ans:8
 5
 3
@@ -579,7 +579,7 @@ Ans:5
 3
 8
 
-Jambavan has 16 shields and 24 swords to give to his soldiers. What is the largest number of soldiers he can have in his regiment so that each soldier gets equal number of shields and equal number of swords?
+Jambavan has 16 shields and 24 swords to give to his soldiers. What is the largest # of soldiers he can have in his class so that each soldier gets equal # of shields and equal # of swords?
 7
 9
 6
@@ -677,7 +677,7 @@ We have to divide 49 bear soldiers and 42 monkey soldiers in rows. We want to mi
 3
 Ans:7
 
-Jambavan has 20 shields and 12 swords to give to his soldiers. What is the largest number of soldiers he can have in his regiment so that each soldier gets equal number of shields and equal number of swords?
+Jambavan has 20 shields and 12 swords to give to his soldiers. What is the largest # of soldiers he can have in his class so that each soldier gets equal # of shields and equal # of swords?
 7
 6
 Ans:4

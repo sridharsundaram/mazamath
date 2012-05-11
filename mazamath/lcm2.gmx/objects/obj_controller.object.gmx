@@ -211,7 +211,6 @@ score = 0;
 global.x_n = get_random_seed();
 
 goto_room(Modelling_Room);
-global.lcm_correct = "true"; // ??? 
 
 obj_help.splash = "Intro.htm";
 obj_help.alarm[0] = 10;

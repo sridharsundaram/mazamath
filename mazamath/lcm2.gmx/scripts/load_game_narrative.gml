@@ -15,9 +15,10 @@ while (!file_text_eof(txtfile)) {
   // Ignore comment lines
   if (string_copy(read, 1, 2) == '//') continue;
   // State line - pick up the state
-  if (string_digits(read) == read) { 
+  if (string_digits(read) == read) {
     global.state_end_counter[state] = i;
     state = real(string_digits(read));
+    global.state_begin_counter[state] = i;
     continue;
   }
   global.game_text[i] = read;

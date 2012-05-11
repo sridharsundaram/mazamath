@@ -1,4 +1,5 @@
 // State Transition
+
 with obj_model_controller {
   switch(state) {
     case STATE_INTRO: return STATE_STORY;

@@ -21,7 +21,7 @@
           <name>js_getPlayerMe</name>
           <externalName></externalName>
           <kind>11</kind>
-          <id>1</id>
+          <id>12</id>
           <help></help>
           <hidden>0</hidden>
           <returnType>1</returnType>
@@ -32,7 +32,7 @@
           <name>js_isReady</name>
           <externalName></externalName>
           <kind>11</kind>
-          <id>3</id>
+          <id>13</id>
           <help>returns true if  moves are ready</help>
           <hidden>0</hidden>
           <returnType>2</returnType>
@@ -43,7 +43,7 @@
           <name>js_getMove</name>
           <externalName></externalName>
           <kind>11</kind>
-          <id>5</id>
+          <id>14</id>
           <help>js_getMove(player) gets move for player - move can be gotten only once per player</help>
           <hidden>0</hidden>
           <returnType>1</returnType>
@@ -56,7 +56,7 @@
           <name>js_getPlayerName</name>
           <externalName></externalName>
           <kind>11</kind>
-          <id>7</id>
+          <id>15</id>
           <help>Returns name of player</help>
           <hidden>0</hidden>
           <returnType>1</returnType>
@@ -69,7 +69,7 @@
           <name>js_sendMove</name>
           <externalName></externalName>
           <kind>11</kind>
-          <id>9</id>
+          <id>16</id>
           <help>send move to server</help>
           <hidden>0</hidden>
           <returnType>3</returnType>
@@ -82,7 +82,7 @@
           <name>js_getRandomSeed</name>
           <externalName></externalName>
           <kind>11</kind>
-          <id>11</id>
+          <id>17</id>
           <help>Gets random seed from js</help>
           <hidden>0</hidden>
           <returnType>2</returnType>

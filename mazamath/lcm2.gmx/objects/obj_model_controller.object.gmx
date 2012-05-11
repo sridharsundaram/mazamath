@@ -25,10 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// Load Static Questions
-load_questions();
-
-// If Story is already loaded, no need to load
+            <string>// If Story is already loaded, no need to load
 self.STATE_INTRO = 0;
 self.STATE_ENCOURAGE = 1;
 self.STATE_STORY = 2;
@@ -43,6 +40,7 @@ self.STATE_DONE = 9;
 if (global.current_story == -1) {
   load_story();
   load_game_narrative();
+  load_questions();
   self.state = self.STATE_INTRO;
 } else {
   self.state = self.STATE_ENCOURAGE;
@@ -76,14 +74,12 @@ rand_question = maza_irandom_range(1,50);
 
 if (coin_toss &lt;= 50){
   global.problem_type[global.num_bridge_segments] = global.LCM;
-  self.problem = 'Monkey and its shadow reaching the same point with different jump lengths' ;
   // Chose a random question here from global.gcd_questions[iRandom,0]
   self.problem = global.lcm_questions[rand_question,0];
   // Choices are [i,1] [i,2] [i,3] [i,4] [i,5]
   // Correct answer is [i,6]  
 }
 else {
-  self.problem = 'Monkey picking up key and going to treasure with the same jump length';
   // Chose a random question here from global.gcd_questions[iRandom,0]
   self.problem = global.gcd_questions[rand_question,0];
   // Choices are [i,1] [i,2] [i,3] [i,4] [i,5]
@@ -92,12 +88,8 @@ else {
 }
 
 var problem_seq_num;
-problem_seq_num = global.state_end_counter[self.STATE_PROBLEM] - 1;
+problem_seq_num = global.state_begin_counter[self.STATE_PROBLEM];
 global.game_text[problem_seq_num] = self.problem;
-
-if (global.lcm_correct == "true"){
-    global.lcm_correct = "false";
-}
 
 </string>
           </argument>

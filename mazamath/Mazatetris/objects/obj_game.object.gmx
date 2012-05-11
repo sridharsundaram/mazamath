@@ -30,7 +30,7 @@ global.bonus = 0;
 global.correct_answer = "0"
 global.mazaQues = 0;
 global.countdown = 0;
-load_files();
+load_questions();
 
 
 /*
@@ -214,17 +214,27 @@ if (a==4){
 qStr = "What is the GCD [HCF] of " + string (n1) + " and " + string (n2) + " ? Press the right key (a,b,c or d)";
 cStr = "a. " + string (ans_array[1]) +  " b. " + string (ans_array[2]) + " c. " + string (ans_array[3]) + " d. " + string (ans_array[4]) ;
 
-// Use the generated questions instead
+// Use the generated questions instead of the above
 n1 = irandom_range(0,50);
-qStr = global.lcm_questions[n1,0];
-cStr = "a. " + string (global.lcm_questions[n1,1]) +  "  b. " + string (global.lcm_questions[n1,2]) + "  c. " + string (global.lcm_questions[n1,3]) + "  d. " + string (global.lcm_questions[n1,4]) + "  e. " + string (global.lcm_questions[n1,5] );
-global.correct_answer = global.lcm_questions[n1,6];
+n2 = irandom_range(0,100);
+// Choose evenly randomnly between LCM and HCF
+
+if (n2 &lt; 50){
+    qStr = global.lcm_questions[n1,0];
+    cStr = "a." + string (global.lcm_questions[n1,1]) +  "  b." + string (global.lcm_questions[n1,2]) + "  c." + string (global.lcm_questions[n1,3]) + "  d." + string (global.lcm_questions[n1,4]) + "  e." + string (global.lcm_questions[n1,5] );
+    global.correct_answer = global.lcm_questions[n1,6];
+}
+else{
+    qStr = global.gcd_questions[n1,0];
+    cStr = "a." + string (global.gcd_questions[n1,1]) +  "  b." + string (global.gcd_questions[n1,2]) + "  c." + string (global.gcd_questions[n1,3]) + "  d." + string (global.gcd_questions[n1,4]) + "  e." + string (global.gcd_questions[n1,5] );
+    global.correct_answer = global.gcd_questions[n1,6];
+}
 
 // Write the question with white font as there can be any colored block (except white) at the back
 draw_set_font(fnt_maza);
 draw_set_color(c_white);
 draw_set_halign(fa_center);
-draw_text_ext(room_width/2,40, qStr ,20, 150 );
+draw_text_ext(room_width/2,20, qStr ,20, 150 );
 draw_set_color(c_white);
 draw_text_ext(room_width/2,250, cStr,20, 150 );
 screen_refresh() ;

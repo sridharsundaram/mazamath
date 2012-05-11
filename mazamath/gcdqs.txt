@@ -1,700 +1,700 @@
-Neela has two pieces of cloth. One piece is 10 inches wide and the other piece is 15 inches wide. She wants to cut both pieces into strips of equal width that are as wide as possible. How wide should she cut the strips?
-3
-6
-5
-8
-Ans:5
-
-Neela has two pieces of cloth. One piece is 63 inches wide and the other piece is 36 inches wide. She wants to cut both pieces into strips of equal width that are as wide as possible. How wide should she cut the strips?
-6
-8
-Ans:9
-6
-3
-
-We have to divide 24 bear soldiers and 21 monkey soldiers in rows. We want to mix the bear and monkey soldiers in the rows, but each row must have the same number of bear and monkey soldiers. What is the maximum number of soldiers we can have per row?
-4
-3
-Ans:3
-8
-9
-
-We have to divide 12 bear soldiers and 36 monkey soldiers in rows. We want to mix the bear and monkey soldiers in the rows, but each row must have the same number of bear and monkey soldiers. What is the maximum number of soldiers we can have per row?
-3
-Ans:12
-3
-9
-8
-
-Neela has two pieces of cloth. One piece is 56 inches wide and the other piece is 64 inches wide. She wants to cut both pieces into strips of equal width that are as wide as possible. How wide should she cut the strips?
-Ans:8
-4
-3
-8
-7
-
-Jambavan has 14 shields and 4 swords to give to his soldiers. What is the largest # of soldiers he can have in his class so that each soldier gets equal # of shields and equal # of swords?
-6
-5
-Ans:2
-9
-3
-
-Jambavan has 64 shields and 16 swords to give to his soldiers. What is the largest # of soldiers he can have in his class so that each soldier gets equal # of shields and equal # of swords?
-Ans:16
-7
-7
-4
-5
-
-We have to divide 20 bear soldiers and 40 monkey soldiers in rows. We want to mix the bear and monkey soldiers in the rows, but each row must have the same number of bear and monkey soldiers. What is the maximum number of soldiers we can have per row?
-8
-9
-4
-6
-Ans:20
-
-Nala is making a game board that is 42 inches by 54 inches. She wants  to use square tiles. What is the largest tile she can use?
-7
-Ans:6
-7
-7
-5
-
-Neela has two pieces of cloth. One piece is 12 inches wide and the other piece is 21 inches wide. She wants to cut both pieces into strips of equal width that are as wide as possible. How wide should she cut the strips?
-8
-Ans:3
-9
-6
-5
-
-Jambavan has 6 shields and 8 swords to give to his soldiers. What is the largest # of soldiers he can have in his class so that each soldier gets equal # of shields and equal # of swords?
-4
-9
-6
-Ans:2
-8
-
-Jambavan has 72 shields and 54 swords to give to his soldiers. What is the largest # of soldiers he can have in his class so that each soldier gets equal # of shields and equal # of swords?
-5
-Ans:18
-8
-9
-6
-
-We have to divide 10 bear soldiers and 16 monkey soldiers in rows. We want to mix the bear and monkey soldiers in the rows, but each row must have the same number of bear and monkey soldiers. What is the maximum number of soldiers we can have per row?
-6
-8
-Ans:2
-6
-4
-
-Jambavan has 25 shields and 35 swords to give to his soldiers. What is the largest # of soldiers he can have in his class so that each soldier gets equal # of shields and equal # of swords?
-3
-4
-Ans:5
-7
-7
-
-We have to divide 35 bear soldiers and 15 monkey soldiers in rows. We want to mix the bear and monkey soldiers in the rows, but each row must have the same number of bear and monkey soldiers. What is the maximum number of soldiers we can have per row?
-Ans:5
-6
-7
-8
-6
-
-Jambavan has 10 shields and 6 swords to give to his soldiers. What is the largest # of soldiers he can have in his class so that each soldier gets equal # of shields and equal # of swords?
-3
-9
-Ans:2
-4
-5
-
-We have to divide 35 bear soldiers and 25 monkey soldiers in rows. We want to mix the bear and monkey soldiers in the rows, but each row must have the same number of bear and monkey soldiers. What is the maximum number of soldiers we can have per row?
-7
-5
-Ans:5
-9
-6
-
-Jambavan has 63 shields and 81 swords to give to his soldiers. What is the largest # of soldiers he can have in his class so that each soldier gets equal # of shields and equal # of swords?
-Ans:9
-7
-7
-7
-4
-
-Jambavan has 27 shields and 18 swords to give to his soldiers. What is the largest # of soldiers he can have in his class so that each soldier gets equal # of shields and equal # of swords?
-4
-6
-5
-Ans:9
-7
-
-Jambavan has 24 shields and 32 swords to give to his soldiers. What is the largest # of soldiers he can have in his class so that each soldier gets equal # of shields and equal # of swords?
-4
-7
-Ans:8
+Neela has two pieces of cloth. One piece is 28 inches wide and the other piece is 16 inches wide. She wants to cut both pieces into strips of equal width that are as wide as possible. How wide should she cut the strips?
 9
 5
-
-Jambavan has 14 shields and 35 swords to give to his soldiers. What is the largest # of soldiers he can have in his class so that each soldier gets equal # of shields and equal # of swords?
-4
-5
-8
-Ans:7
-3
-
-Nala is making a game board that is 35 inches by 10 inches. She wants  to use square tiles. What is the largest tile she can use?
-9
-Ans:5
-3
-5
-9
-
-Nala is making a game board that is 72 inches by 16 inches. She wants  to use square tiles. What is the largest tile she can use?
-6
-6
-Ans:8
-4
-6
-
-Jambavan has 6 shields and 8 swords to give to his soldiers. What is the largest # of soldiers he can have in his class so that each soldier gets equal # of shields and equal # of swords?
-8
-Ans:2
-7
-5
-5
-
-We have to divide 63 bear soldiers and 18 monkey soldiers in rows. We want to mix the bear and monkey soldiers in the rows, but each row must have the same number of bear and monkey soldiers. What is the maximum number of soldiers we can have per row?
-7
-6
-9
-Ans:9
-4
-
-Nala is making a game board that is 42 inches by 24 inches. She wants  to use square tiles. What is the largest tile she can use?
-6
-6
-9
-Ans:6
-5
-
-We have to divide 36 bear soldiers and 16 monkey soldiers in rows. We want to mix the bear and monkey soldiers in the rows, but each row must have the same number of bear and monkey soldiers. What is the maximum number of soldiers we can have per row?
-6
-7
-4
 7
 Ans:4
-
-Jambavan has 14 shields and 8 swords to give to his soldiers. What is the largest # of soldiers he can have in his class so that each soldier gets equal # of shields and equal # of swords?
-9
-6
-Ans:2
-4
 3
 
-Jambavan has 42 shields and 21 swords to give to his soldiers. What is the largest # of soldiers he can have in his class so that each soldier gets equal # of shields and equal # of swords?
-7
-7
-Ans:21
+Jambavan has 4 shields and 18 swords to give to his soldiers. What is the largest number of soldiers he can have in his class so that each soldier gets equal number of shields and equal number of swords?
+Ans:2
+8
+5
+9
+3
+
+Jambavan has 16 shields and 12 swords to give to his soldiers. What is the largest number of soldiers he can have in his class so that each soldier gets equal number of shields and equal number of swords?
+3
+9
+Ans:4
 5
 8
 
-Nala is making a game board that is 81 inches by 27 inches. She wants  to use square tiles. What is the largest tile she can use?
+Neela has two pieces of cloth. One piece is 18 inches wide and the other piece is 10 inches wide. She wants to cut both pieces into strips of equal width that are as wide as possible. How wide should she cut the strips?
 5
+3
+7
+Ans:2
+4
+
+Jambavan has 28 shields and 21 swords to give to his soldiers. What is the largest number of soldiers he can have in his class so that each soldier gets equal number of shields and equal number of swords?
+6
+5
+Ans:7
+8
+3
+
+We have to divide 4 bear soldiers and 10 monkey soldiers in rows. We want to mix the bear and monkey soldiers in the rows, but each row must have the same number of bear and monkey soldiers. What is the maximum number of soldiers we can have per row?
+Ans:2
+8
+5
+6
+3
+
+Jambavan has 24 shields and 40 swords to give to his soldiers. What is the largest number of soldiers he can have in his class so that each soldier gets equal number of shields and equal number of swords?
+7
+6
+3
+9
+Ans:8
+
+We have to divide 81 bear soldiers and 63 monkey soldiers in rows. We want to mix the bear and monkey soldiers in the rows, but each row must have the same number of bear and monkey soldiers. What is the maximum number of soldiers we can have per row?
+6
+Ans:9
+8
+5
+3
+
+Nala is making a game board that is 24 inches by 40 inches. She wants  to use square tiles. What is the largest tile she can use?
+4
+9
+Ans:8
+5
+6
+
+Jambavan has 24 shields and 32 swords to give to his soldiers. What is the largest number of soldiers he can have in his class so that each soldier gets equal number of shields and equal number of swords?
+5
+7
+Ans:8
+3
+9
+
+Neela has two pieces of cloth. One piece is 24 inches wide and the other piece is 8 inches wide. She wants to cut both pieces into strips of equal width that are as wide as possible. How wide should she cut the strips?
+7
+Ans:8
+5
+4
+3
+
+Nala is making a game board that is 64 inches by 56 inches. She wants  to use square tiles. What is the largest tile she can use?
+Ans:8
+3
+7
+4
+9
+
+We have to divide 48 bear soldiers and 40 monkey soldiers in rows. We want to mix the bear and monkey soldiers in the rows, but each row must have the same number of bear and monkey soldiers. What is the maximum number of soldiers we can have per row?
+Ans:8
+9
+4
+7
+6
+
+Jambavan has 81 shields and 54 swords to give to his soldiers. What is the largest number of soldiers he can have in his class so that each soldier gets equal number of shields and equal number of swords?
 Ans:27
+3
+6
 9
-4
 7
 
-Neela has two pieces of cloth. One piece is 72 inches wide and the other piece is 27 inches wide. She wants to cut both pieces into strips of equal width that are as wide as possible. How wide should she cut the strips?
-6
-3
-Ans:9
-6
-6
-
-Neela has two pieces of cloth. One piece is 35 inches wide and the other piece is 14 inches wide. She wants to cut both pieces into strips of equal width that are as wide as possible. How wide should she cut the strips?
-Ans:7
-4
-5
+Neela has two pieces of cloth. One piece is 16 inches wide and the other piece is 40 inches wide. She wants to cut both pieces into strips of equal width that are as wide as possible. How wide should she cut the strips?
 9
-3
+4
+Ans:8
+7
+5
 
-Nala is making a game board that is 56 inches by 14 inches. She wants  to use square tiles. What is the largest tile she can use?
+Neela has two pieces of cloth. One piece is 28 inches wide and the other piece is 14 inches wide. She wants to cut both pieces into strips of equal width that are as wide as possible. How wide should she cut the strips?
+9
+5
+3
 Ans:14
+4
+
+Jambavan has 48 shields and 24 swords to give to his soldiers. What is the largest number of soldiers he can have in his class so that each soldier gets equal number of shields and equal number of swords?
+4
+5
 7
+Ans:24
+6
+
+Jambavan has 25 shields and 10 swords to give to his soldiers. What is the largest number of soldiers he can have in his class so that each soldier gets equal number of shields and equal number of swords?
+Ans:5
+7
+3
+4
 9
+
+Neela has two pieces of cloth. One piece is 24 inches wide and the other piece is 48 inches wide. She wants to cut both pieces into strips of equal width that are as wide as possible. How wide should she cut the strips?
+6
+7
+4
+Ans:24
+8
+
+Jambavan has 28 shields and 63 swords to give to his soldiers. What is the largest number of soldiers he can have in his class so that each soldier gets equal number of shields and equal number of swords?
+6
+4
+8
+3
+Ans:7
+
+Neela has two pieces of cloth. One piece is 42 inches wide and the other piece is 12 inches wide. She wants to cut both pieces into strips of equal width that are as wide as possible. How wide should she cut the strips?
+5
+9
+8
+Ans:6
+4
+
+Jambavan has 21 shields and 42 swords to give to his soldiers. What is the largest number of soldiers he can have in his class so that each soldier gets equal number of shields and equal number of swords?
+8
+4
+5
+6
+Ans:21
+
+Nala is making a game board that is 32 inches by 12 inches. She wants  to use square tiles. What is the largest tile she can use?
+Ans:4
+8
+3
+5
+9
+
+Jambavan has 25 shields and 40 swords to give to his soldiers. What is the largest number of soldiers he can have in his class so that each soldier gets equal number of shields and equal number of swords?
+7
+Ans:5
+6
 9
 4
 
-Neela has two pieces of cloth. One piece is 36 inches wide and the other piece is 63 inches wide. She wants to cut both pieces into strips of equal width that are as wide as possible. How wide should she cut the strips?
-9
-3
-3
-6
-Ans:9
-
-Nala is making a game board that is 20 inches by 10 inches. She wants  to use square tiles. What is the largest tile she can use?
-6
-Ans:10
-6
-6
-5
-
-Jambavan has 35 shields and 56 swords to give to his soldiers. What is the largest # of soldiers he can have in his class so that each soldier gets equal # of shields and equal # of swords?
+Nala is making a game board that is 12 inches by 8 inches. She wants  to use square tiles. What is the largest tile she can use?
 7
 5
-Ans:7
+3
+8
+Ans:4
+
+We have to divide 28 bear soldiers and 24 monkey soldiers in rows. We want to mix the bear and monkey soldiers in the rows, but each row must have the same number of bear and monkey soldiers. What is the maximum number of soldiers we can have per row?
+5
+3
+Ans:4
+9
+6
+
+We have to divide 8 bear soldiers and 12 monkey soldiers in rows. We want to mix the bear and monkey soldiers in the rows, but each row must have the same number of bear and monkey soldiers. What is the maximum number of soldiers we can have per row?
+7
+8
+6
+Ans:4
+3
+
+We have to divide 28 bear soldiers and 12 monkey soldiers in rows. We want to mix the bear and monkey soldiers in the rows, but each row must have the same number of bear and monkey soldiers. What is the maximum number of soldiers we can have per row?
+6
+7
+3
+9
+Ans:4
+
+Neela has two pieces of cloth. One piece is 42 inches wide and the other piece is 63 inches wide. She wants to cut both pieces into strips of equal width that are as wide as possible. How wide should she cut the strips?
+7
+Ans:21
 6
 5
+3
+
+We have to divide 18 bear soldiers and 48 monkey soldiers in rows. We want to mix the bear and monkey soldiers in the rows, but each row must have the same number of bear and monkey soldiers. What is the maximum number of soldiers we can have per row?
+5
+8
+4
+Ans:6
+7
+
+We have to divide 24 bear soldiers and 28 monkey soldiers in rows. We want to mix the bear and monkey soldiers in the rows, but each row must have the same number of bear and monkey soldiers. What is the maximum number of soldiers we can have per row?
+Ans:4
+6
+8
+7
+3
+
+Neela has two pieces of cloth. One piece is 27 inches wide and the other piece is 15 inches wide. She wants to cut both pieces into strips of equal width that are as wide as possible. How wide should she cut the strips?
+4
+Ans:3
+9
+5
+8
+
+Neela has two pieces of cloth. One piece is 32 inches wide and the other piece is 8 inches wide. She wants to cut both pieces into strips of equal width that are as wide as possible. How wide should she cut the strips?
+3
+Ans:8
+6
+7
+5
+
+Jambavan has 6 shields and 10 swords to give to his soldiers. What is the largest number of soldiers he can have in his class so that each soldier gets equal number of shields and equal number of swords?
+8
+Ans:2
+9
+5
+7
+
+Jambavan has 6 shields and 12 swords to give to his soldiers. What is the largest number of soldiers he can have in his class so that each soldier gets equal number of shields and equal number of swords?
+5
+9
+Ans:6
+3
+4
+
+Jambavan has 30 shields and 35 swords to give to his soldiers. What is the largest number of soldiers he can have in his class so that each soldier gets equal number of shields and equal number of swords?
+9
+4
+Ans:5
+7
+3
+
+Neela has two pieces of cloth. One piece is 20 inches wide and the other piece is 35 inches wide. She wants to cut both pieces into strips of equal width that are as wide as possible. How wide should she cut the strips?
+8
+Ans:5
+4
+7
+6
+
+Nala is making a game board that is 6 inches by 15 inches. She wants  to use square tiles. What is the largest tile she can use?
+9
+6
+Ans:3
+8
+4
+
+Jambavan has 35 shields and 30 swords to give to his soldiers. What is the largest number of soldiers he can have in his class so that each soldier gets equal number of shields and equal number of swords?
+Ans:5
+8
+7
+4
+6
+
+Neela has two pieces of cloth. One piece is 28 inches wide and the other piece is 21 inches wide. She wants to cut both pieces into strips of equal width that are as wide as possible. How wide should she cut the strips?
+5
+8
+4
+Ans:7
+9
+
+Jambavan has 12 shields and 4 swords to give to his soldiers. What is the largest number of soldiers he can have in his class so that each soldier gets equal number of shields and equal number of swords?
+8
+5
+3
+6
+Ans:4
+
+Neela has two pieces of cloth. One piece is 21 inches wide and the other piece is 9 inches wide. She wants to cut both pieces into strips of equal width that are as wide as possible. How wide should she cut the strips?
+4
+5
+Ans:3
+8
+9
+
+Neela has two pieces of cloth. One piece is 24 inches wide and the other piece is 6 inches wide. She wants to cut both pieces into strips of equal width that are as wide as possible. How wide should she cut the strips?
+3
+7
+4
+8
+Ans:6
+
+Neela has two pieces of cloth. One piece is 32 inches wide and the other piece is 48 inches wide. She wants to cut both pieces into strips of equal width that are as wide as possible. How wide should she cut the strips?
+9
+Ans:16
+5
+4
+6
+
+Neela has two pieces of cloth. One piece is 12 inches wide and the other piece is 18 inches wide. She wants to cut both pieces into strips of equal width that are as wide as possible. How wide should she cut the strips?
+8
+4
+9
+7
+Ans:6
+
+We have to divide 10 bear soldiers and 45 monkey soldiers in rows. We want to mix the bear and monkey soldiers in the rows, but each row must have the same number of bear and monkey soldiers. What is the maximum number of soldiers we can have per row?
+Ans:5
+9
+8
+6
+4
+
+Neela has two pieces of cloth. One piece is 28 inches wide and the other piece is 56 inches wide. She wants to cut both pieces into strips of equal width that are as wide as possible. How wide should she cut the strips?
+Ans:28
+9
+6
+3
+5
+
+We have to divide 64 bear soldiers and 40 monkey soldiers in rows. We want to mix the bear and monkey soldiers in the rows, but each row must have the same number of bear and monkey soldiers. What is the maximum number of soldiers we can have per row?
+Ans:8
+3
+9
+5
+7
+
+We have to divide 20 bear soldiers and 15 monkey soldiers in rows. We want to mix the bear and monkey soldiers in the rows, but each row must have the same number of bear and monkey soldiers. What is the maximum number of soldiers we can have per row?
+Ans:5
+9
+8
+6
+3
+
+We have to divide 40 bear soldiers and 15 monkey soldiers in rows. We want to mix the bear and monkey soldiers in the rows, but each row must have the same number of bear and monkey soldiers. What is the maximum number of soldiers we can have per row?
+Ans:5
+4
+9
+6
+7
 
 We have to divide 36 bear soldiers and 24 monkey soldiers in rows. We want to mix the bear and monkey soldiers in the rows, but each row must have the same number of bear and monkey soldiers. What is the maximum number of soldiers we can have per row?
 Ans:12
-5
+7
 8
+5
+3
+
+We have to divide 12 bear soldiers and 6 monkey soldiers in rows. We want to mix the bear and monkey soldiers in the rows, but each row must have the same number of bear and monkey soldiers. What is the maximum number of soldiers we can have per row?
+4
+5
+7
+9
+Ans:6
+
+Jambavan has 9 shields and 27 swords to give to his soldiers. What is the largest number of soldiers he can have in his class so that each soldier gets equal number of shields and equal number of swords?
+5
+Ans:9
+3
 7
 4
 
-We have to divide 4 bear soldiers and 8 monkey soldiers in rows. We want to mix the bear and monkey soldiers in the rows, but each row must have the same number of bear and monkey soldiers. What is the maximum number of soldiers we can have per row?
+We have to divide 9 bear soldiers and 12 monkey soldiers in rows. We want to mix the bear and monkey soldiers in the rows, but each row must have the same number of bear and monkey soldiers. What is the maximum number of soldiers we can have per row?
+8
+Ans:3
+9
 7
-7
-7
-Ans:4
-7
+6
 
-Neela has two pieces of cloth. One piece is 14 inches wide and the other piece is 21 inches wide. She wants to cut both pieces into strips of equal width that are as wide as possible. How wide should she cut the strips?
-5
-9
-9
+Jambavan has 56 shields and 49 swords to give to his soldiers. What is the largest number of soldiers he can have in his class so that each soldier gets equal number of shields and equal number of swords?
+3
 Ans:7
 6
-
-Neela has two pieces of cloth. One piece is 14 inches wide and the other piece is 6 inches wide. She wants to cut both pieces into strips of equal width that are as wide as possible. How wide should she cut the strips?
-7
+9
 8
-Ans:2
-3
-6
 
-Jambavan has 81 shields and 54 swords to give to his soldiers. What is the largest # of soldiers he can have in his class so that each soldier gets equal # of shields and equal # of swords?
-6
-Ans:27
-6
-9
-3
-
-We have to divide 30 bear soldiers and 20 monkey soldiers in rows. We want to mix the bear and monkey soldiers in the rows, but each row must have the same number of bear and monkey soldiers. What is the maximum number of soldiers we can have per row?
-Ans:10
-8
-5
-3
-4
-
-Neela has two pieces of cloth. One piece is 28 inches wide and the other piece is 42 inches wide. She wants to cut both pieces into strips of equal width that are as wide as possible. How wide should she cut the strips?
-8
-9
-3
-9
-Ans:14
-
-Jambavan has 81 shields and 72 swords to give to his soldiers. What is the largest # of soldiers he can have in his class so that each soldier gets equal # of shields and equal # of swords?
-9
-9
-Ans:9
-6
-3
-
-Neela has two pieces of cloth. One piece is 20 inches wide and the other piece is 36 inches wide. She wants to cut both pieces into strips of equal width that are as wide as possible. How wide should she cut the strips?
-3
-4
-6
-8
-Ans:4
-
-Jambavan has 36 shields and 63 swords to give to his soldiers. What is the largest # of soldiers he can have in his class so that each soldier gets equal # of shields and equal # of swords?
-5
-5
-4
+Jambavan has 36 shields and 81 swords to give to his soldiers. What is the largest number of soldiers he can have in his class so that each soldier gets equal number of shields and equal number of swords?
 8
 Ans:9
-
-We have to divide 24 bear soldiers and 30 monkey soldiers in rows. We want to mix the bear and monkey soldiers in the rows, but each row must have the same number of bear and monkey soldiers. What is the maximum number of soldiers we can have per row?
 5
-6
-9
 7
-Ans:6
-
-Neela has two pieces of cloth. One piece is 18 inches wide and the other piece is 54 inches wide. She wants to cut both pieces into strips of equal width that are as wide as possible. How wide should she cut the strips?
 4
-9
-5
-6
-Ans:18
 
-Neela has two pieces of cloth. One piece is 21 inches wide and the other piece is 24 inches wide. She wants to cut both pieces into strips of equal width that are as wide as possible. How wide should she cut the strips?
-9
+Jambavan has 15 shields and 21 swords to give to his soldiers. What is the largest number of soldiers he can have in his class so that each soldier gets equal number of shields and equal number of swords?
 Ans:3
-8
 9
 5
+4
+6
 
-Jambavan has 30 shields and 24 swords to give to his soldiers. What is the largest # of soldiers he can have in his class so that each soldier gets equal # of shields and equal # of swords?
-5
+Jambavan has 15 shields and 35 swords to give to his soldiers. What is the largest number of soldiers he can have in his class so that each soldier gets equal number of shields and equal number of swords?
+9
+Ans:5
+8
+6
 7
+
+Neela has two pieces of cloth. One piece is 24 inches wide and the other piece is 42 inches wide. She wants to cut both pieces into strips of equal width that are as wide as possible. How wide should she cut the strips?
+7
+4
 5
 Ans:6
-4
+8
 
-Nala is making a game board that is 9 inches by 27 inches. She wants  to use square tiles. What is the largest tile she can use?
-6
+Neela has two pieces of cloth. One piece is 27 inches wide and the other piece is 36 inches wide. She wants to cut both pieces into strips of equal width that are as wide as possible. How wide should she cut the strips?
 3
 7
+4
+Ans:9
+5
+
+Nala is making a game board that is 32 inches by 48 inches. She wants  to use square tiles. What is the largest tile she can use?
+6
+7
+9
+Ans:16
+8
+
+Nala is making a game board that is 27 inches by 18 inches. She wants  to use square tiles. What is the largest tile she can use?
+6
+5
+3
+8
+Ans:9
+
+Jambavan has 63 shields and 18 swords to give to his soldiers. What is the largest number of soldiers he can have in his class so that each soldier gets equal number of shields and equal number of swords?
+4
 Ans:9
 6
-
-Jambavan has 4 shields and 14 swords to give to his soldiers. What is the largest # of soldiers he can have in his class so that each soldier gets equal # of shields and equal # of swords?
+7
 3
-Ans:2
+
+Neela has two pieces of cloth. One piece is 48 inches wide and the other piece is 24 inches wide. She wants to cut both pieces into strips of equal width that are as wide as possible. How wide should she cut the strips?
+7
 5
 8
-5
+Ans:24
+4
 
-We have to divide 48 bear soldiers and 12 monkey soldiers in rows. We want to mix the bear and monkey soldiers in the rows, but each row must have the same number of bear and monkey soldiers. What is the maximum number of soldiers we can have per row?
+Neela has two pieces of cloth. One piece is 24 inches wide and the other piece is 42 inches wide. She wants to cut both pieces into strips of equal width that are as wide as possible. How wide should she cut the strips?
+3
+5
+8
+Ans:6
 9
+
+Jambavan has 40 shields and 56 swords to give to his soldiers. What is the largest number of soldiers he can have in his class so that each soldier gets equal number of shields and equal number of swords?
+3
+4
+Ans:8
+5
+9
+
+We have to divide 12 bear soldiers and 18 monkey soldiers in rows. We want to mix the bear and monkey soldiers in the rows, but each row must have the same number of bear and monkey soldiers. What is the maximum number of soldiers we can have per row?
+5
 7
+Ans:6
+4
+8
+
+Nala is making a game board that is 24 inches by 18 inches. She wants  to use square tiles. What is the largest tile she can use?
+3
+Ans:6
+7
+4
+9
+
+We have to divide 30 bear soldiers and 12 monkey soldiers in rows. We want to mix the bear and monkey soldiers in the rows, but each row must have the same number of bear and monkey soldiers. What is the maximum number of soldiers we can have per row?
+8
+Ans:6
+5
+4
+9
+
+Neela has two pieces of cloth. One piece is 72 inches wide and the other piece is 32 inches wide. She wants to cut both pieces into strips of equal width that are as wide as possible. How wide should she cut the strips?
+Ans:8
+5
+4
+7
+6
+
+We have to divide 12 bear soldiers and 24 monkey soldiers in rows. We want to mix the bear and monkey soldiers in the rows, but each row must have the same number of bear and monkey soldiers. What is the maximum number of soldiers we can have per row?
 9
 Ans:12
+7
 5
-
-Jambavan has 6 shields and 21 swords to give to his soldiers. What is the largest # of soldiers he can have in his class so that each soldier gets equal # of shields and equal # of swords?
-Ans:3
-6
-4
-4
-4
-
-Nala is making a game board that is 35 inches by 40 inches. She wants  to use square tiles. What is the largest tile she can use?
-Ans:5
-7
-7
-8
-6
-
-Neela has two pieces of cloth. One piece is 49 inches wide and the other piece is 21 inches wide. She wants to cut both pieces into strips of equal width that are as wide as possible. How wide should she cut the strips?
-5
-7
 3
-6
-Ans:7
 
-Jambavan has 48 shields and 56 swords to give to his soldiers. What is the largest # of soldiers he can have in his class so that each soldier gets equal # of shields and equal # of swords?
-8
-8
-9
-Ans:8
-4
-
-Nala is making a game board that is 12 inches by 9 inches. She wants  to use square tiles. What is the largest tile she can use?
-9
-9
-Ans:3
+Jambavan has 12 shields and 36 swords to give to his soldiers. What is the largest number of soldiers he can have in his class so that each soldier gets equal number of shields and equal number of swords?
 5
-6
+4
+Ans:12
+9
+8
 
-Neela has two pieces of cloth. One piece is 16 inches wide and the other piece is 28 inches wide. She wants to cut both pieces into strips of equal width that are as wide as possible. How wide should she cut the strips?
+We have to divide 14 bear soldiers and 8 monkey soldiers in rows. We want to mix the bear and monkey soldiers in the rows, but each row must have the same number of bear and monkey soldiers. What is the maximum number of soldiers we can have per row?
+4
 3
-Ans:4
-7
-6
-6
-
-Nala is making a game board that is 6 inches by 14 inches. She wants  to use square tiles. What is the largest tile she can use?
-6
+9
 Ans:2
-4
-4
-7
-
-We have to divide 56 bear soldiers and 40 monkey soldiers in rows. We want to mix the bear and monkey soldiers in the rows, but each row must have the same number of bear and monkey soldiers. What is the maximum number of soldiers we can have per row?
-4
-3
-4
-Ans:8
-9
-
-We have to divide 49 bear soldiers and 14 monkey soldiers in rows. We want to mix the bear and monkey soldiers in the rows, but each row must have the same number of bear and monkey soldiers. What is the maximum number of soldiers we can have per row?
-7
-8
-9
-Ans:7
-7
-
-We have to divide 35 bear soldiers and 10 monkey soldiers in rows. We want to mix the bear and monkey soldiers in the rows, but each row must have the same number of bear and monkey soldiers. What is the maximum number of soldiers we can have per row?
-3
-3
-Ans:5
-5
 6
 
-Neela has two pieces of cloth. One piece is 27 inches wide and the other piece is 18 inches wide. She wants to cut both pieces into strips of equal width that are as wide as possible. How wide should she cut the strips?
-7
-9
-Ans:9
-5
+Nala is making a game board that is 12 inches by 54 inches. She wants  to use square tiles. What is the largest tile she can use?
 3
-
-Nala is making a game board that is 15 inches by 35 inches. She wants  to use square tiles. What is the largest tile she can use?
-8
-5
-Ans:5
-4
-3
-
-Nala is making a game board that is 18 inches by 12 inches. She wants  to use square tiles. What is the largest tile she can use?
-4
-9
-8
-6
 Ans:6
+7
+4
+8
 
-Jambavan has 16 shields and 32 swords to give to his soldiers. What is the largest # of soldiers he can have in his class so that each soldier gets equal # of shields and equal # of swords?
+Jambavan has 6 shields and 14 swords to give to his soldiers. What is the largest number of soldiers he can have in his class so that each soldier gets equal number of shields and equal number of swords?
+9
+7
+4
+Ans:2
+6
+
+Nala is making a game board that is 36 inches by 12 inches. She wants  to use square tiles. What is the largest tile she can use?
+6
+4
+7
+5
+Ans:12
+
+We have to divide 27 bear soldiers and 12 monkey soldiers in rows. We want to mix the bear and monkey soldiers in the rows, but each row must have the same number of bear and monkey soldiers. What is the maximum number of soldiers we can have per row?
+6
+Ans:3
+5
+4
+8
+
+Nala is making a game board that is 16 inches by 28 inches. She wants  to use square tiles. What is the largest tile she can use?
+Ans:4
+5
+8
+7
+6
+
+Jambavan has 48 shields and 64 swords to give to his soldiers. What is the largest number of soldiers he can have in his class so that each soldier gets equal number of shields and equal number of swords?
 Ans:16
-5
+4
+3
+8
 9
+
+Jambavan has 8 shields and 32 swords to give to his soldiers. What is the largest number of soldiers he can have in his class so that each soldier gets equal number of shields and equal number of swords?
+Ans:8
 5
+3
+4
+9
+
+Nala is making a game board that is 63 inches by 54 inches. She wants  to use square tiles. What is the largest tile she can use?
+5
+Ans:9
+8
+4
 7
 
-Neela has two pieces of cloth. One piece is 72 inches wide and the other piece is 24 inches wide. She wants to cut both pieces into strips of equal width that are as wide as possible. How wide should she cut the strips?
-8
+Neela has two pieces of cloth. One piece is 35 inches wide and the other piece is 28 inches wide. She wants to cut both pieces into strips of equal width that are as wide as possible. How wide should she cut the strips?
+Ans:7
 5
-Ans:24
+4
 3
-7
+6
 
-Nala is making a game board that is 24 inches by 54 inches. She wants  to use square tiles. What is the largest tile she can use?
-Ans:6
+Nala is making a game board that is 15 inches by 40 inches. She wants  to use square tiles. What is the largest tile she can use?
+6
+7
+Ans:5
 3
 8
+
+Jambavan has 16 shields and 24 swords to give to his soldiers. What is the largest number of soldiers he can have in his class so that each soldier gets equal number of shields and equal number of swords?
 7
+9
+6
+Ans:8
 4
 
-Jambavan has 35 shields and 63 swords to give to his soldiers. What is the largest # of soldiers he can have in his class so that each soldier gets equal # of shields and equal # of swords?
-9
-8
+Neela has two pieces of cloth. One piece is 63 inches wide and the other piece is 27 inches wide. She wants to cut both pieces into strips of equal width that are as wide as possible. How wide should she cut the strips?
+5
 3
-Ans:7
-9
-
-Neela has two pieces of cloth. One piece is 63 inches wide and the other piece is 81 inches wide. She wants to cut both pieces into strips of equal width that are as wide as possible. How wide should she cut the strips?
-6
+8
 Ans:9
 6
-9
-8
 
-Neela has two pieces of cloth. One piece is 63 inches wide and the other piece is 56 inches wide. She wants to cut both pieces into strips of equal width that are as wide as possible. How wide should she cut the strips?
-4
-4
-Ans:7
-4
-3
-
-Neela has two pieces of cloth. One piece is 18 inches wide and the other piece is 12 inches wide. She wants to cut both pieces into strips of equal width that are as wide as possible. How wide should she cut the strips?
-7
-Ans:6
-9
-7
-3
-
-Jambavan has 8 shields and 24 swords to give to his soldiers. What is the largest # of soldiers he can have in his class so that each soldier gets equal # of shields and equal # of swords?
-6
-8
-4
-4
-Ans:8
-
-Jambavan has 63 shields and 28 swords to give to his soldiers. What is the largest # of soldiers he can have in his class so that each soldier gets equal # of shields and equal # of swords?
-5
-7
-4
-Ans:7
-9
-
-Jambavan has 18 shields and 14 swords to give to his soldiers. What is the largest # of soldiers he can have in his class so that each soldier gets equal # of shields and equal # of swords?
-3
-5
-4
-Ans:2
-9
-
-Jambavan has 20 shields and 40 swords to give to his soldiers. What is the largest # of soldiers he can have in his class so that each soldier gets equal # of shields and equal # of swords?
-7
-7
-4
-Ans:20
-9
-
-Nala is making a game board that is 16 inches by 8 inches. She wants  to use square tiles. What is the largest tile she can use?
+Neela has two pieces of cloth. One piece is 27 inches wide and the other piece is 6 inches wide. She wants to cut both pieces into strips of equal width that are as wide as possible. How wide should she cut the strips?
 8
 5
-9
-6
-Ans:8
-
-Neela has two pieces of cloth. One piece is 10 inches wide and the other piece is 4 inches wide. She wants to cut both pieces into strips of equal width that are as wide as possible. How wide should she cut the strips?
-3
-8
-3
-6
-Ans:2
-
-Neela has two pieces of cloth. One piece is 20 inches wide and the other piece is 32 inches wide. She wants to cut both pieces into strips of equal width that are as wide as possible. How wide should she cut the strips?
-Ans:4
-9
 4
 6
-8
+Ans:3
 
-Nala is making a game board that is 35 inches by 56 inches. She wants  to use square tiles. What is the largest tile she can use?
-3
-Ans:7
-7
-6
-3
-
-Jambavan has 24 shields and 20 swords to give to his soldiers. What is the largest # of soldiers he can have in his class so that each soldier gets equal # of shields and equal # of swords?
-8
+Neela has two pieces of cloth. One piece is 42 inches wide and the other piece is 63 inches wide. She wants to cut both pieces into strips of equal width that are as wide as possible. How wide should she cut the strips?
+9
 8
 5
-Ans:4
-9
+Ans:21
+7
 
-We have to divide 36 bear soldiers and 18 monkey soldiers in rows. We want to mix the bear and monkey soldiers in the rows, but each row must have the same number of bear and monkey soldiers. What is the maximum number of soldiers we can have per row?
+Nala is making a game board that is 35 inches by 30 inches. She wants  to use square tiles. What is the largest tile she can use?
+6
+7
 4
 9
-Ans:18
-9
-9
-
-Nala is making a game board that is 8 inches by 14 inches. She wants  to use square tiles. What is the largest tile she can use?
-5
-8
-Ans:2
-6
-3
-
-Nala is making a game board that is 16 inches by 8 inches. She wants  to use square tiles. What is the largest tile she can use?
-6
-3
-Ans:8
-9
-6
-
-Neela has two pieces of cloth. One piece is 12 inches wide and the other piece is 20 inches wide. She wants to cut both pieces into strips of equal width that are as wide as possible. How wide should she cut the strips?
-3
-5
-Ans:4
-6
-9
-
-We have to divide 16 bear soldiers and 12 monkey soldiers in rows. We want to mix the bear and monkey soldiers in the rows, but each row must have the same number of bear and monkey soldiers. What is the maximum number of soldiers we can have per row?
-9
-5
-6
-Ans:4
-7
-
-Neela has two pieces of cloth. One piece is 15 inches wide and the other piece is 25 inches wide. She wants to cut both pieces into strips of equal width that are as wide as possible. How wide should she cut the strips?
-Ans:5
-6
-6
-3
-7
-
-Jambavan has 20 shields and 45 swords to give to his soldiers. What is the largest # of soldiers he can have in his class so that each soldier gets equal # of shields and equal # of swords?
-9
-5
-3
-3
 Ans:5
 
-Neela has two pieces of cloth. One piece is 8 inches wide and the other piece is 16 inches wide. She wants to cut both pieces into strips of equal width that are as wide as possible. How wide should she cut the strips?
+Neela has two pieces of cloth. One piece is 42 inches wide and the other piece is 49 inches wide. She wants to cut both pieces into strips of equal width that are as wide as possible. How wide should she cut the strips?
+3
 8
-Ans:8
-3
-5
-7
-
-Neela has two pieces of cloth. One piece is 24 inches wide and the other piece is 15 inches wide. She wants to cut both pieces into strips of equal width that are as wide as possible. How wide should she cut the strips?
 4
-8
-Ans:3
-9
-7
-
-Nala is making a game board that is 6 inches by 12 inches. She wants  to use square tiles. What is the largest tile she can use?
-Ans:6
-6
-4
-3
-3
-
-Jambavan has 56 shields and 49 swords to give to his soldiers. What is the largest # of soldiers he can have in his class so that each soldier gets equal # of shields and equal # of swords?
-6
-9
 5
-6
 Ans:7
 
-We have to divide 32 bear soldiers and 24 monkey soldiers in rows. We want to mix the bear and monkey soldiers in the rows, but each row must have the same number of bear and monkey soldiers. What is the maximum number of soldiers we can have per row?
+Neela has two pieces of cloth. One piece is 24 inches wide and the other piece is 32 inches wide. She wants to cut both pieces into strips of equal width that are as wide as possible. How wide should she cut the strips?
 7
-9
-9
-3
-Ans:8
-
-Jambavan has 81 shields and 63 swords to give to his soldiers. What is the largest # of soldiers he can have in his class so that each soldier gets equal # of shields and equal # of swords?
-6
-Ans:9
-6
-6
-5
-
-Neela has two pieces of cloth. One piece is 40 inches wide and the other piece is 64 inches wide. She wants to cut both pieces into strips of equal width that are as wide as possible. How wide should she cut the strips?
-5
-4
-7
-3
-Ans:8
-
-Neela has two pieces of cloth. One piece is 56 inches wide and the other piece is 40 inches wide. She wants to cut both pieces into strips of equal width that are as wide as possible. How wide should she cut the strips?
 9
 Ans:8
-9
-4
-5
-
-Nala is making a game board that is 21 inches by 18 inches. She wants  to use square tiles. What is the largest tile she can use?
-Ans:3
 3
-7
-7
-9
+6
 
 Neela has two pieces of cloth. One piece is 24 inches wide and the other piece is 30 inches wide. She wants to cut both pieces into strips of equal width that are as wide as possible. How wide should she cut the strips?
 7
-9
 Ans:6
-8
+9
+5
 8
 
-Jambavan has 54 shields and 42 swords to give to his soldiers. What is the largest # of soldiers he can have in his class so that each soldier gets equal # of shields and equal # of swords?
+We have to divide 6 bear soldiers and 9 monkey soldiers in rows. We want to mix the bear and monkey soldiers in the rows, but each row must have the same number of bear and monkey soldiers. What is the maximum number of soldiers we can have per row?
+6
+7
+4
+8
+Ans:3
+
+Neela has two pieces of cloth. One piece is 63 inches wide and the other piece is 18 inches wide. She wants to cut both pieces into strips of equal width that are as wide as possible. How wide should she cut the strips?
+5
 3
+4
+Ans:9
+6
+
+Neela has two pieces of cloth. One piece is 36 inches wide and the other piece is 30 inches wide. She wants to cut both pieces into strips of equal width that are as wide as possible. How wide should she cut the strips?
+3
+7
 Ans:6
+5
+8
+
+We have to divide 54 bear soldiers and 63 monkey soldiers in rows. We want to mix the bear and monkey soldiers in the rows, but each row must have the same number of bear and monkey soldiers. What is the maximum number of soldiers we can have per row?
 6
 4
 7
+Ans:9
+5
+
+Neela has two pieces of cloth. One piece is 18 inches wide and the other piece is 30 inches wide. She wants to cut both pieces into strips of equal width that are as wide as possible. How wide should she cut the strips?
+8
+9
+Ans:6
+3
+7
+
+We have to divide 49 bear soldiers and 42 monkey soldiers in rows. We want to mix the bear and monkey soldiers in the rows, but each row must have the same number of bear and monkey soldiers. What is the maximum number of soldiers we can have per row?
+5
+4
+6
+3
+Ans:7
+
+Jambavan has 20 shields and 12 swords to give to his soldiers. What is the largest number of soldiers he can have in his class so that each soldier gets equal number of shields and equal number of swords?
+7
+6
+Ans:4
+9
+3
+
+We have to divide 63 bear soldiers and 35 monkey soldiers in rows. We want to mix the bear and monkey soldiers in the rows, but each row must have the same number of bear and monkey soldiers. What is the maximum number of soldiers we can have per row?
+4
+5
+3
+Ans:7
+8
+
+We have to divide 14 bear soldiers and 56 monkey soldiers in rows. We want to mix the bear and monkey soldiers in the rows, but each row must have the same number of bear and monkey soldiers. What is the maximum number of soldiers we can have per row?
+9
+Ans:14
+6
+5
+8
 

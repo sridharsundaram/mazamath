@@ -95,6 +95,7 @@ self.image_index = 0;
 
 // If sequence of jumps not over, continue to next jump
 if (self.jumping &gt; 1) {
+  sound_play(self.sound);
   path_start(self.path, 30 /* speed */, 0 /*endaction */,false /* absolute*/);
   return 0;
 }
@@ -145,7 +146,7 @@ self.recovering = true;
             <string>if (!self.selected) return 0;
 if (mouse_check_button(mb_left)) {
   var x_distance, new_multiple;
-  x_distance = self.x + global.GRID_SPACE_WIDTH/2 - mouse_x;
+  x_distance = self.x + self.sprite_width/2 - mouse_x;
   new_multiple = x_distance div 10 + 1; // Converts simple click to 1
   // Disallow multiple larger than 10
   if (abs(new_multiple) &gt; 10) {
@@ -164,7 +165,7 @@ if (mouse_check_button(mb_left)) {
 
 if (mouse_check_button(mb_right)) { // Always set in X direction
   var distance, new_jump;
-  distance = distance_to_point(mouse_x - global.GRID_SPACE_WIDTH/2, mouse_y - global.GRID_SPACE_WIDTH/2);
+  distance = distance_to_point(mouse_x - self.sprite_width/2, mouse_y - self.sprite_height/2);
   new_jump = min(10, distance div 10 + 1);
   if (self.jump != new_jump) {
     sound_play(snd_click);
@@ -323,7 +324,8 @@ if (self.count_x != 0) {
 if (self.x &gt; self.max_segment_x) {
   var final;
   final = self.start_jump_x + sign(self.multiple) * self.jump * global.GRID_SPACE_WIDTH;
-  create_wood_bridge(self.start_jump_x, self.y, final, self.count_x, wood_obj);
+  create_wood_bridge(self.start_jump_x, self.y + global.GRID_SPACE_WIDTH, 
+                     final, self.count_x, wood_obj);
   self.max_segment_x += self.jump * global.GRID_SPACE_WIDTH;
   self.count_x += self.jump;
 }

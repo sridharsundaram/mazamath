@@ -25,5 +25,6 @@ while (!file_text_eof(txtfile)) {
   i += 1;
 }
 global.state_end_counter[state] = i;
+global.state_begin_counter[obj_model_controller.STATE_DONE] = 0;
 file_text_close(txtfile);
 

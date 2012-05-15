@@ -21,19 +21,19 @@ if (key_rnd > treasure_rnd) {
   treasure_rnd = key_rnd;
   key_rnd = t;
 }
-obj_treasure.x = xval + treasure_rnd * global.GRID_SPACE_WIDTH;
-obj_treasure.y = yval - obj_player_B.sprite_height;
+obj_treasure.x = xval + (treasure_rnd - 1) * global.GRID_SPACE_WIDTH;
+obj_treasure.y = yval - global.GRID_SPACE_WIDTH;
 obj_treasure.num = treasure_rnd;
-obj_key.x = xval + key_rnd * global.GRID_SPACE_WIDTH;
-obj_key.y = yval - obj_player_B.sprite_height;
+obj_key.x = xval + (key_rnd - 1) * global.GRID_SPACE_WIDTH;
+obj_key.y = yval - global.GRID_SPACE_WIDTH;
 obj_key.num = key_rnd;
 global.problem_num1[global.num_bridge_segments] = treasure_rnd;
 global.problem_num2[global.num_bridge_segments] = key_rnd;
 with obj_player {
-  initialize_player(xval, 0);
+  initialize_player(xval - obj_player_B.sprite_width/2, 0);
 }
 
-create_wood_bridge(obj_player_B.x + global.GRID_SPACE_WIDTH, obj_player_B.y,
+create_wood_bridge(xval, obj_player_B.y + global.GRID_SPACE_WIDTH, 
                    obj_treasure.x + global.GRID_SPACE_WIDTH, 1, obj_wood);
                    
 // No idea why we need following line - seems to be bug in GM:HTML5

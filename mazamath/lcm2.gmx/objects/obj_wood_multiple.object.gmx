@@ -3,7 +3,7 @@
   <spriteName>spr_wood_multiple</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>100</depth>
+  <depth>99</depth>
   <persistent>0</persistent>
   <parentName>obj_wood</parentName>
   <maskName>&lt;undefined&gt;</maskName>

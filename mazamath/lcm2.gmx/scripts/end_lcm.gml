@@ -9,8 +9,8 @@ if (obj_player_A.current_count != 0 &&
     obj_player_B.jumping == 0 and obj_player_A.jumping == 0) {
   global.problem_value[global.num_bridge_segments] = self.current_count;
   var weld;
-  weld = instance_create(obj_player_A.x, obj_player_A.y, obj_weld); // Weld the wood together
-  with instance_create(obj_player_A.x, obj_player_A.y - global.GRID_SPACE_WIDTH, obj_delta_score) {
+  weld = instance_create(obj_player_B.x, obj_player_B.y - 2 * global.GRID_SPACE_WIDTH, obj_weld); // Weld the wood together
+  with instance_create(obj_player_B.x, obj_player_B.y - global.GRID_SPACE_WIDTH, obj_delta_score) {
     delta_score = 100;
   }
 

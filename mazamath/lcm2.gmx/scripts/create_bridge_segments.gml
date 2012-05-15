@@ -3,7 +3,7 @@ var num_segments;
 num_segments = argument0;
 
 var xval, yval, i, bridge;
-yval = obj_player_B.y - obj_player_B.sprite_height;
+yval = global.BRIDGE_Y;
 xval = global.BRIDGE_WIDTH;
 
 for (i = 0; i < num_segments; i += 1) {

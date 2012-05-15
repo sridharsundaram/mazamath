@@ -103,7 +103,7 @@ view_object[global.MAIN_VIEW] = self.player_id;
             <kind>1</kind>
             <string>if (!instance_exists(self.player_id)) return 0;
 
-draw_self();
+draw_sprite_ext( sprite_index, image_index, x, y, image_xscale/2, image_yscale/2, image_angle, image_blend, image_alpha ); 
 draw_set_color(c_white);
 draw_set_halign(fa_center);
 draw_set_valign(fa_bottom);

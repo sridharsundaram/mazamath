@@ -1,7 +1,7 @@
 // Initialize Stage for Game
 var xval, yval;
 create_bridge_segments(global.num_bridge_segments);
-xval = (global.num_bridge_segments + 1) * global.BRIDGE_WIDTH - obj_player_B.sprite_width;
+xval = (global.num_bridge_segments + 1) * global.BRIDGE_WIDTH;
 yval = obj_player_B.y;
 global.problem_value[global.num_bridge_segments] = 0;
 // 2 minutes == 120s to finish.

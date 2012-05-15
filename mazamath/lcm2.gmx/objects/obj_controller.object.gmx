@@ -28,7 +28,7 @@
             <string>global.GRID_SPACE_WIDTH = 32;
 global.MAIN_VIEW = 0;
 global.DASHBOARD_VIEW = 1;
-global.BRIDGE_WIDTH = 4 * global.GRID_SPACE_WIDTH; // Dont know how to get sprite width
+global.BRIDGE_WIDTH = sprite_get_width(spr_bridge); // 4 * global.GRID_SPACE_WIDTH; // Dont know how to get sprite width
 global.PLAYER_A = "A";
 global.PLAYER_B = "B";
 global.PLAYER_BOTH = "BOTH";
@@ -204,7 +204,8 @@ instance_deactivate_object(obj_sinhika);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.problem_value[0] = 0;
+            <string>global.BRIDGE_Y = obj_bridge.y;
+global.problem_value[0] = 0;
 global.num_bridge_segments = 0;
 global.problem = '';
 health = 100;

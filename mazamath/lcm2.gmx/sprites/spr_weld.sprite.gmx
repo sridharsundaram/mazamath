@@ -9,7 +9,7 @@
   <bbox_left>1</bbox_left>
   <bbox_right>14</bbox_right>
   <bbox_top>1</bbox_top>
-  <bbox_bottom>63</bbox_bottom>
+  <bbox_bottom>110</bbox_bottom>
   <frames>
     <frame index="0">images\spr_weld_0.png</frame>
     <frame index="1">images\spr_weld_1.png</frame>

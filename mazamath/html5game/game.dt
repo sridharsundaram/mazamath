@@ -1,0 +1,30 @@
+// INTRO
+0
+Hi, I am Sugriva - the commander of Rama's army. Your mission is to build a bridge to Lanka.
+Each of you has a fixed jump distance and each time you can jump multiples of this distance.
+Let us start with a little background on why we are building this bridge.
+// ENCOURAGE
+1
+Well done. Here is some more background on why we are building this bridge.
+// State 2 = STORY is the Ramayana Story
+2
+// TRAINING
+3
+Now a question - What do you think will solve the following problem, LCM or HCF ?
+// PROBLEM is the actual problem - this is a placeholder
+4
+Placeholder problem
+// HCF_CORRECT
+5
+Excellent. HCF is correct. All the best with this stage, which begins now.
+// HCF_WRONG
+6
+Oops! You got that wrong - we need to solve this using LCM, not HCF. All the best with this stage, which begins now.
+// LCM_CORRECT
+7
+Excellent. LCM is correct. All the best with this stage, which begins now.
+// LCM_WRONG
+8
+Oops! You got that wrong - we need to solve this using HCF, not LCM. All the best with this Stage, which begins now.
+// DONE
+9

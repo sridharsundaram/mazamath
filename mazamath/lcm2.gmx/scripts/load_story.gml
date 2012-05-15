@@ -5,7 +5,7 @@ global.num_story = 0;
 prev_seq_num = -1;
 for (i = 0; !file_text_eof(txtfile); i += 1) {
   read = file_text_read_string(txtfile);
-  seq_num = real(string_copy(read, 0, 3));
+  seq_num = real(string_copy(read, 1, 3));
   if (prev_seq_num + 1 != seq_num and prev_seq_num != -1) {
     global.story[i,0] = '';
     global.story[i,1] = '';

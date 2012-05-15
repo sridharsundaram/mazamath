@@ -18,7 +18,7 @@ for (i = 0; !file_text_eof(txtfile); i += 1) {
   for (j = 1; j < 6; j += 1) {
     read = file_text_readln(txtfile);
     read = file_text_read_string(txtfile);
-    if (string_copy(read,0,4) == "Ans:"){
+    if (string_copy(read,1,4) == "Ans:"){
       read = string_copy(read,5,string_length(read));
       global.lcm_questions[i,6] = chr(j - 1 + ord('a'));
     }
@@ -47,7 +47,7 @@ for (i = 0; !file_text_eof(txtfile); i += 1) {
   for (j = 1; j < 6; j += 1) {
     read = file_text_readln(txtfile);
     read = file_text_read_string(txtfile);
-    if (string_copy(read,0,4) == "Ans:"){
+    if (string_copy(read,1,4) == "Ans:"){
       read = string_copy(read,5,string_length(read));
       global.gcd_questions[i,6] = chr(j - 1 + ord('a'));
     }

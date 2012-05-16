@@ -45,7 +45,7 @@ if (global.current_story == -1) {
 } else {
   self.state = self.STATE_ENCOURAGE;
 }
-// self.state = self.STATE_PROBLEM;
+self.state = self.STATE_PROBLEM;
 //self.state = self.STATE_DONE;
 self.counter = 0;
 

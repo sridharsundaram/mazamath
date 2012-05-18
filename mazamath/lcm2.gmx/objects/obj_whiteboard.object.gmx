@@ -25,66 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>self.alarm[0] = 100;
-self.counter = 0;
+            <string>self.counter = 0;
 if (obj_model_controller.state != obj_model_controller.STATE_INTRO) {
   self.counter = global.state_begin_counter[obj_model_controller.state];
 }
-
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="2" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>// Story next line alarm
-if (obj_model_controller.state == obj_model_controller.STATE_DONE) {
-  goto_room(lcm);
-  return 0;
-}
-
-if (obj_model_controller.state == obj_model_controller.STATE_STORY) {
-  global.current_story += 1;
-  if (global.current_story &gt;= global.num_story) {
-    global.current_story = 0;
-  } else if (global.story[global.current_story,1] == '') {
-    obj_model_controller.state = next_state();
-    self.counter = global.state_begin_counter[obj_model_controller.state];
-  }
-} else {
-  self.counter += 1;
-  if (global.state_end_counter[obj_model_controller.state] == self.counter) {
-    obj_model_controller.state = next_state();
-    if (obj_model_controller.state != obj_model_controller.STATE_DONE) {
-      self.counter = global.state_begin_counter[obj_model_controller.state];
-    } else {
-      goto_room(lcm);
-      return 0;
-    }
-  }
-  if (obj_model_controller.state == obj_model_controller.STATE_PROBLEM) {
-    obj_lcm.visible = true;
-    obj_hcf.visible = true;
-  }
-}
-
-alarm[0] = 100;
 
 </string>
           </argument>
@@ -134,27 +78,30 @@ obj_whiteboard.counter = global.state_begin_counter[obj_model_controller.state];
           <argument>
             <kind>1</kind>
             <string>draw_self();
-draw_set_color( c_blue );
-draw_set_font( fnt_h );
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 // Story
 var actor, sprite;
 if (obj_model_controller.state != obj_model_controller.STATE_STORY) {
-  draw_set_color(c_black);
-  draw_rectangle(self.x, self.y, self.x + sprite_width, self.y + sprite_height, 0);
   draw_set_color(c_white);
   draw_sprite(spr_sugriva, -1, self.x + sprite_width - 50, self.y + sprite_height - 50);
+  draw_set_font( fnt_h );
   draw_text_ext(self.x + sprite_width/2, self.y + sprite_height/2, 
-      global.game_text[self.counter], 20, sprite_width);
+      global.game_text[self.counter], 30, sprite_width);
 } else {
   actor = global.story[global.current_story, 0];
   sprite = ds_map_find_value(global.actors, actor);
-  if (sprite != 0) {
-    draw_sprite(sprite, -1, self.x + sprite_width/2, self.y +sprite_height/2);
+  if (sprite == 0) {
+    sprite = spr_sugriva;
   }
-  draw_text_ext(self.x + sprite_width/2, self.y + sprite_height/2, 
-                global.story[global.current_story,1], 20, sprite_width);
+  var xscale, yscale;
+  xscale = (self.sprite_width - 10) / sprite_get_width(sprite);
+  yscale = (self.sprite_height - 10) / sprite_get_height(sprite);
+  draw_sprite_ext(sprite, -1, self.x + 5, self.y + 5, xscale, yscale, 0, make_color_rgb(200,200,200), 0.90);
+  draw_set_color( c_white );
+  draw_set_font( font_multiple );
+  draw_text_ext(self.x + sprite_width/2, self.y + sprite_height * (2/3), 
+                global.story[global.current_story,1], 30, sprite_width);
 }
 
 </string>

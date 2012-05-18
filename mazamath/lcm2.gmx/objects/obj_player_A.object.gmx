@@ -29,6 +29,7 @@
 self.original_path = path_monkey;
 self.name = 'A';
 self.player = 'A';
+self.sound = snd_monkey;
 
 </string>
           </argument>

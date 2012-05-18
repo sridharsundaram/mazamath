@@ -29,6 +29,7 @@
 self.original_path = path_me;
 self.name = 'B';
 self.player = 'B';
+self.sound = snd_me;
 
 </string>
           </argument>

@@ -45,9 +45,63 @@ if (global.current_story == -1) {
 } else {
   self.state = self.STATE_ENCOURAGE;
 }
-self.state = self.STATE_PROBLEM;
+//self.state = self.STATE_PROBLEM;
 //self.state = self.STATE_DONE;
-self.counter = 0;
+self.alarm[0] = 100;
+obj_whiteboard.counter = 0;
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>// Story next line alarm
+if (obj_model_controller.state == obj_model_controller.STATE_DONE) {
+  goto_room(lcm);
+  return 0;
+}
+
+if (obj_model_controller.state == obj_model_controller.STATE_STORY) {
+  global.current_story += 1;
+  if (global.current_story &gt;= global.num_story || global.story[global.current_story,1] == '') {
+    obj_model_controller.state = next_state();
+    obj_whiteboard.counter = global.state_begin_counter[obj_model_controller.state];
+  }
+} else {
+  obj_whiteboard.counter += 1;
+  if (global.state_end_counter[obj_model_controller.state] == obj_whiteboard.counter) {
+    obj_model_controller.state = next_state();
+    if (obj_model_controller.state != obj_model_controller.STATE_DONE) {
+      obj_whiteboard.counter = global.state_begin_counter[obj_model_controller.state];
+    } else {
+      goto_room(lcm);
+      return 0;
+    }
+  }
+  if (obj_model_controller.state == obj_model_controller.STATE_PROBLEM) {
+    obj_lcm.visible = true;
+    obj_hcf.visible = true;
+  }
+}
+
+self.alarm[0] = 100;
 
 </string>
           </argument>
@@ -75,14 +129,13 @@ self.counter = 0;
 coin_toss = maza_irandom_range(1,100);
 rand_question = maza_irandom_range(1,50);
 
-if (coin_toss &lt;= 50){
+if (coin_toss &lt;= 60){
   global.problem_type[global.num_bridge_segments] = global.LCM;
   // Chose a random question here from global.gcd_questions[iRandom,0]
   self.problem = global.lcm_questions[rand_question,0];
   // Choices are [i,1] [i,2] [i,3] [i,4] [i,5]
   // Correct answer is [i,6]  
-}
-else {
+} else {
   // Chose a random question here from global.gcd_questions[iRandom,0]
   self.problem = global.gcd_questions[rand_question,0];
   // Choices are [i,1] [i,2] [i,3] [i,4] [i,5]
@@ -93,6 +146,34 @@ else {
 var problem_seq_num;
 problem_seq_num = global.state_begin_counter[self.STATE_PROBLEM];
 global.game_text[problem_seq_num] = self.problem;
+create_wood_bridge(0, obj_player_B.y + global.GRID_SPACE_WIDTH, 
+                   room_width, 1, obj_wood);
+
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="18">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>self.state = self.STATE_DONE;
+show_message('State done');
 
 </string>
           </argument>

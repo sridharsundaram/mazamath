@@ -103,6 +103,9 @@ self.jumping = 0;
 self.multiple = 0;
 self.move_ready = false;
 
+// If not LCM/GCD room, return
+if (!instance_exists(obj_sinhika)) return 0;
+
 // If other player already recognized success in finding LCM, return
 if (obj_sinhika.speed == 0) return 0;
 
@@ -146,7 +149,7 @@ self.recovering = true;
             <string>if (!self.selected) return 0;
 if (mouse_check_button(mb_left)) {
   var x_distance, new_multiple;
-  x_distance = self.x + self.sprite_width/2 - mouse_x;
+  x_distance = mouse_x - (self.x + self.sprite_width/2);
   new_multiple = x_distance div 10 + 1; // Converts simple click to 1
   // Disallow multiple larger than 10
   if (abs(new_multiple) &gt; 10) {
@@ -157,8 +160,8 @@ if (mouse_check_button(mb_left)) {
     self.multiple = new_multiple;
   }
   // Clamp multiple so that self.x &gt;= self.min_segment_x i.e. cannot go behind stage beginning.
-  if (self.x + self.multiple * self.jump &lt; self.min_segment_x) {
-    self.multiple = (self.min_segment_x - self.x) div self.jump;
+  if (self.x + self.multiple * self.jump * global.GRID_SPACE_WIDTH &lt; self.min_segment_x) {
+    self.multiple = (self.min_segment_x - self.x) div (self.jump * global.GRID_SPACE_WIDTH);
   }
   image_index = sign(self.multiple) + 1; // 0 = right, 1 = straight, 2 = left
 }
@@ -253,11 +256,18 @@ send_move(self.multiple);
           <argument>
             <kind>1</kind>
             <string>// Select only if user is at beginning location on bridge for GCD problem
-if (global.problem_type[global.num_bridge_segments] == global.GCD &amp;&amp; self.jumping == 0 &amp;&amp; self.x == self.min_segment_x) {
+if (global.problem_type[global.num_bridge_segments] == global.GCD &amp;&amp; 
+    self.jumping == 0 &amp;&amp; 
+    self.x == self.min_segment_x) {
   self.selected = true;
   self.has_key = false;
   obj_key.visible = true;
 }
+// Select also if in modelling_room
+if (room == Modelling_Room) {
+  self.selected = true;
+}
+
 </string>
           </argument>
         </arguments>
@@ -286,7 +296,7 @@ if (self.jump &gt; 0) {
 } else if (self.jump == 0) {
   var msg;
   msg = instance_create(self.x, self.y, obj_message);
-  msg.message = "Use right mouse to set jump length.";
+  msg.message = "Use right mouse to set jump length.#Then pull to jump in the direction you want.";
 }
 </string>
           </argument>
@@ -356,23 +366,27 @@ self.alarm[0] = 10; // Timeout so that wood gets drawn
           <argument>
             <kind>1</kind>
             <string>draw_self();
+draw_set_halign(fa_center);
+draw_set_valign(fa_middle);
+draw_set_font(font_multiple);
 if (self.selected) {
   draw_set_color(c_white);
-  draw_set_font(font_multiple);
-  draw_set_halign(fa_center);
-  draw_set_valign(fa_middle);
   self.step = (self.step + 1) mod sprite_get_number(self.sprite_index);
   draw_sprite(self.sprite_index, step, mouse_x, mouse_y);
   var value;
   if (mouse_check_button(mb_left)) {
     draw_set_color(c_white);
-    value = abs(self.multiple);
+    value = string(abs(self.multiple)) + " x " + string(self.jump);
   } else {
     draw_set_color(c_red);
     value = self.jump;
   }
   draw_text(self.x + global.GRID_SPACE_WIDTH/2, self.y + global.GRID_SPACE_WIDTH/2, value);
 }
+draw_set_color(c_black);
+draw_text_transformed(self.x + global.GRID_SPACE_WIDTH, self.y + 3*global.GRID_SPACE_WIDTH, 
+                      self.name, 0.75, 0.75, 0);
+
 
 </string>
           </argument>

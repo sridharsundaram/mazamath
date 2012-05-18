@@ -169,6 +169,7 @@
       <sprite>sprites\spr_sinhika_recovering</sprite>
       <sprite>sprites\spr_monkey</sprite>
       <sprite>sprites\spr_monkey2</sprite>
+      <sprite>sprites\sprite49</sprite>
     </sprites>
     <sprite>sprites\spr_green</sprite>
     <sprite>sprites\spr_red</sprite>
@@ -190,6 +191,7 @@
       <sprite>sprites\spr_sita</sprite>
       <sprite>sprites\spr_hanuman</sprite>
       <sprite>sprites\spr_sugriva</sprite>
+      <sprite>sprites\spr_rama</sprite>
     </sprites>
     <sprite>sprites\spr_whiteboard</sprite>
     <sprite>sprites\spr_weld</sprite>
@@ -286,7 +288,7 @@
     <object>objects\obj_whiteboard</object>
     <object>objects\obj_message</object>
   </objects>
-  <rooms name="rooms" roommaxid="100030" room_maxtileid="10000034">
+  <rooms name="rooms" roommaxid="100031" room_maxtileid="10000034">
     <room>rooms\lcm</room>
     <room>rooms\Modelling_Room</room>
     <room>rooms\Celebration_Room</room>

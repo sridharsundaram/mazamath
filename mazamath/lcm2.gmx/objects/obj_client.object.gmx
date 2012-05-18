@@ -25,14 +25,16 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>  with obj_player { 
-    if (self.move_ready) {
-      move_player(); 
-    }
+            <string>with obj_player { 
+  if (self.move_ready) {
+    move_player(); 
   }
-  if (obj_sinhika.move_ready) {
+}
+with obj_sinhika {
+  if (self.move_ready) {
     move_sinhika();
   }
+}
 
 </string>
           </argument>

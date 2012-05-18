@@ -1,6 +1,6 @@
 var txtfile, i, read, seq_num, prev_seq_num;
 
-txtfile = file_text_open_read("sundar_kaand.dt");
+txtfile = file_text_open_read("lanka_kaand.dt");
 global.num_story = 0;
 prev_seq_num = -1;
 for (i = 0; !file_text_eof(txtfile); i += 1) {
@@ -18,7 +18,6 @@ for (i = 0; !file_text_eof(txtfile); i += 1) {
 }
 file_text_close(txtfile);
 // Set up a sentinel to indicate end of story
-i += 1;
 global.story[i,0] = '';
 global.story[i,1] = '';
 global.num_story = i;

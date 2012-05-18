@@ -4,6 +4,7 @@ ds_map_add(global.actors, "hn", spr_hanuman);
 ds_map_add(global.actors, "tb", spr_sampati);
 ds_map_add(global.actors, "rn", spr_ravana);
 ds_map_add(global.actors, "st", spr_sita);
+ds_map_add(global.actors, "rm", spr_rama);
 
 txtfile = file_text_open_read("game.dt");
 // First state must be INTRO state in file

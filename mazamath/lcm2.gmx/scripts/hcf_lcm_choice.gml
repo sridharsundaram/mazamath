@@ -2,6 +2,7 @@ var correct_state, incorrect_state, is_correct;
 is_correct = argument0;
 correct_state = argument1;
 incorrect_state = argument2;
+obj_player_B.visible = false;
 
 if (is_correct){
   sound_play(snd_celebrate);

@@ -56,6 +56,7 @@
     <instance index="35" objName="obj_whiteboard" x="64" y="32" name="inst_94242BB2" locked="0" code="" scaleX="1" scaleY="1" colour="-1" rotation="0"/>
     <instance index="13" objName="obj_player_B" x="256" y="384" name="inst_AC2FD934" locked="0" code="self.image_speed = 0;&#xA;self.image_index = 1;&#xA;self.jump = 2;" scaleX="1" scaleY="1" colour="-1" rotation="0"/>
     <instance index="11" objName="obj_client" x="0" y="480" name="inst_8C822F38" locked="0" code="" scaleX="1" scaleY="1" colour="-1" rotation="0"/>
+    <instance index="37" objName="obj_dontknow" x="256" y="480" name="inst_46223973" locked="0" code="" scaleX="1" scaleY="1" colour="-1" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

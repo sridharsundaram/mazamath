@@ -25,16 +25,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (global.problem_type[global.num_bridge_segments] == global.LCM){
-  obj_model_controller.state = obj_model_controller.STATE_LCM_CORRECT;
-}
-if (global.problem_type[global.num_bridge_segments] == global.GCD){
-  obj_model_controller.state = obj_model_controller.STATE_LCM_WRONG;
-}
-with obj_hcf { instance_destroy();}
-instance_destroy();
-obj_whiteboard.counter = global.state_begin_counter[obj_model_controller.state];
-obj_whiteboard.alarm[0] = 100;
+            <string>if (!visible) return 0;
+
+var is_correct;
+is_correct = global.problem_type[global.num_bridge_segments] == global.LCM;
+
+hcf_lcm_choice(is_correct, obj_model_controller.STATE_LCM_CORRECT,
+               obj_model_controller.STATE_LCM_WRONG);
 
 </string>
           </argument>

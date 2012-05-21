@@ -174,6 +174,7 @@
     <sprite>sprites\spr_green</sprite>
     <sprite>sprites\spr_red</sprite>
     <sprite>sprites\spr_lcm</sprite>
+    <sprite>sprites\spr_dontknow</sprite>
     <sprite>sprites\spr_hcf</sprite>
     <sprite>sprites\spr_celebrate</sprite>
     <sprite>sprites\spr_key</sprite>
@@ -242,6 +243,8 @@
     <script>scripts\load_game_narrative.gml</script>
     <script>scripts\load_story.gml</script>
     <script>scripts\load_questions.gml</script>
+    <script>scripts\hcf_lcm_choice.gml</script>
+    <script>scripts\check_cheat_codes.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font_multiple</font>
@@ -271,6 +274,7 @@
     <object>objects\obj_sword</object>
     <object>objects\obj_celebrate</object>
     <object>objects\obj_hcf</object>
+    <object>objects\obj_dontknow</object>
     <object>objects\obj_lcm</object>
     <object>objects\obj_me</object>
     <object>objects\obj_model_controller</object>
@@ -288,7 +292,7 @@
     <object>objects\obj_whiteboard</object>
     <object>objects\obj_message</object>
   </objects>
-  <rooms name="rooms" roommaxid="100031" room_maxtileid="10000034">
+  <rooms name="rooms" roommaxid="100032" room_maxtileid="10000034">
     <room>rooms\lcm</room>
     <room>rooms\Modelling_Room</room>
     <room>rooms\Celebration_Room</room>

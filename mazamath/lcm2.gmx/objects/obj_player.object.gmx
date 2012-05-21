@@ -383,6 +383,12 @@ if (self.selected) {
   }
   draw_text(self.x + global.GRID_SPACE_WIDTH/2, self.y + global.GRID_SPACE_WIDTH/2, value);
 }
+// Display the JUMP value
+draw_set_color(c_red);
+draw_text_transformed(self.x + global.GRID_SPACE_WIDTH*1.0, 
+                      self.y + global.GRID_SPACE_WIDTH*0.4, self.jump,
+                      0.75, 0.75, 0);
+
 draw_set_color(c_black);
 draw_text_transformed(self.x + global.GRID_SPACE_WIDTH, self.y + 3*global.GRID_SPACE_WIDTH, 
                       self.name, 0.75, 0.75, 0);

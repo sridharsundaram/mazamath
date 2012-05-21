@@ -79,7 +79,9 @@ if (obj_model_controller.state == obj_model_controller.STATE_DONE) {
 }
 
 if (obj_model_controller.state == obj_model_controller.STATE_STORY) {
-  global.current_story += 1;
+  if (global.current_story &lt; global.num_story) {
+    global.current_story += 1;
+  }
   if (global.current_story &gt;= global.num_story || global.story[global.current_story,1] == '') {
     obj_model_controller.state = next_state();
     obj_whiteboard.counter = global.state_begin_counter[obj_model_controller.state];
@@ -98,6 +100,7 @@ if (obj_model_controller.state == obj_model_controller.STATE_STORY) {
   if (obj_model_controller.state == obj_model_controller.STATE_PROBLEM) {
     obj_lcm.visible = true;
     obj_hcf.visible = true;
+    obj_dontknow.visible = true;
   }
 }
 
@@ -149,31 +152,6 @@ global.game_text[problem_seq_num] = self.problem;
 create_wood_bridge(0, obj_player_B.y + global.GRID_SPACE_WIDTH, 
                    room_width, 1, obj_wood);
 
-
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="9" enumb="18">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>self.state = self.STATE_DONE;
-show_message('State done');
 
 </string>
           </argument>

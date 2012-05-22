@@ -12,6 +12,7 @@ if (global.problem_type[global.num_bridge_segments] == global.LCM) {
   initialize_lcm(xval, yval);
 } else if (global.problem_type[global.num_bridge_segments] == global.GCD) {
   initialize_gcd(xval, yval);
+  instance_create(obj_player_B.x - global.GRID_SPACE_WIDTH, obj_player_B.y, obj_slider2);
 }
 
 with obj_sinhika {

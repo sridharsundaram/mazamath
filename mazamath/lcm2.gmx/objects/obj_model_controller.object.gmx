@@ -151,6 +151,7 @@ problem_seq_num = global.state_begin_counter[self.STATE_PROBLEM];
 global.game_text[problem_seq_num] = self.problem;
 create_wood_bridge(obj_bridge.sprite_width, obj_player_B.y + global.GRID_SPACE_WIDTH, 
                    room_width, 1, obj_wood);
+obj_player_B.jump = 5;
 
 
 </string>

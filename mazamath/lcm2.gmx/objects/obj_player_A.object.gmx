@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>event_inherited();
 self.original_path = path_monkey;
-self.name = 'A';
+self.name = 'Shadow';
 self.player = 'A';
 self.sound = snd_monkey;
 

@@ -147,60 +147,23 @@ self.recovering = true;
           <argument>
             <kind>1</kind>
             <string>if (!self.selected) return 0;
-if (mouse_check_button(mb_left)) {
-  var x_distance, new_multiple;
-  x_distance = mouse_x - (self.x + self.sprite_width/2);
-  new_multiple = x_distance div 10 + 1; // Converts simple click to 1
-  // Disallow multiple larger than 10
-  if (abs(new_multiple) &gt; 10) {
-    new_multiple = sign(new_multiple) * 10;
-  }
-  if (self.multiple != new_multiple) {
-    sound_play(snd_click);
-    self.multiple = new_multiple;
-  }
-  // Clamp multiple so that self.x &gt;= self.min_segment_x i.e. cannot go behind stage beginning.
-  if (self.x + self.multiple * self.jump * global.GRID_SPACE_WIDTH &lt; self.min_segment_x) {
-    self.multiple = (self.min_segment_x - self.x) div (self.jump * global.GRID_SPACE_WIDTH);
-  }
-  image_index = sign(self.multiple) + 1; // 0 = right, 1 = straight, 2 = left
+
+var x_distance, new_multiple;
+x_distance = mouse_x - (self.x + self.sprite_width/2);
+new_multiple = x_distance div 10 + 1; // Converts simple click to 1
+// Disallow multiple larger than 10
+if (abs(new_multiple) &gt; 10) {
+  new_multiple = sign(new_multiple) * 10;
 }
-
-if (mouse_check_button(mb_right)) { // Always set in X direction
-  var distance, new_jump;
-  distance = distance_to_point(mouse_x - self.sprite_width/2, mouse_y - self.sprite_height/2);
-  new_jump = min(10, distance div 10 + 1);
-  if (self.jump != new_jump) {
-    sound_play(snd_click);
-    self.jump = new_jump;
-  }
+if (self.multiple != new_multiple) {
+  sound_play(snd_click);
+  self.multiple = new_multiple;
 }
-
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="6" enumb="57">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if (not self.selected) return 0;
-
-self.selected = false;
+// Clamp multiple so that self.x &gt;= self.min_segment_x i.e. cannot go behind stage beginning.
+if (self.x + self.multiple * self.jump * global.GRID_SPACE_WIDTH &lt; self.min_segment_x) {
+  self.multiple = (self.min_segment_x - self.x) div (self.jump * global.GRID_SPACE_WIDTH);
+}
+image_index = sign(self.multiple) + 1; // 0 = right, 1 = straight, 2 = left
 
 </string>
           </argument>
@@ -233,41 +196,6 @@ if (self.recovering) return 0;
 
 self.move_ready = true;
 send_move(self.multiple);
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="6" enumb="5">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>// Select only if user is at beginning location on bridge for GCD problem
-if (global.problem_type[global.num_bridge_segments] == global.GCD &amp;&amp; 
-    self.jumping == 0 &amp;&amp; 
-    self.x == self.min_segment_x) {
-  self.selected = true;
-  self.has_key = false;
-  obj_key.visible = true;
-}
-// Select also if in modelling_room
-if (room == Modelling_Room) {
-  self.selected = true;
-}
-
 </string>
           </argument>
         </arguments>
@@ -377,6 +305,11 @@ if (self.selected) {
   if (mouse_check_button(mb_left)) {
     draw_set_color(c_white);
     value = string(abs(self.multiple)) + " x " + string(self.jump);
+    var sprite;
+    switch(sign(self.multiple)) {
+      case -1: draw_sprite(spr_left_arrow, -1, self.x, self.y + global.GRID_SPACE_WIDTH); break;
+      case +1: draw_sprite(spr_right_arrow, -1, self.x + global.GRID_SPACE_WIDTH, self.y + global.GRID_SPACE_WIDTH); break;
+    }
   } else {
     draw_set_color(c_red);
     value = self.jump;

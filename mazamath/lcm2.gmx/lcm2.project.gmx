@@ -196,6 +196,8 @@
     </sprites>
     <sprite>sprites\spr_whiteboard</sprite>
     <sprite>sprites\spr_weld</sprite>
+    <sprite>sprites\spr_slider</sprite>
+    <sprite>sprites\spr_slider2</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\back_plane</background>
@@ -291,8 +293,10 @@
     <object>objects\obj_snd_play</object>
     <object>objects\obj_whiteboard</object>
     <object>objects\obj_message</object>
+    <object>objects\obj_slider</object>
+    <object>objects\obj_slider2</object>
   </objects>
-  <rooms name="rooms" roommaxid="100032" room_maxtileid="10000034">
+  <rooms name="rooms" roommaxid="100037" room_maxtileid="10000034">
     <room>rooms\lcm</room>
     <room>rooms\Modelling_Room</room>
     <room>rooms\Celebration_Room</room>

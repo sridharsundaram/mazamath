@@ -1,7 +1,6 @@
 // INTRO
 0
-Hi, I am Sugriva - the commander of Rama's army. Your mission is to build a bridge to Lanka.
-Each of you has a fixed jump distance and each time you can jump multiples of this distance.
+Hi, I am Sugriva - the commander of Rama's army. You, our Maths Consultant, are here to help us build a bridge to Lanka.
 Let us start with a little background on why we are building this bridge.
 // ENCOURAGE
 1
@@ -10,7 +9,7 @@ Well done. Here is some more background on why we are building this bridge.
 2
 // TRAINING
 3
-Now a question - What do you think will solve the following problem, LCM or HCF ?
+Now a question - how can we solve the following problem, LCM or HCF ?
 // PROBLEM is the actual problem - this is a placeholder
 4
 Placeholder problem

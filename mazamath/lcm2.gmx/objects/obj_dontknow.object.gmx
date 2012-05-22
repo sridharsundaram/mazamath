@@ -32,7 +32,7 @@
         </arguments>
       </action>
     </event>
-    <event eventtype="6" enumb="4">
+    <event eventtype="4" ename="obj_player_B">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -49,10 +49,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (!self.visible) return 0;
+            <string>if (!self.visible || obj_player_B.jumping &gt; 0) return 0;
 self.dontknow = true;
-obj_hcf.visible = false;
-obj_lcm.visible = false;
 
 </string>
           </argument>

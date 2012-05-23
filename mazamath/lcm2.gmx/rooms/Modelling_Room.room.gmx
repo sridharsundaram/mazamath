@@ -51,13 +51,13 @@
   </views>
   <instances>
     <instance index="6" objName="obj_bridge" x="0" y="384" name="inst_E2EA486D" locked="0" code="" scaleX="1" scaleY="1" colour="-1" rotation="0"/>
-    <instance index="21" objName="obj_lcm" x="557" y="398" name="inst_308C82D3" locked="0" code="" scaleX="1" scaleY="1" colour="-1" rotation="0"/>
-    <instance index="20" objName="obj_hcf" x="395" y="397" name="inst_AF832225" locked="0" code="" scaleX="1" scaleY="1" colour="-1" rotation="0"/>
+    <instance index="21" objName="obj_lcm" x="397" y="399" name="inst_308C82D3" locked="0" code="" scaleX="1" scaleY="1" colour="-1" rotation="0"/>
+    <instance index="20" objName="obj_hcf" x="240" y="397" name="inst_AF832225" locked="0" code="" scaleX="1" scaleY="1" colour="-1" rotation="0"/>
     <instance index="23" objName="obj_model_controller" x="0" y="256" name="inst_3CAD6189" locked="0" code="" scaleX="1" scaleY="1" colour="-1" rotation="0"/>
     <instance index="35" objName="obj_whiteboard" x="64" y="32" name="inst_94242BB2" locked="0" code="" scaleX="1" scaleY="1" colour="-1" rotation="0"/>
     <instance index="13" objName="obj_player_B" x="96" y="448" name="inst_AC2FD934" locked="0" code="self.image_speed = 0;&#xA;self.image_index = 1;&#xA;self.jump = 2;" scaleX="1" scaleY="1" colour="-1" rotation="0"/>
     <instance index="11" objName="obj_client" x="0" y="288" name="inst_8C822F38" locked="0" code="" scaleX="1" scaleY="1" colour="-1" rotation="0"/>
-    <instance index="37" objName="obj_dontknow" x="242" y="396" name="inst_46223973" locked="0" code="" scaleX="1" scaleY="1" colour="-1" rotation="0"/>
+    <instance index="37" objName="obj_dontknow" x="556" y="399" name="inst_46223973" locked="0" code="" scaleX="1" scaleY="1" colour="-1" rotation="0"/>
     <instance index="39" objName="obj_slider2" x="70" y="449" name="inst_FFE13DB1" locked="0" code="" scaleX="1" scaleY="1" colour="-1" rotation="0"/>
   </instances>
   <tiles/>

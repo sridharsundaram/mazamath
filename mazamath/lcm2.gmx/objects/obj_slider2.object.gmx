@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>self.image_speed = 0;
 self.drag = false;                                    //Variable for the mouse
-self.size = 32;                                       //Slider size in pixels (More Big = More precise)
+self.size = 48;                                       //Slider size in pixels (More Big = More precise)
 self.value_max = 10;                                  //Maximum value at right position
 self.value_min = 0;                                   //Minimun value at left position
 y1 = self.y;                                         //Top side
@@ -39,7 +39,7 @@ self.portion = (self.value_max - self.value_min) / self.size;
 self.value = 5;
 // Initial position for the slider (By default is on the middle)
 self.value_y = self.y2 - (self.value - self.value_min) / self.portion;
-self.image_index = self.value_y;
+self.image_index = self.value;
 
 </string>
           </argument>
@@ -152,7 +152,7 @@ self.image_index = self.value_y;
 // Draw the spring
 draw_self();
 // Draw the value
-draw_text(self.x + 10, self.value_y, self.value);
+draw_text(self.x + 10, self.value_y + 8, self.value);
 
 </string>
           </argument>
